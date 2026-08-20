@@ -1,0 +1,141 @@
+{
+  "error": null,
+  "ga_best_fitness": 93,
+  "ga_best_fitness_by_gen": [
+    93,
+    93,
+    93,
+    93,
+    93,
+    93
+  ],
+  "ga_generations_completed": 5,
+  "ga_individuals_evaluated": 300,
+  "ga_path": "/opt/run/out/2026-08-03_17_53_20.830029",
+  "ga_sec": 619.1711096763611,
+  "ga_stopping_checks": [
+    {
+      "cv_f1": 0.98,
+      "cv_precision": 0.981,
+      "cv_recall": 0.98,
+      "generation": 1,
+      "root_split": "NUM2 <= 4752.309141: FALSE (28.0)",
+      "samples": 50,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "e5cc768ba838b82a93fd8b4eb1b145bed9ff6098bd603a7552458cec88359960",
+      "tree_leaves": 8,
+      "tree_nodes": 16
+    },
+    {
+      "cv_f1": 0.989,
+      "cv_precision": 0.99,
+      "cv_recall": 0.989,
+      "generation": 2,
+      "root_split": "NUM2 <= 4752.309141: FALSE (54.0)",
+      "samples": 94,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "e5cc768ba838b82a93fd8b4eb1b145bed9ff6098bd603a7552458cec88359960",
+      "tree_leaves": 8,
+      "tree_nodes": 16
+    },
+    {
+      "cv_f1": 0.993,
+      "cv_precision": 0.993,
+      "cv_recall": 0.993,
+      "generation": 3,
+      "root_split": "NUM2 <= 4754.114773: FALSE (80.0)",
+      "samples": 141,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "e5cc768ba838b82a93fd8b4eb1b145bed9ff6098bd603a7552458cec88359960",
+      "tree_leaves": 8,
+      "tree_nodes": 16
+    },
+    {
+      "cv_f1": 0.995,
+      "cv_precision": 0.995,
+      "cv_recall": 0.995,
+      "generation": 4,
+      "root_split": "NUM2 <= 4754.114773: FALSE (110.0)",
+      "samples": 188,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "e5cc768ba838b82a93fd8b4eb1b145bed9ff6098bd603a7552458cec88359960",
+      "tree_leaves": 8,
+      "tree_nodes": 16
+    },
+    {
+      "cv_f1": 0.996,
+      "cv_precision": 0.996,
+      "cv_recall": 0.996,
+      "generation": 5,
+      "root_split": "NUM2 <= 4754.114773: FALSE (138.0)",
+      "samples": 238,
+      "stop": true,
+      "tree_depth": 1,
+      "tree_hash": "e5cc768ba838b82a93fd8b4eb1b145bed9ff6098bd603a7552458cec88359960",
+      "tree_leaves": 8,
+      "tree_nodes": 16
+    }
+  ],
+  "ga_target_sats": 1000,
+  "j48_runs": [
+    {
+      "arff_path": "/opt/run/out/2026-08-03_17_53_20.830029/dataset_qty_2026-08-03_17_53_20.830029_per100.arff",
+      "j48_out_path": "/opt/run/out/2026-08-03_17_53_20.830029/J48-data-100.out",
+      "qty": 1.0,
+      "root_split": "NUM2 <= 4754.114773: FALSE (156.0)",
+      "tree_depth": 1,
+      "tree_leaves": 8,
+      "tree_nodes": 18
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-03_17_53_20.830029/dataset_qty_2026-08-03_17_53_20.830029_per025.arff",
+      "j48_out_path": "/opt/run/out/2026-08-03_17_53_20.830029/J48-data-25.out",
+      "qty": 0.25,
+      "root_split": "NUM2 <= 4752.309141: FALSE (35.0)",
+      "tree_depth": 1,
+      "tree_leaves": 8,
+      "tree_nodes": 18
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-03_17_53_20.830029/dataset_qty_2026-08-03_17_53_20.830029_per020.arff",
+      "j48_out_path": "/opt/run/out/2026-08-03_17_53_20.830029/J48-data-20.out",
+      "qty": 0.2,
+      "root_split": "NUM2 <= 4751.189166: FALSE (27.0)",
+      "tree_depth": 1,
+      "tree_leaves": 8,
+      "tree_nodes": 18
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-03_17_53_20.830029/dataset_qty_2026-08-03_17_53_20.830029_per015.arff",
+      "j48_out_path": "/opt/run/out/2026-08-03_17_53_20.830029/J48-data-15.out",
+      "qty": 0.15,
+      "root_split": "NUM2 <= 4751.189166: FALSE (21.0)",
+      "tree_depth": 1,
+      "tree_leaves": 8,
+      "tree_nodes": 18
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-03_17_53_20.830029/dataset_qty_2026-08-03_17_53_20.830029_per010.arff",
+      "j48_out_path": "/opt/run/out/2026-08-03_17_53_20.830029/J48-data-10.out",
+      "qty": 0.1,
+      "root_split": "NUM2 <= 4748.660855: FALSE (15.0)",
+      "tree_depth": 1,
+      "tree_leaves": 8,
+      "tree_nodes": 18
+    }
+  ],
+  "max_generations": 100,
+  "output_dir": "/opt/run/out",
+  "population_size": 50,
+  "requirement_file": "replication/evaluation_inputs/effectiveness/AT2/AT2_AT015.py",
+  "requirement_sha256": "329dc270a94838985bd859d746a9fe726ddc5941c758116fe0716a4193e87378",
+  "runtime_sec": 621.3114693164825,
+  "seed": 2,
+  "success": true,
+  "traces_file": "replication/analysis/data/tracesAT.csv",
+  "traces_sha256": "bcb8c2d0fb57b248ff8a55d12b6ce8872c0e958775bfbc64a13aafb138a582e2"
+}

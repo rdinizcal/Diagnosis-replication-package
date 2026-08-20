@@ -1,0 +1,30 @@
+{
+  "archived_source_run": "diagnosis-experiments/diagnosis-runs/20260803171759/exp22_CC1_s3/2026-08-03_21_09_29.706384",
+  "authoritative_campaign": "20260803171759",
+  "canonical_experiment_id": "exp22",
+  "censored": false,
+  "censoring_limit_sec": null,
+  "evidence": {
+    "cache_hit_miss_timeout_tiers": true,
+    "effective_configuration": true,
+    "evaluation_tree": true,
+    "generated_candidates_generation_fitness": true,
+    "j48_training_data": true,
+    "raw_j48_output": true,
+    "run_log": true,
+    "scheduler_metadata": true,
+    "stopping_history": true,
+    "unique_formulas_verdict_duration": true
+  },
+  "omissions": {
+    "run_requirement_copy": "duplicate of immutable requirement under data/requirements",
+    "temp.py": "duplicate generated checker program; formulas and verdicts retained in generations/cache"
+  },
+  "repository_head_at_reconciliation_not_run_commit": "05d0750395972662e9be0a1083b09a6dce7e3e65",
+  "seed": 3,
+  "selection_policy": "reconciliation allow-list; independent of result quality/runtime",
+  "status": "completed_informative",
+  "stop_reason": "cv_pr_stable",
+  "tool_commit_at_run": "UNRECORDED",
+  "unavailable_evidence": {}
+}

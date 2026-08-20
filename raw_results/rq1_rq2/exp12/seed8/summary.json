@@ -1,0 +1,141 @@
+{
+  "error": null,
+  "ga_best_fitness": 94,
+  "ga_best_fitness_by_gen": [
+    94,
+    94,
+    94,
+    94,
+    94,
+    94
+  ],
+  "ga_generations_completed": 5,
+  "ga_individuals_evaluated": 300,
+  "ga_path": "/opt/run/out/2026-08-06_00_06_50.230703",
+  "ga_sec": 1808.3381111621857,
+  "ga_stopping_checks": [
+    {
+      "cv_f1": 0.936,
+      "cv_precision": 0.944,
+      "cv_recall": 0.94,
+      "generation": 1,
+      "root_split": "NUM4 <= 1657992: TRUE (9.0)",
+      "samples": 50,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "c3eaa2aa00719d32b8ecfb20eddfe3409b49a48639c7bf06d44a763d271b591c",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    },
+    {
+      "cv_f1": 0.979,
+      "cv_precision": 0.979,
+      "cv_recall": 0.979,
+      "generation": 2,
+      "root_split": "NUM4 <= 1657992: TRUE (20.0)",
+      "samples": 94,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "c3eaa2aa00719d32b8ecfb20eddfe3409b49a48639c7bf06d44a763d271b591c",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    },
+    {
+      "cv_f1": 0.993,
+      "cv_precision": 0.993,
+      "cv_recall": 0.993,
+      "generation": 3,
+      "root_split": "NUM4 <= 1657992: TRUE (34.0)",
+      "samples": 137,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "c3eaa2aa00719d32b8ecfb20eddfe3409b49a48639c7bf06d44a763d271b591c",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    },
+    {
+      "cv_f1": 0.994,
+      "cv_precision": 0.995,
+      "cv_recall": 0.995,
+      "generation": 4,
+      "root_split": "NUM4 <= 1769841: TRUE (51.0)",
+      "samples": 182,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "c3eaa2aa00719d32b8ecfb20eddfe3409b49a48639c7bf06d44a763d271b591c",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    },
+    {
+      "cv_f1": 0.995,
+      "cv_precision": 0.996,
+      "cv_recall": 0.995,
+      "generation": 5,
+      "root_split": "NUM4 <= 1769841: TRUE (71.0)",
+      "samples": 222,
+      "stop": true,
+      "tree_depth": 1,
+      "tree_hash": "c3eaa2aa00719d32b8ecfb20eddfe3409b49a48639c7bf06d44a763d271b591c",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    }
+  ],
+  "ga_target_sats": 1000,
+  "j48_runs": [
+    {
+      "arff_path": "/opt/run/out/2026-08-06_00_06_50.230703/dataset_qty_2026-08-06_00_06_50.230703_per100.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_00_06_50.230703/J48-data-100.out",
+      "qty": 1.0,
+      "root_split": "NUM4 <= 1769841: TRUE (86.0)",
+      "tree_depth": 1,
+      "tree_leaves": 9,
+      "tree_nodes": 19
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_00_06_50.230703/dataset_qty_2026-08-06_00_06_50.230703_per025.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_00_06_50.230703/J48-data-25.out",
+      "qty": 0.25,
+      "root_split": "NUM4 <= 1657992: TRUE (21.0)",
+      "tree_depth": 1,
+      "tree_leaves": 9,
+      "tree_nodes": 19
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_00_06_50.230703/dataset_qty_2026-08-06_00_06_50.230703_per020.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_00_06_50.230703/J48-data-20.out",
+      "qty": 0.2,
+      "root_split": "NUM4 <= 1657992: TRUE (15.0)",
+      "tree_depth": 1,
+      "tree_leaves": 9,
+      "tree_nodes": 19
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_00_06_50.230703/dataset_qty_2026-08-06_00_06_50.230703_per015.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_00_06_50.230703/J48-data-15.out",
+      "qty": 0.15,
+      "root_split": "NUM4 <= 1657992: TRUE (10.0)",
+      "tree_depth": 1,
+      "tree_leaves": 9,
+      "tree_nodes": 19
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_00_06_50.230703/dataset_qty_2026-08-06_00_06_50.230703_per010.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_00_06_50.230703/J48-data-10.out",
+      "qty": 0.1,
+      "root_split": "NUM4 <= 1657992: TRUE (6.0)",
+      "tree_depth": 1,
+      "tree_leaves": 9,
+      "tree_nodes": 19
+    }
+  ],
+  "max_generations": 100,
+  "output_dir": "/opt/run/out",
+  "population_size": 50,
+  "requirement_file": "replication/evaluation_inputs/effectiveness/AT54/AT54_AT159.py",
+  "requirement_sha256": "9ed0aa6b0edc007c74729b6166945e2b068cfff50f72432ce7572fbc1a78aa88",
+  "runtime_sec": 1810.1541526317596,
+  "seed": 8,
+  "success": true,
+  "traces_file": "replication/analysis/data/tracesAT.csv",
+  "traces_sha256": "bcb8c2d0fb57b248ff8a55d12b6ce8872c0e958775bfbc64a13aafb138a582e2"
+}

@@ -1,0 +1,30 @@
+digraph J48Tree {
+rankdir=TB;
+node [fontname=Helvetica];
+label="exp24 seed 2 tool tree"; labelloc=t;
+N0 [label="NUM4",shape=ellipse];
+N1 [label="NUM0",shape=ellipse];
+N2 [label="FALSE",shape=box,style=filled,fillcolor=lightgray];
+N3 [label="NUM4",shape=ellipse];
+N4 [label="TRUE",shape=box,style=filled,fillcolor=lightgray];
+N5 [label="NUM0",shape=ellipse];
+N6 [label="NUM4",shape=ellipse];
+N7 [label="NUM0",shape=ellipse];
+N8 [label="FALSE",shape=box,style=filled,fillcolor=lightgray];
+N9 [label="TRUE",shape=box,style=filled,fillcolor=lightgray];
+N10 [label="FALSE",shape=box,style=filled,fillcolor=lightgray];
+N11 [label="TRUE",shape=box,style=filled,fillcolor=lightgray];
+N12 [label="FALSE",shape=box,style=filled,fillcolor=lightgray];
+N0 -> N1 [label="<= 15.04414"];
+N1 -> N2 [label="<= 2736878"];
+N1 -> N3 [label="> 2736878"];
+N3 -> N4 [label="<= 14.917573"];
+N3 -> N5 [label="> 14.917573"];
+N5 -> N6 [label="<= 6572799"];
+N6 -> N7 [label="<= 15.015638"];
+N7 -> N8 [label="<= 3220703"];
+N7 -> N9 [label="> 3220703"];
+N6 -> N10 [label="> 15.015638"];
+N5 -> N11 [label="> 6572799"];
+N0 -> N12 [label="> 15.04414"];
+}

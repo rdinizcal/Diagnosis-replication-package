@@ -1,0 +1,11 @@
+{
+  "grouping_basis": "full normalized rule topology",
+  "missing_policy": "censored runs without a final tree are inventoried but excluded; degenerate one-class trees participate as a leaf topology",
+  "mode_tie_break": "lexicographically smallest normalized signature",
+  "normalization": "ordered split/branch/leaf structure and feature/operator/category are retained; training counts and numeric threshold values are abstracted",
+  "not_used_as_mode": [
+    "root feature alone",
+    "unnormalized full numeric tree"
+  ],
+  "representative": "minimum normalized L1 distance of thresholds to component-wise modal-group medians; then lowest seed"
+}

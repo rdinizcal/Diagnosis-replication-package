@@ -1,0 +1,51 @@
+{
+  "directions": {
+    "4": "INCREASING",
+    "8": "DECREASING",
+    "12": "DECREASING",
+    "17": "INCREASING"
+  },
+  "monotone_knobs": [
+    4,
+    8,
+    12,
+    17
+  ],
+  "region": {
+    "positions": [
+      4,
+      8,
+      12,
+      17
+    ],
+    "directions": [
+      "INCREASING",
+      "DECREASING",
+      "DECREASING",
+      "INCREASING"
+    ],
+    "sat": [],
+    "unsat": [],
+    "unknown": [],
+    "consistent_solves": 0,
+    "disabled": false,
+    "witness": null
+  },
+  "counters": {
+    "inferred_satisfied": 0,
+    "inferred_violated": 0,
+    "inferred_undecided": 0,
+    "real_solves": 352,
+    "region_memory_skips": 0,
+    "tier1_decided": 352,
+    "tier2_decided": 0,
+    "tier2_undecided": 0,
+    "monotonicity_violations": 0
+  },
+  "violations": [],
+  "adaptive_observations": {},
+  "adaptive_endpoint_verdicts": [],
+  "one_class_space": [],
+  "adaptive_widenings": [],
+  "adaptive_unknown_bands": []
+}

@@ -1,0 +1,3 @@
+# Installed with --no-deps after its exact ANTLR 4.7 runtime and the documented
+# Python 3.13 import compatibility patch.
+rtamt==0.3.5

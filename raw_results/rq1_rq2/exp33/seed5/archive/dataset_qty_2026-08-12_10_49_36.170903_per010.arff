@@ -1,0 +1,43 @@
+@relation all.2026-08-12_10_49_36.170903
+
+
+@attribute QUANTIFIERS0 {ForAll,Exists}
+@attribute TERM0 {t,cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))]}
+@attribute LOGICALS0 {And,Or,Implies}
+@attribute LOGICALS1 {And,Or,Implies}
+@attribute NUM0 NUMERIC
+@attribute RELATIONALS0 {<,>,<=,>=}
+@attribute TERM1 {t,cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))]}
+@attribute TERM2 {t,cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))]}
+@attribute RELATIONALS1 {<,>,<=,>=}
+@attribute NUM1 NUMERIC
+@attribute LOGICALS2 {And,Or,Implies}
+@attribute TERM3 {t,cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))]}
+@attribute RELATIONALS2 {<,>,<=,>=}
+@attribute NUM2 NUMERIC
+@attribute TERM4 {t,cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))]}
+@attribute TERM5 {t,cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))]}
+@attribute RELATIONALS3 {<,>,<=,>=}
+@attribute NUM3 NUMERIC
+@attribute VEREDICT {TRUE, FALSE}
+
+@data
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,Implies,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,20.000000,TRUE
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,Implies,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,5.189643,TRUE
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,Or,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,5.491001,TRUE
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,Implies,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,6.491052,TRUE
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,Or,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,6.322495,TRUE
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,Or,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,6.879009,TRUE
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,Implies,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,6.401205,TRUE
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,Or,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,6.370996,TRUE
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,Implies,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,5.725595,TRUE
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,And,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,20.000000,FALSE
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,And,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,5.130279,FALSE
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,And,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,6.848395,FALSE
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,And,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,6.803721,FALSE
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,And,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,6.248144,FALSE
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,And,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,5.491001,FALSE
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,And,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,5.486943,FALSE
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,And,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,5.339515,FALSE
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,And,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,5.250646,FALSE
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,And,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,6.853427,FALSE

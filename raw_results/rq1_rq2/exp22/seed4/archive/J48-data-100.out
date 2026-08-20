@@ -1,0 +1,108 @@
+WARNING: core mtj jar files are not available as resources to this classloader (jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+NUM0 <= 21971191
+|   NUM2 <= 41.139231
+|   |   NUM0 <= 21216548: FALSE (423.0/2.0)
+|   |   NUM0 > 21216548
+|   |   |   NUM2 <= 39.439319: FALSE (13.0)
+|   |   |   NUM2 > 39.439319: TRUE (6.0)
+|   NUM2 > 41.139231
+|   |   NUM1 <= 97233994: TRUE (104.0)
+|   |   NUM1 > 97233994
+|   |   |   NUM0 <= 3620803
+|   |   |   |   NUM1 <= 98519496: UNKNOWN (3.0)
+|   |   |   |   NUM1 > 98519496
+|   |   |   |   |   NUM1 <= 99393721: TRUE (2.0)
+|   |   |   |   |   NUM1 > 99393721
+|   |   |   |   |   |   NUM2 <= 46.777782: TRUE (11.0/3.0)
+|   |   |   |   |   |   NUM2 > 46.777782: UNKNOWN (3.0)
+|   |   |   NUM0 > 3620803: TRUE (4.0)
+NUM0 > 21971191
+|   NUM0 <= 22400875
+|   |   NUM2 <= 35.246716: FALSE (2.0)
+|   |   NUM2 > 35.246716: TRUE (11.0)
+|   NUM0 > 22400875: TRUE (318.0)
+
+Number of Leaves  : 	12
+
+Size of the tree : 	23
+
+
+Time taken to build model: 0.03 seconds
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         895               99.4444 %
+Incorrectly Classified Instances         5                0.5556 %
+Kappa statistic                          0.9891
+K&B Relative Info Score                 97.4685 %
+K&B Information Score                  949.8239 bits      1.0554 bits/instance
+Class complexity | order 0             974.4935 bits      1.0828 bits/instance
+Class complexity | scheme               27.6264 bits      0.0307 bits/instance
+Complexity improvement     (Sf)        946.8671 bits      1.0521 bits/instance
+Mean absolute error                      0.0062
+Root mean squared error                  0.0556
+Relative absolute error                  1.8097 %
+Root relative squared error             13.4594 %
+Total Number of Instances              900     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.007    0.993      1.000    0.997      0.993    1.000     1.000     TRUE
+                 1.000    0.004    0.995      1.000    0.998      0.996    0.998     0.996     FALSE
+                 0.545    0.000    1.000      0.545    0.706      0.736    0.954     0.694     UNKNOWN
+Weighted Avg.    0.994    0.005    0.994      0.994    0.994      0.991    0.998     0.994     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 453   0   0 |   a = TRUE
+   0 436   0 |   b = FALSE
+   3   2   6 |   c = UNKNOWN
+
+Time taken to perform cross-validation: 0.05 seconds
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         884               98.2222 %
+Incorrectly Classified Instances        16                1.7778 %
+Kappa statistic                          0.965 
+K&B Relative Info Score                 94.1314 %
+K&B Information Score                  917.4549 bits      1.0194 bits/instance
+Class complexity | order 0             974.6538 bits      1.0829 bits/instance
+Class complexity | scheme             6510.2853 bits      7.2337 bits/instance
+Complexity improvement     (Sf)      -5535.6315 bits     -6.1507 bits/instance
+Mean absolute error                      0.0144
+Root mean squared error                  0.105 
+Relative absolute error                  4.2059 %
+Root relative squared error             25.4253 %
+Total Number of Instances              900     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.996    0.027    0.974      0.996    0.985      0.969    0.991     0.986     TRUE
+                 0.986    0.004    0.995      0.986    0.991      0.982    0.993     0.987     FALSE
+                 0.273    0.002    0.600      0.273    0.375      0.400    0.780     0.333     UNKNOWN
+Weighted Avg.    0.982    0.016    0.980      0.982    0.980      0.969    0.990     0.978     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 451   0   2 |   a = TRUE
+   6 430   0 |   b = FALSE
+   6   2   3 |   c = UNKNOWN
+

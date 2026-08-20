@@ -1,0 +1,102 @@
+WARNING: core mtj jar files are not available as resources to this classloader (jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+NUM2 <= 2982.188095: TRUE (50.0)
+NUM2 > 2982.188095
+|   NUM1 <= 33213774
+|   |   NUM5 <= 69.807361
+|   |   |   NUM4 <= 16381989
+|   |   |   |   NUM5 <= 58.402652: FALSE (2.0)
+|   |   |   |   NUM5 > 58.402652: TRUE (10.0)
+|   |   |   NUM4 > 16381989: FALSE (154.0)
+|   |   NUM5 > 69.807361
+|   |   |   NUM4 <= 21902689: TRUE (23.0)
+|   |   |   NUM4 > 21902689: FALSE (2.0)
+|   NUM1 > 33213774
+|   |   NUM2 <= 3061.426796: TRUE (45.0)
+|   |   NUM2 > 3061.426796
+|   |   |   NUM1 <= 34989388: FALSE (3.0)
+|   |   |   NUM1 > 34989388: TRUE (5.0)
+
+Number of Leaves  : 	9
+
+Size of the tree : 	17
+
+
+Time taken to build model: 0.03 seconds
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         294              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+K&B Relative Info Score                100      %
+K&B Information Score                  293.5041 bits      0.9983 bits/instance
+Class complexity | order 0             293.5041 bits      0.9983 bits/instance
+Class complexity | scheme                0      bits      0      bits/instance
+Complexity improvement     (Sf)        293.5041 bits      0.9983 bits/instance
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              294     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     TRUE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     FALSE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         UNKNOWN
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 133   0   0 |   a = TRUE
+   0 161   0 |   b = FALSE
+   0   0   0 |   c = UNKNOWN
+
+Time taken to perform cross-validation: 0.03 seconds
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         284               96.5986 %
+Incorrectly Classified Instances        10                3.4014 %
+Kappa statistic                          0.9317
+K&B Relative Info Score                 93.2075 %
+K&B Information Score                  273.7354 bits      0.9311 bits/instance
+Class complexity | order 0             293.6839 bits      0.9989 bits/instance
+Class complexity | scheme             7529.1731 bits     25.6094 bits/instance
+Complexity improvement     (Sf)      -7235.4892 bits    -24.6105 bits/instance
+Mean absolute error                      0.0226
+Root mean squared error                  0.1451
+Relative absolute error                  6.8036 %
+Root relative squared error             35.7014 %
+Total Number of Instances              294     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.992    0.056    0.936      0.992    0.964      0.933    0.977     0.948     TRUE
+                 0.944    0.008    0.993      0.944    0.968      0.933    0.977     0.980     FALSE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         UNKNOWN
+Weighted Avg.    0.966    0.029    0.968      0.966    0.966      0.933    0.977     0.965     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 132   1   0 |   a = TRUE
+   9 152   0 |   b = FALSE
+   0   0   0 |   c = UNKNOWN
+

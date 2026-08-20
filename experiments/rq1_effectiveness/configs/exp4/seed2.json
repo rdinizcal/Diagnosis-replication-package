@@ -1,0 +1,116 @@
+{
+  "budgets": {
+    "PGTO_sec": 432000,
+    "TCTO_sec": 3600,
+    "orchestration_wall_guard_sec": 432000
+  },
+  "decision_tree": {
+    "classifier": "weka.classifiers.trees.J48",
+    "options": {
+      "binary_splits": false,
+      "confidence_factor": 0.25,
+      "cross_validation_folds": 10,
+      "fold_rule": "min(10, labeled_instances)",
+      "min_num_obj": 2,
+      "reduced_error_pruning": false,
+      "seed": 1,
+      "subtree_raising": true,
+      "unpruned": false
+    },
+    "weka_version": "3.8.6"
+  },
+  "evaluation": {
+    "cache_enabled": true,
+    "cache_path": null,
+    "engine": "worker",
+    "parallel_workers": 1,
+    "trace_check_timeout_sec": 3600
+  },
+  "ga": {
+    "crossover_rate": 0.95,
+    "elitism": 2,
+    "generations": 100,
+    "mutation_rate": 0.9,
+    "population_size": 50,
+    "seed": 2,
+    "stopping": {
+      "check_every_generations": 1,
+      "max_samples": 1000,
+      "min_samples": 50,
+      "mode": "cv_pr",
+      "patience": 2,
+      "pr_threshold": 0.995
+    },
+    "target_sats": 1000
+  },
+  "heuristics": {
+    "adaptive_range": {
+      "enabled": false,
+      "endpoint_init": true,
+      "exploration_fraction": 0.3,
+      "max_widenings": 4,
+      "on_one_class": "continue",
+      "widen_factor": 1.5
+    },
+    "interval_inference": {
+      "empirical_validation_k": 2,
+      "enabled": false,
+      "mode": "label"
+    },
+    "time_quantization": {
+      "enabled": true,
+      "force_period": false,
+      "period": null,
+      "validate_every_n_hits": 50
+    },
+    "two_tier_timeout": {
+      "enabled": true,
+      "escalation": "once_per_formula",
+      "high_sec": 600,
+      "low_sec": 60
+    }
+  },
+  "input": {
+    "output_dir": "raw_results/rerun/rq1_rq2/exp4/seed2",
+    "requirement_file": "data/requirements/AT2/AT2_AT015.py",
+    "traces_file": "data/traces/tracesAT.csv"
+  },
+  "mutation": {
+    "allowed_changes": {
+      "11": {
+        "numeric": [
+          4700.0,
+          4800.0
+        ]
+      },
+      "4": {
+        "numeric": [
+          0.0,
+          5000000.0
+        ]
+      },
+      "8": {
+        "numeric": [
+          5000000.0,
+          15000000.0
+        ]
+      }
+    },
+    "allowed_positions": [
+      11,
+      8,
+      4
+    ],
+    "enable_logical_flip": false,
+    "enable_numeric_perturbation": true,
+    "enable_quantifier_flip": false,
+    "enable_relop_flip": false,
+    "max_mutations": 1
+  },
+  "replication_metadata": {
+    "configuration_provenance": "captured_then_path_normalized",
+    "tool_commit_for_archived_run": "UNRECORDED",
+    "tool_snapshot_for_rerun": "05d0750395972662e9be0a1083b09a6dce7e3e65",
+    "verdict_polarity": "TRUE=satisfied; FALSE=violated; UNDECIDED=missing label"
+  }
+}

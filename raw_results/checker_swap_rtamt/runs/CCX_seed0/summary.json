@@ -1,0 +1,141 @@
+{
+  "error": null,
+  "ga_best_fitness": 97,
+  "ga_best_fitness_by_gen": [
+    97,
+    97,
+    97,
+    97,
+    97,
+    97
+  ],
+  "ga_generations_completed": 5,
+  "ga_individuals_evaluated": 300,
+  "ga_path": "outputs/rtamt/CCX/2026-07-25_11_18_40.699423",
+  "ga_sec": 357.61242294311523,
+  "ga_stopping_checks": [
+    {
+      "cv_f1": 0.98,
+      "cv_precision": 0.981,
+      "cv_recall": 0.98,
+      "generation": 1,
+      "root_split": "NUM2 <= 7.382655: TRUE (23.0)",
+      "samples": 50,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "ae5ca05b780dabe001635751ae67bdbb0e07126ab66cd65be9a3a905e7978781",
+      "tree_leaves": 8,
+      "tree_nodes": 16
+    },
+    {
+      "cv_f1": 0.989,
+      "cv_precision": 0.989,
+      "cv_recall": 0.989,
+      "generation": 2,
+      "root_split": "NUM2 <= 7.382655: TRUE (42.0)",
+      "samples": 93,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "ae5ca05b780dabe001635751ae67bdbb0e07126ab66cd65be9a3a905e7978781",
+      "tree_leaves": 8,
+      "tree_nodes": 16
+    },
+    {
+      "cv_f1": 0.993,
+      "cv_precision": 0.993,
+      "cv_recall": 0.993,
+      "generation": 3,
+      "root_split": "NUM2 <= 7.382655: TRUE (65.0)",
+      "samples": 140,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "ae5ca05b780dabe001635751ae67bdbb0e07126ab66cd65be9a3a905e7978781",
+      "tree_leaves": 8,
+      "tree_nodes": 16
+    },
+    {
+      "cv_f1": 0.995,
+      "cv_precision": 0.995,
+      "cv_recall": 0.995,
+      "generation": 4,
+      "root_split": "NUM2 <= 7.382655: TRUE (85.0)",
+      "samples": 182,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "ae5ca05b780dabe001635751ae67bdbb0e07126ab66cd65be9a3a905e7978781",
+      "tree_leaves": 8,
+      "tree_nodes": 16
+    },
+    {
+      "cv_f1": 0.996,
+      "cv_precision": 0.996,
+      "cv_recall": 0.996,
+      "generation": 5,
+      "root_split": "NUM2 <= 7.383576: TRUE (109.0)",
+      "samples": 229,
+      "stop": true,
+      "tree_depth": 1,
+      "tree_hash": "ae5ca05b780dabe001635751ae67bdbb0e07126ab66cd65be9a3a905e7978781",
+      "tree_leaves": 8,
+      "tree_nodes": 16
+    }
+  ],
+  "ga_target_sats": 1000,
+  "j48_runs": [
+    {
+      "arff_path": "outputs/rtamt/CCX/2026-07-25_11_18_40.699423/dataset_qty_2026-07-25_11_18_40.699423_per100.arff",
+      "j48_out_path": "outputs/rtamt/CCX/2026-07-25_11_18_40.699423/J48-data-100.out",
+      "qty": 1.0,
+      "root_split": "NUM2 <= 7.383576: TRUE (163.0)",
+      "tree_depth": 1,
+      "tree_leaves": 8,
+      "tree_nodes": 18
+    },
+    {
+      "arff_path": "outputs/rtamt/CCX/2026-07-25_11_18_40.699423/dataset_qty_2026-07-25_11_18_40.699423_per025.arff",
+      "j48_out_path": "outputs/rtamt/CCX/2026-07-25_11_18_40.699423/J48-data-25.out",
+      "qty": 0.25,
+      "root_split": "NUM2 <= 7.382655: TRUE (41.0)",
+      "tree_depth": 1,
+      "tree_leaves": 8,
+      "tree_nodes": 18
+    },
+    {
+      "arff_path": "outputs/rtamt/CCX/2026-07-25_11_18_40.699423/dataset_qty_2026-07-25_11_18_40.699423_per020.arff",
+      "j48_out_path": "outputs/rtamt/CCX/2026-07-25_11_18_40.699423/J48-data-20.out",
+      "qty": 0.2,
+      "root_split": "NUM2 <= 7.382655: TRUE (32.0)",
+      "tree_depth": 1,
+      "tree_leaves": 8,
+      "tree_nodes": 18
+    },
+    {
+      "arff_path": "outputs/rtamt/CCX/2026-07-25_11_18_40.699423/dataset_qty_2026-07-25_11_18_40.699423_per015.arff",
+      "j48_out_path": "outputs/rtamt/CCX/2026-07-25_11_18_40.699423/J48-data-15.out",
+      "qty": 0.15,
+      "root_split": "NUM2 <= 7.382655: TRUE (23.0)",
+      "tree_depth": 1,
+      "tree_leaves": 8,
+      "tree_nodes": 18
+    },
+    {
+      "arff_path": "outputs/rtamt/CCX/2026-07-25_11_18_40.699423/dataset_qty_2026-07-25_11_18_40.699423_per010.arff",
+      "j48_out_path": "outputs/rtamt/CCX/2026-07-25_11_18_40.699423/J48-data-10.out",
+      "qty": 0.1,
+      "root_split": "NUM2 <= 7.360714: TRUE (16.0)",
+      "tree_depth": 1,
+      "tree_leaves": 8,
+      "tree_nodes": 18
+    }
+  ],
+  "max_generations": 100,
+  "output_dir": "outputs/rtamt/CCX",
+  "population_size": 50,
+  "requirement_file": "replication/evaluation_inputs/effectiveness/CCX/CCX_CC041.py",
+  "requirement_sha256": "6e2715acda683c89e7c7f755b39085678a6811a33a31f1dc694f6f482701033e",
+  "runtime_sec": 359.4921338558197,
+  "seed": 0,
+  "success": true,
+  "traces_file": "replication/analysis/data/tracesCC.csv",
+  "traces_sha256": "48b1489168f3a6c19a8fa744ad8e76be308a9696eb883d5e02e7796083421412"
+}

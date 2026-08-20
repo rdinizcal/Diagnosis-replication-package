@@ -1,0 +1,6 @@
+digraph J48Tree {
+rankdir=TB;
+node [fontname=Helvetica];
+label="exp25 seed 5 tool tree"; labelloc=t;
+N0 [label="TRUE",shape=box,style=filled,fillcolor=lightgray];
+}

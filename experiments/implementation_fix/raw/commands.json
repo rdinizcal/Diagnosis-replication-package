@@ -1,0 +1,5 @@
+{
+  "trace_generation": "python reproduce.py",
+  "verification": "python -m pytest -q test_verdict_matrix.py test_fix_verification.py",
+  "verification_exit_status": 0
+}

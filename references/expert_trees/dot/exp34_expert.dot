@@ -1,0 +1,11 @@
+digraph ExpertTree {
+rankdir=TB;
+node [shape=box,fontname=Helvetica];
+root [label="exp34 expert satisfied region"];
+rule [label="forall t: logical(d2obs(t) > d2obs_threshold, desired_x(t)-current_x(t) < distance)"];
+root -> rule;
+rule -> sat [label="true"];
+rule -> unsat [label="false"];
+sat [label="SATISFIED",shape=ellipse];
+unsat [label="VIOLATED",shape=ellipse];
+}

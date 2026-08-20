@@ -1,0 +1,25 @@
+Bootstrap: docker
+From: python:3.13.5-slim-bookworm
+
+%files
+    . /opt/replication
+
+%post
+    apt-get update
+    apt-get install -y --no-install-recommends openjdk-17-jre-headless=17.0.20+8-1~deb12u1 graphviz=2.42.2-7+deb12u1 ca-certificates curl
+    rm -rf /var/lib/apt/lists/*
+    python -m pip install --no-cache-dir -r /opt/replication/environment/requirements-lock.txt
+    python /opt/replication/environment/patch_antlr47_py313.py
+    python -m pip install --no-cache-dir --no-deps -r /opt/replication/environment/rtamt-compat-lock.txt
+    mkdir -p /opt/weka
+    cp /opt/replication/environment/vendor/bounce-0.18.jar /opt/weka/bounce.jar
+    curl -fsSL https://repo1.maven.org/maven2/nz/ac/waikato/cms/weka/weka-stable/3.8.6/weka-stable-3.8.6.jar -o /opt/weka/weka.jar
+    echo "932ea2f342b58fe45736389e9c426d5b5955e610d1f5f6485117f532068915e9  /opt/weka/weka.jar" | sha256sum -c -
+    python -m pip install --no-deps -e /opt/replication/tool
+
+%environment
+    export WEKA_JAR=/opt/weka/weka.jar:/opt/weka/bounce.jar
+
+%runscript
+    cd /opt/replication
+    exec ./smoke "$@"

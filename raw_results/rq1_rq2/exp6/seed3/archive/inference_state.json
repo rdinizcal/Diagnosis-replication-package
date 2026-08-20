@@ -1,0 +1,55 @@
+{
+  "directions": {
+    "5": "UNKNOWN",
+    "8": "UNKNOWN",
+    "13": "UNKNOWN",
+    "16": "UNKNOWN",
+    "27": "DECREASING",
+    "30": "UNKNOWN"
+  },
+  "monotone_knobs": [
+    27
+  ],
+  "region": {
+    "positions": [
+      27
+    ],
+    "directions": [
+      "DECREASING"
+    ],
+    "sat": [],
+    "unsat": [],
+    "unknown": [],
+    "consistent_solves": 0,
+    "disabled": false,
+    "witness": null
+  },
+  "counters": {
+    "inferred_satisfied": 0,
+    "inferred_violated": 0,
+    "inferred_undecided": 0,
+    "real_solves": 409,
+    "region_memory_skips": 0,
+    "tier1_decided": 409,
+    "tier2_decided": 0,
+    "tier2_undecided": 0,
+    "monotonicity_violations": 0
+  },
+  "violations": [],
+  "adaptive_observations": {},
+  "adaptive_endpoint_verdicts": [],
+  "one_class_space": [],
+  "adaptive_widenings": [],
+  "adaptive_unknown_bands": [],
+  "regions": {
+    "27": {
+      "direction": "DECREASING",
+      "sat_values": [],
+      "unsat_values": [],
+      "unknown_values": [],
+      "consistent_solves": 0,
+      "disabled": false,
+      "witness": null
+    }
+  }
+}

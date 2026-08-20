@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Auxiliary study configuration or link record",
+  "type": "object",
+  "required": ["study_id"],
+  "properties": {
+    "study_id": {"type": "string"},
+    "seed": {},
+    "provenance_status": {"type": "string"}
+  }
+}

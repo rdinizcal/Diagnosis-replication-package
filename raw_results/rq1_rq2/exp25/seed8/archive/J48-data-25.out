@@ -1,0 +1,9 @@
+WARNING: core mtj jar files are not available as resources to this classloader (jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09)
+java.lang.IllegalArgumentException: Number of folds must be greater than 1
+	at weka.core.Instances.stratify(Instances.java:1757)
+	at weka.classifiers.evaluation.Evaluation.crossValidateModel(Evaluation.java:825)
+	at weka.classifiers.evaluation.Evaluation.crossValidateModel(Evaluation.java:797)
+	at weka.classifiers.evaluation.Evaluation.evaluateModel(Evaluation.java:1943)
+	at weka.classifiers.Evaluation.evaluateModel(Evaluation.java:668)
+	at weka.classifiers.AbstractClassifier.runClassifier(AbstractClassifier.java:141)
+	at weka.classifiers.trees.J48.main(J48.java:1221)

@@ -1,0 +1,142 @@
+{
+  "error": null,
+  "ga_best_fitness": 98,
+  "ga_best_fitness_by_gen": [
+    98,
+    98,
+    98,
+    98,
+    97,
+    97,
+    97
+  ],
+  "ga_generations_completed": 6,
+  "ga_individuals_evaluated": 350,
+  "ga_path": "/opt/run/out/2026-08-06_19_37_59.836016",
+  "ga_sec": 143061.42083740234,
+  "ga_stopping_checks": [
+    {
+      "cv_f1": 0.957,
+      "cv_precision": 0.952,
+      "cv_recall": 0.963,
+      "generation": 2,
+      "root_split": "NUM4 <= 9.902825: FALSE (77.0)",
+      "samples": 82,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "ed7e5dfca9b0323317c29410fd0fe1170867bccc70a1d030ad843c272e70ea4e",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    },
+    {
+      "cv_f1": 0.992,
+      "cv_precision": 0.994,
+      "cv_recall": 0.991,
+      "generation": 3,
+      "root_split": "NUM4 <= 9.902825: FALSE (110.0)",
+      "samples": 116,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "ed7e5dfca9b0323317c29410fd0fe1170867bccc70a1d030ad843c272e70ea4e",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    },
+    {
+      "cv_f1": 0.994,
+      "cv_precision": 0.995,
+      "cv_recall": 0.993,
+      "generation": 4,
+      "root_split": "NUM4 <= 9.84641: FALSE (138.0)",
+      "samples": 150,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "ed7e5dfca9b0323317c29410fd0fe1170867bccc70a1d030ad843c272e70ea4e",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    },
+    {
+      "cv_f1": 0.995,
+      "cv_precision": 0.996,
+      "cv_recall": 0.995,
+      "generation": 5,
+      "root_split": "NUM4 <= 9.84641: FALSE (178.0)",
+      "samples": 191,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "ed7e5dfca9b0323317c29410fd0fe1170867bccc70a1d030ad843c272e70ea4e",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    },
+    {
+      "cv_f1": 0.996,
+      "cv_precision": 0.996,
+      "cv_recall": 0.996,
+      "generation": 6,
+      "root_split": "NUM4 <= 9.84641: FALSE (207.0)",
+      "samples": 223,
+      "stop": true,
+      "tree_depth": 1,
+      "tree_hash": "ed7e5dfca9b0323317c29410fd0fe1170867bccc70a1d030ad843c272e70ea4e",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    }
+  ],
+  "ga_target_sats": 1000,
+  "j48_runs": [
+    {
+      "arff_path": "/opt/run/out/2026-08-06_19_37_59.836016/dataset_qty_2026-08-06_19_37_59.836016_per100.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_19_37_59.836016/J48-data-100.out",
+      "qty": 1.0,
+      "root_split": "NUM4 <= 9: FALSE (8.0)",
+      "tree_depth": 1,
+      "tree_leaves": 8,
+      "tree_nodes": 18
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_19_37_59.836016/dataset_qty_2026-08-06_19_37_59.836016_per025.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_19_37_59.836016/J48-data-25.out",
+      "qty": 0.25,
+      "root_split": null,
+      "tree_depth": 0,
+      "tree_leaves": 7,
+      "tree_nodes": 17
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_19_37_59.836016/dataset_qty_2026-08-06_19_37_59.836016_per020.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_19_37_59.836016/J48-data-20.out",
+      "qty": 0.2,
+      "root_split": null,
+      "tree_depth": 0,
+      "tree_leaves": 7,
+      "tree_nodes": 17
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_19_37_59.836016/dataset_qty_2026-08-06_19_37_59.836016_per015.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_19_37_59.836016/J48-data-15.out",
+      "qty": 0.15,
+      "root_split": null,
+      "tree_depth": 0,
+      "tree_leaves": 7,
+      "tree_nodes": 17
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_19_37_59.836016/dataset_qty_2026-08-06_19_37_59.836016_per010.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_19_37_59.836016/J48-data-10.out",
+      "qty": 0.1,
+      "root_split": null,
+      "tree_depth": 0,
+      "tree_leaves": 7,
+      "tree_nodes": 17
+    }
+  ],
+  "max_generations": 100,
+  "output_dir": "/opt/run/out",
+  "population_size": 50,
+  "requirement_file": "replication/evaluation_inputs/effectiveness/CC5/CC5_CC031.py",
+  "requirement_sha256": "ae2e06eae030bef24b8fe884c3f6db9ec898b8d701f757a123e64d9aed984eef",
+  "runtime_sec": 143069.78074669838,
+  "seed": 9,
+  "success": true,
+  "traces_file": "replication/analysis/data/tracesCC.csv",
+  "traces_sha256": "48b1489168f3a6c19a8fa744ad8e76be308a9696eb883d5e02e7796083421412"
+}

@@ -1,0 +1,24 @@
+{
+  "derivation_rule": "rpm <= running_max(engine_speed,[0,t0]) OR speed > running_max(vehicle_speed,[0,t1])",
+  "experiment_id": "exp14",
+  "extrema": {
+    "engine_speed": {
+      "maximum": 3753.3899,
+      "maximum_time_s": 44.53,
+      "minimum": 1000.0,
+      "minimum_time_s": 0.0
+    },
+    "time_s": {
+      "maximum": 50.0,
+      "maximum_time_s": 50.0,
+      "minimum": 0.0,
+      "minimum_time_s": 0.0
+    },
+    "vehicle_speed": {
+      "maximum": 82.995095,
+      "maximum_time_s": 48.96,
+      "minimum": 0.0,
+      "minimum_time_s": 0.0
+    }
+  }
+}

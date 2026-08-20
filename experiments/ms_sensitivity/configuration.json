@@ -1,0 +1,10 @@
+{
+  "study_id": "ms_sensitivity",
+  "experiments": ["exp2", "exp4"],
+  "sample_targets": [100, 1000],
+  "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "pipeline_snapshot": "05d0750395972662e9be0a1083b09a6dce7e3e65",
+  "controlled_change": "ga.target_sats only; count mode requires both satisfied and violated pools to reach MS",
+  "archive_status": "not_executed_on_current_pipeline",
+  "historical_status": "superseded measurements had no retained effective configs or raw outputs and remain deleted from the manuscript"
+}

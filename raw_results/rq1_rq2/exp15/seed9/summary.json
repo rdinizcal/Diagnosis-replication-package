@@ -1,0 +1,141 @@
+{
+  "error": null,
+  "ga_best_fitness": 96,
+  "ga_best_fitness_by_gen": [
+    96,
+    96,
+    96,
+    96,
+    96,
+    96
+  ],
+  "ga_generations_completed": 5,
+  "ga_individuals_evaluated": 300,
+  "ga_path": "/opt/run/out/2026-08-06_12_52_34.463323",
+  "ga_sec": 5707.134279489517,
+  "ga_stopping_checks": [
+    {
+      "cv_f1": 0.96,
+      "cv_precision": 0.96,
+      "cv_recall": 0.96,
+      "generation": 1,
+      "root_split": "NUM5 <= 50.197544",
+      "samples": 50,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "d02cbac66e3b7cdd6770464a551bfe94587a0edd455e2fdae91dccf939e0c241",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    },
+    {
+      "cv_f1": 0.979,
+      "cv_precision": 0.979,
+      "cv_recall": 0.979,
+      "generation": 2,
+      "root_split": "NUM5 <= 51.771131",
+      "samples": 94,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "d02cbac66e3b7cdd6770464a551bfe94587a0edd455e2fdae91dccf939e0c241",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    },
+    {
+      "cv_f1": 0.979,
+      "cv_precision": 0.979,
+      "cv_recall": 0.979,
+      "generation": 3,
+      "root_split": "NUM5 <= 51.771131",
+      "samples": 140,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "d02cbac66e3b7cdd6770464a551bfe94587a0edd455e2fdae91dccf939e0c241",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    },
+    {
+      "cv_f1": 1.0,
+      "cv_precision": 1.0,
+      "cv_recall": 1.0,
+      "generation": 4,
+      "root_split": "NUM5 <= 51.771131",
+      "samples": 186,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "d02cbac66e3b7cdd6770464a551bfe94587a0edd455e2fdae91dccf939e0c241",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    },
+    {
+      "cv_f1": 0.996,
+      "cv_precision": 0.996,
+      "cv_recall": 0.996,
+      "generation": 5,
+      "root_split": "NUM5 <= 51.823547",
+      "samples": 233,
+      "stop": true,
+      "tree_depth": 1,
+      "tree_hash": "d02cbac66e3b7cdd6770464a551bfe94587a0edd455e2fdae91dccf939e0c241",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    }
+  ],
+  "ga_target_sats": 1000,
+  "j48_runs": [
+    {
+      "arff_path": "/opt/run/out/2026-08-06_12_52_34.463323/dataset_qty_2026-08-06_12_52_34.463323_per100.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_12_52_34.463323/J48-data-100.out",
+      "qty": 1.0,
+      "root_split": "NUM5 <= 51.763468",
+      "tree_depth": 1,
+      "tree_leaves": 9,
+      "tree_nodes": 19
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_12_52_34.463323/dataset_qty_2026-08-06_12_52_34.463323_per025.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_12_52_34.463323/J48-data-25.out",
+      "qty": 0.25,
+      "root_split": "NUM5 <= 51.763468",
+      "tree_depth": 1,
+      "tree_leaves": 9,
+      "tree_nodes": 19
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_12_52_34.463323/dataset_qty_2026-08-06_12_52_34.463323_per020.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_12_52_34.463323/J48-data-20.out",
+      "qty": 0.2,
+      "root_split": "NUM5 <= 49.946612: FALSE (23.0)",
+      "tree_depth": 2,
+      "tree_leaves": 10,
+      "tree_nodes": 21
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_12_52_34.463323/dataset_qty_2026-08-06_12_52_34.463323_per015.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_12_52_34.463323/J48-data-15.out",
+      "qty": 0.15,
+      "root_split": "NUM5 <= 50.197544: FALSE (19.0)",
+      "tree_depth": 1,
+      "tree_leaves": 8,
+      "tree_nodes": 18
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_12_52_34.463323/dataset_qty_2026-08-06_12_52_34.463323_per010.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_12_52_34.463323/J48-data-10.out",
+      "qty": 0.1,
+      "root_split": "NUM5 <= 49.026: FALSE (13.0)",
+      "tree_depth": 1,
+      "tree_leaves": 8,
+      "tree_nodes": 18
+    }
+  ],
+  "max_generations": 100,
+  "output_dir": "/opt/run/out",
+  "population_size": 50,
+  "requirement_file": "replication/evaluation_inputs/effectiveness/AT6B/AT6B_AT272.py",
+  "requirement_sha256": "23033e30dc0ce391dc7cc7820ff8b9403510613f429ab169972a5aeaf6cf138f",
+  "runtime_sec": 5714.608473539352,
+  "seed": 9,
+  "success": true,
+  "traces_file": "replication/analysis/data/tracesAT.csv",
+  "traces_sha256": "bcb8c2d0fb57b248ff8a55d12b6ce8872c0e958775bfbc64a13aafb138a582e2"
+}

@@ -1,0 +1,42 @@
+{
+    "TOTAL": 450,
+    "": 450,
+    "cache_hits": 39,
+    "cache_misses": 411,
+    "cache_distinct": 411,
+    "worker_restarts": 0,
+    "worker_fallbacks": 0,
+    "inferred_satisfied": 0,
+    "inferred_violated": 0,
+    "inferred_undecided": 0,
+    "real_solves": 411,
+    "region_memory_skips": 0,
+    "tier1_decided": 411,
+    "tier2_decided": 0,
+    "tier2_undecided": 0,
+    "monotonicity_violations": 0,
+    "time_quantization": true,
+    "quantized_positions": {
+        "27": 10000.0
+    },
+    "quant_hits_exact": 39,
+    "quant_hits_canonical": 0,
+    "quant_validations": 0,
+    "quantization_violations": 0,
+    "vacuous_candidates": 0,
+    "inference_mode": "label",
+    "two_tier_timeout": true,
+    "interval_inference": false,
+    "adaptive_range": false,
+    "monotone_knobs": [
+        27
+    ],
+    "position_directions": {
+        "5": "UNKNOWN",
+        "8": "UNKNOWN",
+        "13": "UNKNOWN",
+        "16": "UNKNOWN",
+        "27": "DECREASING",
+        "30": "UNKNOWN"
+    }
+}

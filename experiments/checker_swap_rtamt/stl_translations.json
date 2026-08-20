@@ -1,0 +1,13 @@
+{
+  "time_model": "discrete samples; source timestamps in microseconds are divided by the inferred sampling period",
+  "AT1": {
+    "parameters": ["lo", "hi", "threshold"],
+    "stl": "always((time >= lo and time <= hi) -> v_speed <= threshold)",
+    "adapter_subject": "AT1"
+  },
+  "CCx": {
+    "parameters": ["threshold"],
+    "stl": "always((y5 - y4) <= threshold)",
+    "adapter_subject": "CCX"
+  }
+}

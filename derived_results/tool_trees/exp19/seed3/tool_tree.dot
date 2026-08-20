@@ -1,0 +1,14 @@
+digraph J48Tree {
+rankdir=TB;
+node [fontname=Helvetica];
+label="exp19 seed 3 tool tree"; labelloc=t;
+N0 [label="NUM14",shape=ellipse];
+N1 [label="TRUE",shape=box,style=filled,fillcolor=lightgray];
+N2 [label="NUM17",shape=ellipse];
+N3 [label="FALSE",shape=box,style=filled,fillcolor=lightgray];
+N4 [label="TRUE",shape=box,style=filled,fillcolor=lightgray];
+N0 -> N1 [label="<= 2967.36677"];
+N0 -> N2 [label="> 2967.36677"];
+N2 -> N3 [label="<= 70.247822"];
+N2 -> N4 [label="> 70.247822"];
+}

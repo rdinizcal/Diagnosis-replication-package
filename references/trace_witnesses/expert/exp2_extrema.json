@@ -1,0 +1,30 @@
+{
+  "derivation_rule": "speed > vehicle_speed(t1); t0 is irrelevant",
+  "experiment_id": "exp2",
+  "extrema": {
+    "engine_speed": {
+      "maximum": 4764.8108,
+      "maximum_time_s": 6.16,
+      "minimum": 1000.0,
+      "minimum_time_s": 0.0
+    },
+    "gear": {
+      "maximum": 4.0,
+      "maximum_time_s": 12.36,
+      "minimum": 1.0,
+      "minimum_time_s": 0.0
+    },
+    "time_s": {
+      "maximum": 50.0,
+      "maximum_time_s": 50.0,
+      "minimum": 0.0,
+      "minimum_time_s": 0.0
+    },
+    "vehicle_speed": {
+      "maximum": 140.9703,
+      "maximum_time_s": 38.32,
+      "minimum": 0.0,
+      "minimum_time_s": 0.0
+    }
+  }
+}

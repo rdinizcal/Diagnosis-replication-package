@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/rdinizcal/Diagnosis-replication-package/blob/main/experiments/config.schema.json",
+  "title": "Fully materialized Diagnosis experiment configuration",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["input", "ga", "mutation", "evaluation", "heuristics", "budgets", "decision_tree", "replication_metadata"],
+  "properties": {
+    "input": {"type": "object", "required": ["requirement_file", "traces_file", "output_dir"]},
+    "ga": {
+      "type": "object",
+      "required": ["population_size", "generations", "crossover_rate", "mutation_rate", "elitism", "seed", "target_sats", "stopping"],
+      "properties": {"seed": {"type": "integer"}, "stopping": {"type": "object", "required": ["mode", "pr_threshold", "check_every_generations", "patience", "min_samples", "max_samples"]}}
+    },
+    "mutation": {"type": "object", "required": ["max_mutations", "enable_numeric_perturbation", "enable_relop_flip", "enable_logical_flip", "enable_quantifier_flip", "allowed_positions", "allowed_changes"]},
+    "evaluation": {"type": "object", "required": ["trace_check_timeout_sec", "cache_enabled", "engine", "parallel_workers", "cache_path"]},
+    "heuristics": {
+      "type": "object",
+      "required": ["interval_inference", "two_tier_timeout", "adaptive_range", "time_quantization"],
+      "properties": {
+        "interval_inference": {"type": "object", "required": ["enabled", "mode", "empirical_validation_k"]},
+        "two_tier_timeout": {"type": "object", "required": ["enabled", "low_sec", "high_sec", "escalation"]},
+        "adaptive_range": {"type": "object", "required": ["enabled", "exploration_fraction", "endpoint_init", "on_one_class", "widen_factor", "max_widenings"]},
+        "time_quantization": {"type": "object", "required": ["enabled", "validate_every_n_hits", "period", "force_period"]}
+      }
+    },
+    "budgets": {"type": "object", "required": ["TCTO_sec", "PGTO_sec", "orchestration_wall_guard_sec"]},
+    "decision_tree": {"type": "object", "required": ["classifier", "weka_version", "options"]},
+    "replication_metadata": {"type": "object", "required": ["configuration_provenance", "tool_commit_for_archived_run", "tool_snapshot_for_rerun", "verdict_polarity"]}
+  }
+}

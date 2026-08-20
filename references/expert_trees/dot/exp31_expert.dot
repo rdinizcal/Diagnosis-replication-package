@@ -1,0 +1,13 @@
+digraph ExpertTree {
+rankdir=TB;
+node [shape=box,fontname=Helvetica];
+root [label="exp31 expert satisfied region"];
+or [label="OR"];
+root -> or;
+b0 [label="t0: (0.0, 0.0]\nt1: (50.0, 50.0]\ndistance: (5.0, 7.3894]"];
+or -> b0;
+b0 -> sat0;
+sat0 [label="SATISFIED",shape=ellipse];
+root -> unsat [label="otherwise"];
+unsat [label="VIOLATED",shape=ellipse];
+}

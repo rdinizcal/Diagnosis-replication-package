@@ -1,0 +1,672 @@
+{
+  "experiment_id": "exp16",
+  "normalized_rule_signature": "split:NUM5[<=:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->split:NUM5[<=:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->split:NUM1[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->split:NUM2[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->leaf:FALSE]]]|>:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->split:NUM1[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->leaf:TRUE]]]|>:<NUMERIC_THRESHOLD>->split:NUM1[<=:<NUMERIC_THRESHOLD>->split:NUM5[<=:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->split:NUM5[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->split:NUM1[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->leaf:FALSE]]]|>:<NUMERIC_THRESHOLD>->split:NUM2[<=:<NUMERIC_THRESHOLD>->split:NUM1[<=:<NUMERIC_THRESHOLD>->split:NUM2[<=:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->leaf:FALSE]|>:<NUMERIC_THRESHOLD>->leaf:FALSE]|>:<NUMERIC_THRESHOLD>->leaf:TRUE]|>:<NUMERIC_THRESHOLD>->leaf:FALSE]]|>:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->leaf:FALSE]]|>:<NUMERIC_THRESHOLD>->split:NUM2[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->split:NUM1[<=:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->split:NUM2[<=:<NUMERIC_THRESHOLD>->split:NUM1[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->leaf:TRUE]|>:<NUMERIC_THRESHOLD>->leaf:FALSE]]|>:<NUMERIC_THRESHOLD>->split:NUM2[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->leaf:FALSE]]]]]|>:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->split:NUM5[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->leaf:TRUE]]]",
+  "normalized_rule_signature_sha256": "dccb9a3814ceb50f0820b8358cbc06f7f3c7d8843581ca5f50915e35e65a1f3f",
+  "numeric_thresholds": [
+    55.383183,
+    6123919.0,
+    44.229472,
+    4772439.0,
+    4772439.0,
+    32046691.0,
+    32046691.0,
+    3089.500023,
+    3089.500023,
+    44.229472,
+    6033307.0,
+    6033307.0,
+    25953819.0,
+    25953819.0,
+    6123919.0,
+    32046691.0,
+    52.022111,
+    7050129.0,
+    47.471322,
+    47.471322,
+    6743844.0,
+    6743844.0,
+    23242183.0,
+    23242183.0,
+    7050129.0,
+    2872.918593,
+    30306384.0,
+    2837.762673,
+    8721974.0,
+    8721974.0,
+    2837.762673,
+    30306384.0,
+    2872.918593,
+    52.022111,
+    8721974.0,
+    8721974.0,
+    32046691.0,
+    3019.299974,
+    3019.299974,
+    35546532.0,
+    6810219.0,
+    6810219.0,
+    3093.08094,
+    33904247.0,
+    33904247.0,
+    3093.08094,
+    35546532.0,
+    3195.100576,
+    3195.100576,
+    55.383183,
+    10791978.0,
+    10791978.0,
+    57.620768,
+    57.620768
+  ],
+  "run_status": "completed_informative",
+  "schema_version": 1,
+  "seed": 4,
+  "source_j48_output": "raw_results/rq1_rq2/exp16/seed4/archive/evaluation_tree/J48-data-100.out",
+  "tree": {
+    "edges": [
+      {
+        "operator": "<=",
+        "source": 0,
+        "target": 1,
+        "value": "55.383183"
+      },
+      {
+        "operator": "<=",
+        "source": 1,
+        "target": 2,
+        "value": "6123919"
+      },
+      {
+        "operator": "<=",
+        "source": 2,
+        "target": 3,
+        "value": "44.229472"
+      },
+      {
+        "operator": "<=",
+        "source": 3,
+        "target": 4,
+        "value": "4772439"
+      },
+      {
+        "operator": ">",
+        "source": 3,
+        "target": 5,
+        "value": "4772439"
+      },
+      {
+        "operator": "<=",
+        "source": 5,
+        "target": 6,
+        "value": "32046691"
+      },
+      {
+        "operator": ">",
+        "source": 5,
+        "target": 7,
+        "value": "32046691"
+      },
+      {
+        "operator": "<=",
+        "source": 7,
+        "target": 8,
+        "value": "3089.500023"
+      },
+      {
+        "operator": ">",
+        "source": 7,
+        "target": 9,
+        "value": "3089.500023"
+      },
+      {
+        "operator": ">",
+        "source": 2,
+        "target": 10,
+        "value": "44.229472"
+      },
+      {
+        "operator": "<=",
+        "source": 10,
+        "target": 11,
+        "value": "6033307"
+      },
+      {
+        "operator": ">",
+        "source": 10,
+        "target": 12,
+        "value": "6033307"
+      },
+      {
+        "operator": "<=",
+        "source": 12,
+        "target": 13,
+        "value": "25953819"
+      },
+      {
+        "operator": ">",
+        "source": 12,
+        "target": 14,
+        "value": "25953819"
+      },
+      {
+        "operator": ">",
+        "source": 1,
+        "target": 15,
+        "value": "6123919"
+      },
+      {
+        "operator": "<=",
+        "source": 15,
+        "target": 16,
+        "value": "32046691"
+      },
+      {
+        "operator": "<=",
+        "source": 16,
+        "target": 17,
+        "value": "52.022111"
+      },
+      {
+        "operator": "<=",
+        "source": 17,
+        "target": 18,
+        "value": "7050129"
+      },
+      {
+        "operator": "<=",
+        "source": 18,
+        "target": 19,
+        "value": "47.471322"
+      },
+      {
+        "operator": ">",
+        "source": 18,
+        "target": 20,
+        "value": "47.471322"
+      },
+      {
+        "operator": "<=",
+        "source": 20,
+        "target": 21,
+        "value": "6743844"
+      },
+      {
+        "operator": ">",
+        "source": 20,
+        "target": 22,
+        "value": "6743844"
+      },
+      {
+        "operator": "<=",
+        "source": 22,
+        "target": 23,
+        "value": "23242183"
+      },
+      {
+        "operator": ">",
+        "source": 22,
+        "target": 24,
+        "value": "23242183"
+      },
+      {
+        "operator": ">",
+        "source": 17,
+        "target": 25,
+        "value": "7050129"
+      },
+      {
+        "operator": "<=",
+        "source": 25,
+        "target": 26,
+        "value": "2872.918593"
+      },
+      {
+        "operator": "<=",
+        "source": 26,
+        "target": 27,
+        "value": "30306384"
+      },
+      {
+        "operator": "<=",
+        "source": 27,
+        "target": 28,
+        "value": "2837.762673"
+      },
+      {
+        "operator": "<=",
+        "source": 28,
+        "target": 29,
+        "value": "8721974"
+      },
+      {
+        "operator": ">",
+        "source": 28,
+        "target": 30,
+        "value": "8721974"
+      },
+      {
+        "operator": ">",
+        "source": 27,
+        "target": 31,
+        "value": "2837.762673"
+      },
+      {
+        "operator": ">",
+        "source": 26,
+        "target": 32,
+        "value": "30306384"
+      },
+      {
+        "operator": ">",
+        "source": 25,
+        "target": 33,
+        "value": "2872.918593"
+      },
+      {
+        "operator": ">",
+        "source": 16,
+        "target": 34,
+        "value": "52.022111"
+      },
+      {
+        "operator": "<=",
+        "source": 34,
+        "target": 35,
+        "value": "8721974"
+      },
+      {
+        "operator": ">",
+        "source": 34,
+        "target": 36,
+        "value": "8721974"
+      },
+      {
+        "operator": ">",
+        "source": 15,
+        "target": 37,
+        "value": "32046691"
+      },
+      {
+        "operator": "<=",
+        "source": 37,
+        "target": 38,
+        "value": "3019.299974"
+      },
+      {
+        "operator": ">",
+        "source": 37,
+        "target": 39,
+        "value": "3019.299974"
+      },
+      {
+        "operator": "<=",
+        "source": 39,
+        "target": 40,
+        "value": "35546532"
+      },
+      {
+        "operator": "<=",
+        "source": 40,
+        "target": 41,
+        "value": "6810219"
+      },
+      {
+        "operator": ">",
+        "source": 40,
+        "target": 42,
+        "value": "6810219"
+      },
+      {
+        "operator": "<=",
+        "source": 42,
+        "target": 43,
+        "value": "3093.08094"
+      },
+      {
+        "operator": "<=",
+        "source": 43,
+        "target": 44,
+        "value": "33904247"
+      },
+      {
+        "operator": ">",
+        "source": 43,
+        "target": 45,
+        "value": "33904247"
+      },
+      {
+        "operator": ">",
+        "source": 42,
+        "target": 46,
+        "value": "3093.08094"
+      },
+      {
+        "operator": ">",
+        "source": 39,
+        "target": 47,
+        "value": "35546532"
+      },
+      {
+        "operator": "<=",
+        "source": 47,
+        "target": 48,
+        "value": "3195.100576"
+      },
+      {
+        "operator": ">",
+        "source": 47,
+        "target": 49,
+        "value": "3195.100576"
+      },
+      {
+        "operator": ">",
+        "source": 0,
+        "target": 50,
+        "value": "55.383183"
+      },
+      {
+        "operator": "<=",
+        "source": 50,
+        "target": 51,
+        "value": "10791978"
+      },
+      {
+        "operator": ">",
+        "source": 50,
+        "target": 52,
+        "value": "10791978"
+      },
+      {
+        "operator": "<=",
+        "source": 52,
+        "target": 53,
+        "value": "57.620768"
+      },
+      {
+        "operator": ">",
+        "source": 52,
+        "target": 54,
+        "value": "57.620768"
+      }
+    ],
+    "nodes": [
+      {
+        "feature": "NUM5",
+        "id": 0,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM4",
+        "id": 1,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM5",
+        "id": 2,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM4",
+        "id": 3,
+        "kind": "split"
+      },
+      {
+        "id": 4,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "feature": "NUM1",
+        "id": 5,
+        "kind": "split"
+      },
+      {
+        "id": 6,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "feature": "NUM2",
+        "id": 7,
+        "kind": "split"
+      },
+      {
+        "id": 8,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "id": 9,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "feature": "NUM4",
+        "id": 10,
+        "kind": "split"
+      },
+      {
+        "id": 11,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "feature": "NUM1",
+        "id": 12,
+        "kind": "split"
+      },
+      {
+        "id": 13,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "id": 14,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "feature": "NUM1",
+        "id": 15,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM5",
+        "id": 16,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM4",
+        "id": 17,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM5",
+        "id": 18,
+        "kind": "split"
+      },
+      {
+        "id": 19,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "feature": "NUM4",
+        "id": 20,
+        "kind": "split"
+      },
+      {
+        "id": 21,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "feature": "NUM1",
+        "id": 22,
+        "kind": "split"
+      },
+      {
+        "id": 23,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "id": 24,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "feature": "NUM2",
+        "id": 25,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM1",
+        "id": 26,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM2",
+        "id": 27,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM4",
+        "id": 28,
+        "kind": "split"
+      },
+      {
+        "id": 29,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "id": 30,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "id": 31,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "id": 32,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "id": 33,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "feature": "NUM4",
+        "id": 34,
+        "kind": "split"
+      },
+      {
+        "id": 35,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "id": 36,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "feature": "NUM2",
+        "id": 37,
+        "kind": "split"
+      },
+      {
+        "id": 38,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "feature": "NUM1",
+        "id": 39,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM4",
+        "id": 40,
+        "kind": "split"
+      },
+      {
+        "id": 41,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "feature": "NUM2",
+        "id": 42,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM1",
+        "id": 43,
+        "kind": "split"
+      },
+      {
+        "id": 44,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "id": 45,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "id": 46,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "feature": "NUM2",
+        "id": 47,
+        "kind": "split"
+      },
+      {
+        "id": 48,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "id": 49,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "feature": "NUM4",
+        "id": 50,
+        "kind": "split"
+      },
+      {
+        "id": 51,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "feature": "NUM5",
+        "id": 52,
+        "kind": "split"
+      },
+      {
+        "id": 53,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "id": 54,
+        "kind": "leaf",
+        "label": "TRUE"
+      }
+    ],
+    "root": 0
+  },
+  "tree_status": "available"
+}

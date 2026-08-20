@@ -1,0 +1,96 @@
+WARNING: core mtj jar files are not available as resources to this classloader (jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+NUM13 <= 32745783
+|   NUM14 <= 2947.121562: TRUE (16.0)
+|   NUM14 > 2947.121562
+|   |   NUM17 <= 70.665171
+|   |   |   NUM16 <= 16809517
+|   |   |   |   NUM17 <= 64.687393: FALSE (4.0/1.0)
+|   |   |   |   NUM17 > 64.687393: TRUE (4.0)
+|   |   |   NUM16 > 16809517: FALSE (41.0)
+|   |   NUM17 > 70.665171
+|   |   |   NUM16 <= 21465506: TRUE (13.0)
+|   |   |   NUM16 > 21465506
+|   |   |   |   NUM14 <= 3063.595612: FALSE (3.0)
+|   |   |   |   NUM14 > 3063.595612: TRUE (3.0)
+NUM13 > 32745783: TRUE (21.0)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Time taken to build model: 0.02 seconds
+
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         104               99.0476 %
+Incorrectly Classified Instances         1                0.9524 %
+Kappa statistic                          0.9808
+K&B Relative Info Score                 97.2684 %
+K&B Information Score                  101.3221 bits      0.965  bits/instance
+Class complexity | order 0             104.1675 bits      0.9921 bits/instance
+Class complexity | scheme                3.2451 bits      0.0309 bits/instance
+Complexity improvement     (Sf)        100.9224 bits      0.9612 bits/instance
+Mean absolute error                      0.0143
+Root mean squared error                  0.0845
+Relative absolute error                  2.8882 %
+Root relative squared error             16.9966 %
+Total Number of Instances              105     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.983    0.000    1.000      0.983    0.991      0.981    0.999     0.999     TRUE
+                 1.000    0.017    0.979      1.000    0.989      0.981    0.999     0.999     FALSE
+Weighted Avg.    0.990    0.008    0.991      0.990    0.990      0.981    0.999     0.999     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 57  1 |  a = TRUE
+  0 47 |  b = FALSE
+
+Time taken to perform cross-validation: 0.03 seconds
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances          97               92.381  %
+Incorrectly Classified Instances         8                7.619  %
+Kappa statistic                          0.8453
+K&B Relative Info Score                 84.5261 %
+K&B Information Score                   88.116  bits      0.8392 bits/instance
+Class complexity | order 0             104.2471 bits      0.9928 bits/instance
+Class complexity | scheme             8592      bits     81.8286 bits/instance
+Complexity improvement     (Sf)      -8487.7529 bits    -80.8357 bits/instance
+Mean absolute error                      0.0762
+Root mean squared error                  0.276 
+Relative absolute error                 15.3961 %
+Root relative squared error             55.4814 %
+Total Number of Instances              105     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.948    0.106    0.917      0.948    0.932      0.846    0.921     0.898     TRUE
+                 0.894    0.052    0.933      0.894    0.913      0.846    0.921     0.882     FALSE
+Weighted Avg.    0.924    0.082    0.924      0.924    0.924      0.846    0.921     0.891     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 55  3 |  a = TRUE
+  5 42 |  b = FALSE
+

@@ -1,0 +1,3 @@
+QUANTIFIERS0,TERM0,LOGICALS0,LOGICALS1,NUM0,RELATIONALS0,TERM1,TERM2,RELATIONALS1,NUM1,LOGICALS2,TERM3,RELATIONALS2,NUM2,TERM4,TERM5,RELATIONALS3,NUM3,VEREDICT
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,And,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,20.000000,FALSE
+ForAll,t,Implies,And,0,<=,t,t,<=,15930000.000000,Or,d2obs[ToInt((RealVal(0)+((t-0.0)/10000.0)))],>,50.000000,des_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],cur_x[ToInt((RealVal(0)+((t-0.0)/10000.0)))],<,20.000000,TRUE

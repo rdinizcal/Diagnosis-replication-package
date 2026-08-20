@@ -1,0 +1,72 @@
+name: artifact-evidence
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  evidence-chain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          submodules: recursive
+
+      - name: Diagnosis submodule pin
+        run: python3 scripts/verify_submodule.py
+
+      - name: Manifest checksum verification
+        run: python3 scripts/verify_manifest.py
+
+      - name: Release metadata validation
+        run: python3 scripts/release_audit.py
+
+      - name: Build locked replication environment
+        run: docker build --pull -t diagnosis-artifact-ci -f environment/Dockerfile .
+
+      - name: Configuration-schema validation
+        run: |
+          docker run --rm --network none diagnosis-artifact-ci python3 scripts/validate_configs.py
+
+      - name: Unit and quantifier regression tests
+        run: |
+          docker run --rm --network none diagnosis-artifact-ci \
+            python3 -m pytest -q tests/test_operator_coverage.py \
+            experiments/implementation_fix/test_fix_verification.py \
+            experiments/implementation_fix/test_verdict_matrix.py
+
+      - name: Operator coverage
+        run: docker run --rm --network none diagnosis-artifact-ci python3 experiments/operator_coverage/run_coverage.py
+
+      - name: Smoke reproduction
+        run: docker run --rm --network none diagnosis-artifact-ci ./smoke
+
+      - name: Analysis regeneration from an empty target
+        run: |
+          mkdir -p ci-derived
+          docker run --rm --network none \
+            -v "$PWD/ci-derived:/opt/replication/derived_results" \
+            diagnosis-artifact-ci ./reproduce-analysis
+
+      - name: Manuscript-value consistency and analysis regressions
+        run: |
+          docker run --rm --network none \
+            -v "$PWD/ci-derived:/opt/replication/derived_results" \
+            diagnosis-artifact-ci python3 scripts/verify.py
+          docker run --rm --network none \
+            -v "$PWD/ci-derived:/opt/replication/derived_results" \
+            diagnosis-artifact-ci python3 -m pytest -q tests/test_rq1_rq2.py
+          docker run --rm --network none \
+            -v "$PWD/ci-derived:/opt/replication/derived_results" \
+            diagnosis-artifact-ci python3 scripts/verify_auxiliaries.py --allow-incomplete
+
+      - name: Evaluated-manuscript consistency gate
+        run: |
+          docker run --rm --network none \
+            -v "$PWD/ci-derived:/opt/replication/derived_results" \
+            diagnosis-artifact-ci python3 scripts/verify_manuscript_values.py

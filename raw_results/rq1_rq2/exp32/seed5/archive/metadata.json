@@ -1,0 +1,33 @@
+{
+  "archived_source_run": "diagnosis-experiments/diagnosis-runs/20260803171759/exp32_CCX_s5/2026-08-04_15_54_37.336025",
+  "authoritative_campaign": "20260803171759",
+  "canonical_experiment_id": "exp32",
+  "censored": true,
+  "censoring_limit_sec": 432000,
+  "evidence": {
+    "cache_hit_miss_timeout_tiers": true,
+    "effective_configuration": true,
+    "evaluation_tree": false,
+    "generated_candidates_generation_fitness": true,
+    "j48_training_data": true,
+    "raw_j48_output": true,
+    "run_log": true,
+    "scheduler_metadata": true,
+    "stopping_history": false,
+    "unique_formulas_verdict_duration": true
+  },
+  "omissions": {
+    "run_requirement_copy": "duplicate of immutable requirement under data/requirements",
+    "temp.py": "duplicate generated checker program; formulas and verdicts retained in generations/cache"
+  },
+  "repository_head_at_reconciliation_not_run_commit": "05d0750395972662e9be0a1083b09a6dce7e3e65",
+  "seed": 5,
+  "selection_policy": "reconciliation allow-list; independent of result quality/runtime",
+  "status": "timeout",
+  "stop_reason": "wall_guard_or_PGTO_no_summary",
+  "tool_commit_at_run": "UNRECORDED",
+  "unavailable_evidence": {
+    "evaluation_tree": "not present in the reconciliation-selected source run; preserve as unavailable, do not reconstruct from another campaign",
+    "stopping_history": "not present in the reconciliation-selected source run; preserve as unavailable, do not reconstruct from another campaign"
+  }
+}

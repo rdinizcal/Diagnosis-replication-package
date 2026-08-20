@@ -1,0 +1,14 @@
+digraph J48Tree {
+rankdir=TB;
+node [fontname=Helvetica];
+label="exp8 modal tool tree (seed 7)"; labelloc=t;
+N0 [label="NUM0",shape=ellipse];
+N1 [label="NUM4",shape=ellipse];
+N2 [label="TRUE",shape=box,style=filled,fillcolor=lightgray];
+N3 [label="FALSE",shape=box,style=filled,fillcolor=lightgray];
+N4 [label="TRUE",shape=box,style=filled,fillcolor=lightgray];
+N0 -> N1 [label="<= 173.030274"];
+N1 -> N2 [label="<= 1172046"];
+N1 -> N3 [label="> 1172046"];
+N0 -> N4 [label="> 173.030274"];
+}

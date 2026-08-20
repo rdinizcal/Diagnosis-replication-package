@@ -1,0 +1,43 @@
+{
+    "TOTAL": 1150,
+    "": 1134,
+    "REQUIREMENT UNDECIDED": 16,
+    "cache_hits": 102,
+    "cache_misses": 1048,
+    "cache_distinct": 1048,
+    "worker_restarts": 0,
+    "worker_fallbacks": 0,
+    "inferred_satisfied": 0,
+    "inferred_violated": 0,
+    "inferred_undecided": 0,
+    "real_solves": 1048,
+    "region_memory_skips": 0,
+    "tier1_decided": 261,
+    "tier2_decided": 771,
+    "tier2_undecided": 16,
+    "monotonicity_violations": 0,
+    "time_quantization": true,
+    "quantized_positions": {
+        "4": 10000.0,
+        "8": 10000.0
+    },
+    "quant_hits_exact": 102,
+    "quant_hits_canonical": 0,
+    "quant_validations": 0,
+    "quantization_violations": 0,
+    "vacuous_candidates": 0,
+    "inference_mode": "label",
+    "two_tier_timeout": true,
+    "interval_inference": false,
+    "adaptive_range": false,
+    "monotone_knobs": [
+        4,
+        8,
+        13
+    ],
+    "position_directions": {
+        "4": "INCREASING",
+        "8": "DECREASING",
+        "13": "INCREASING"
+    }
+}

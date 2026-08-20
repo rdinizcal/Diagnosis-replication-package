@@ -1,0 +1,180 @@
+@relation all.2026-08-04_00_15_07.694871
+
+
+@attribute LOGICALS0 {And,Or,Implies}
+@attribute QUANTIFIERS0 {ForAll,Exists}
+@attribute TERM0 {t1,t2,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))]}
+@attribute LOGICALS1 {And,Or,Implies}
+@attribute LOGICALS2 {And,Or,Implies}
+@attribute NUM0 NUMERIC
+@attribute RELATIONALS0 {<,>,<=,>=}
+@attribute TERM1 {t1,t2,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))]}
+@attribute TERM2 {t1,t2,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))]}
+@attribute RELATIONALS1 {<,>,<=,>=}
+@attribute NUM1 NUMERIC
+@attribute TERM3 {t1,t2,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))]}
+@attribute RELATIONALS2 {<,>,<=,>=}
+@attribute NUM2 NUMERIC
+@attribute QUANTIFIERS1 {ForAll,Exists}
+@attribute TERM4 {t1,t2,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))]}
+@attribute LOGICALS3 {And,Or,Implies}
+@attribute LOGICALS4 {And,Or,Implies}
+@attribute NUM3 NUMERIC
+@attribute RELATIONALS3 {<,>,<=,>=}
+@attribute TERM5 {t1,t2,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))]}
+@attribute TERM6 {t1,t2,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))]}
+@attribute RELATIONALS4 {<,>,<=,>=}
+@attribute NUM4 NUMERIC
+@attribute TERM7 {t1,t2,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))]}
+@attribute RELATIONALS5 {<,>,<=,>=}
+@attribute NUM5 NUMERIC
+@attribute VEREDICT {TRUE, FALSE, UNKNOWN}
+
+@data
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,56.008957,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,53.434029,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,56.960882,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,54.017574,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,54.938854,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,53.945838,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,59.320135,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,57.227462,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,51.976193,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,59.943705,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,58.330596,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,53.032244,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,56.620942,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,56.296523,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,58.549619,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,57.557557,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,58.734737,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,57.207651,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2826.575388,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2824.883676,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2812.660143,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2828.596994,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2975.730708,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,53.343798,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2928.573182,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,58.304697,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2928.573182,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,52.162503,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3183.947204,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,56.960882,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3114.954993,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,56.008957,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2960.636406,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,57.109493,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2845.780450,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,56.960882,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2888.771270,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,52.259990,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3161.726041,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,55.420843,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2914.146515,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,57.227462,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2965.578417,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,53.499334,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2934.635834,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,56.145003,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3078.170790,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,53.220152,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2888.771270,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,57.620768,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2884.478101,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,54.071790,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2884.478101,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,57.980356,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2862.421016,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,53.343798,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2904.687831,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,52.076072,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2864.760592,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,57.851277,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3169.599999,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,58.549619,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2882.195369,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,56.960882,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2997.715209,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,53.875238,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3001.019676,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,57.557557,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2834.327910,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,56.960882,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3154.187914,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,53.343798,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3041.507736,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,52.002018,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2902.267622,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,55.420843,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,42.063321,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,43.099445,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,45.533653,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,41.734365,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,41.786924,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,40.144227,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,48.620860,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.377442,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,45.526097,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,49.180375,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,40.363751,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,45.839907,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,51.461801,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,44.035455,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,49.838773,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,48.870042,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,42.834035,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,46.770612,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,41.487611,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,42.317799,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,41.338357,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,48.449289,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.837261,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,42.665095,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,46.533450,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,40.370546,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,43.405273,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,42.084760,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,49.575478,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2960.636406,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2888.771270,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2904.687831,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2923.939983,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2871.116070,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2965.578417,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2922.044639,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2832.430184,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3161.726041,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3083.264995,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2848.858161,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2917.364101,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2981.914133,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2975.730708,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3038.213935,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3018.492018,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2928.573182,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3133.940180,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3108.926237,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2934.635834,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,42.063321,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,43.099445,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,45.533653,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,56.008957,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,41.734365,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,53.434029,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,41.786924,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,40.144227,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,56.960882,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,48.620860,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.377442,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,54.017574,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,45.526097,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,54.938854,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,49.180375,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,53.945838,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,40.363751,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,59.320135,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,57.227462,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,45.839907,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,51.976193,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,51.461801,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,59.943705,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,58.330596,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,53.032244,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,44.035455,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,49.838773,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,48.870042,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,56.620942,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,42.834035,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,56.296523,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,46.770612,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,41.487611,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,58.549619,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,42.317799,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,57.557557,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,41.338357,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,48.449289,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.837261,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,58.734737,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,42.665095,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,46.533450,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,40.370546,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,43.405273,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,42.084760,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,49.575478,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,3000.000000,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,57.207651,TRUE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2960.636406,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE
+Implies,ForAll,t1,Implies,And,0,<=,t1,t1,<=,30000000,e_speed[ToInt((RealVal(0)+((t1-0.0)/10000.0)))],<,2888.771270,ForAll,t2,Implies,And,0,<=,t2,t2,<=,8000000,v_speed[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],<,50.000000,FALSE

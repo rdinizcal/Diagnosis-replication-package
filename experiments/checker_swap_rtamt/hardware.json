@@ -1,0 +1,17 @@
+{
+  "archived_run_hardware": {
+    "model": "MacBook Air (Mac15,12)",
+    "chip": "Apple M3",
+    "cpu_cores": 8,
+    "cpu_core_layout": "4 performance, 4 efficiency",
+    "memory_gb": 24,
+    "architecture": "arm64",
+    "operating_system": "macOS 26.0.1",
+    "operating_system_build": "25A362"
+  },
+  "status": "author-confirmed run host; specifications captured on the same computer after execution",
+  "evidence_source": "author confirmation on 2026-08-20 plus sw_vers and system_profiler SPHardwareDataType",
+  "collection_limit": "hardware fields were not embedded in the adopted raw run reports",
+  "tool_commit": "05d0750395972662e9be0a1083b09a6dce7e3e65",
+  "rtamt_version": "0.3.5"
+}

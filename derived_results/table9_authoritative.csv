@@ -1,0 +1,29 @@
+requirement,configuration,n_runs,n_informative,split,runtime_sec_mean,runtime_sec_sd,nodes_mean,nodes_sd,depth_mean,depth_sd,leaves_mean,leaves_sd,root_feature_mode,root_value_mean,root_value_sd,root_category_mode,status_interpretation
+AT53,B,5,5,Yes,4360.199452,107.745688,3,0,1,0,2,0,QUANTIFIERS1,,,ForAll,informative tree
+AT53,G,5,5,Yes,4427.024738,250.562524,3,0,1,0,2,0,QUANTIFIERS1,,,ForAll,informative tree
+AT53,G2,5,5,Yes,5613.342566,176.885177,3,0,1,0,2,0,QUANTIFIERS1,,,ForAll,informative tree
+AT53,G3,5,5,Yes,6225.033786,151.903608,6,0,2,0,4,0,QUANTIFIERS1,,,ForAll,informative tree
+AT53,O1,5,0,No,4638.062803,219.345032,,,,,,,,,,,no informative tree; not convergence
+AT53,O2,5,0,No,2130.227915,15.274738,,,,,,,,,,,no informative tree; not convergence
+RR,B,5,5,Yes,4644.91717,182.120888,5.2,1.095445,1.6,0.547723,3.6,0.547723,LOGICALS2,,,And,informative tree
+RR,G,5,5,Yes,2875.352479,106.54306,4,0,1,0,3,0,LOGICALS2,,,And,informative tree
+RR,G2,5,5,Yes,2085.408135,31.254126,6,0,2,0,4,0,LOGICALS2,,,And,informative tree
+RR,G3,5,0,No,1696.744245,4.272424,,,,,,,,,,,no informative tree; not convergence
+RR,O,5,5,Yes,7273.517928,107.405956,4,0,1,0,3,0,LOGICALS2,,,And,informative tree
+phi2,B,5,5,Yes,487.676587,90.83572,5,0,2,0,3,0,NUM3,1.997633,0.00134,,informative tree
+phi2,G,5,5,Yes,437.535768,210.209273,5,0,2,0,3,0,NUM3,1.997801,0.001426,,informative tree
+phi2,G2,5,5,Yes,486.530257,8.708521,5,0,2,0,3,0,NUM3,1.998926,0.000747,,informative tree
+phi2,G3,5,5,Yes,493.980578,21.92151,5,0,2,0,3,0,NUM3,1.998926,0.000747,,informative tree
+phi2,O,5,5,Yes,447.101975,203.218407,3,0,1,0,2,0,NUM2,-3.501353,0.001076,,informative tree
+phi3,B,5,5,Yes,903.347691,387.064742,33.4,7.056912,6.4,0.547723,18.8,3.701351,NUM1,5.193392,0.072492,,informative tree
+phi3,G,5,5,Yes,825.051205,383.131628,15.8,2.167948,4,0.707107,9.6,1.341641,NUM1,4.971366,0.241058,,informative tree
+phi3,G2,5,5,Yes,1202.944038,114.56951,10,0,4,0,6,0,NUM1,4.698529,0.003395,,informative tree
+phi3,G3,5,5,Yes,1151.1243,62.353588,10,0,4,0,6,0,NUM1,4.698133,0.005811,,informative tree
+phi3,O1,5,5,Yes,850.927631,42.329947,10.4,2.19089,4.2,1.095445,6.2,1.095445,NUM1,5.19601,0.00282,,informative tree
+phi3,O2,5,5,Yes,638.63808,55.975085,3,0,1,0,2,0,NUM3,2.799308,0.000345,,informative tree
+phi3,O3,5,0,No,160.008222,1.460336,,,,,,,,,,,no informative tree; not convergence
+phi4,B,5,5,Yes,491.531657,33.982511,3,0,1,0,2,0,NUM2,4.95846,0.674237,,informative tree
+phi4,G,5,5,Yes,478.8065,49.323327,3,0,1,0,2,0,NUM1,16,0,,informative tree
+phi4,G2,5,5,Yes,510.228624,45.457059,5,0,2,0,3,0,NUM2,6.7796,0.017293,,informative tree
+phi4,G3,5,5,Yes,546.547223,59.940223,12.2,1.788854,4.6,1.341641,6.6,0.894427,NUM1,15.25,0.957427,,informative tree
+phi4,O,5,0,No,507.064456,17.869509,,,,,,,,,,,no informative tree; not convergence

@@ -1,0 +1,89 @@
+{
+  "canonical_experiment_id": "exp25",
+  "canonicalization": {
+    "author": "UNRECORDED",
+    "date": "2026-08-18",
+    "original_vs_corrected": "verbatim boxes",
+    "role": "mechanical transcription; trace-semantic correction where declared"
+  },
+  "dimensions": [
+    {
+      "archive_to_expert_scale": 1.0,
+      "arff_attribute": "QUANTIFIERS0",
+      "kind": "categorical",
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "name": "quantifier0",
+      "unit": "categorical",
+      "values": [
+        "ForAll",
+        "Exists"
+      ]
+    },
+    {
+      "archive_to_expert_scale": 1.0,
+      "arff_attribute": "QUANTIFIERS1",
+      "kind": "categorical",
+      "maximum": 2.0,
+      "minimum": 1.0,
+      "name": "quantifier1",
+      "unit": "categorical",
+      "values": [
+        "ForAll",
+        "Exists"
+      ]
+    },
+    {
+      "archive_to_expert_scale": 1.0,
+      "arff_attribute": "LOGICALS2",
+      "kind": "categorical",
+      "maximum": 2.0,
+      "minimum": 0.0,
+      "name": "logical",
+      "unit": "categorical",
+      "values": [
+        "And",
+        "Or"
+      ]
+    }
+  ],
+  "dot_path": "references/expert_trees/dot/exp25_expert.dot",
+  "evaluator": {
+    "satisfied_boxes": [
+      {
+        "logical": {
+          "lower_exclusive": 1.0,
+          "upper_inclusive": 2.0
+        },
+        "quantifier0": {
+          "lower_exclusive": 0.0,
+          "upper_inclusive": 1.0
+        },
+        "quantifier1": {
+          "lower_exclusive": 1.0,
+          "upper_inclusive": 2.0
+        }
+      }
+    ],
+    "type": "satisfied_region_union"
+  },
+  "original_reference": {
+    "author_identifier_verbatim": "fedformi_new",
+    "case": 1,
+    "creation_date_verbatim": "Thu May 16 00:11:33 2024",
+    "path": "references/expert_trees/original_accuracy_scripts/AccuracyCC3.py",
+    "role": "expert prediction and original grid evaluator",
+    "sha256": "a9e82e9e98627d1ad64040581173d9199b98fa9ab67ebdf6ff01b90aa77321f6"
+  },
+  "pdf_path": "references/expert_trees/pdf/exp25_expert.pdf",
+  "requirement_family": "CC3",
+  "schema_version": 1,
+  "trace_witness_derivation": {
+    "extrema": null,
+    "reconstruction_required": "Recover the expert's annotated trace/plot, threshold crossings, and independent derivation notes; only the final region is archived.",
+    "representative_trace_check_mutations": null,
+    "status": "unavailable_final_tree_only",
+    "witness": null
+  },
+  "vector_path": "references/expert_trees/svg/exp25_expert.svg"
+}

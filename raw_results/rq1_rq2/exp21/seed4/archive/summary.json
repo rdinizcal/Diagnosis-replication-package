@@ -1,0 +1,170 @@
+{
+  "error": null,
+  "ga_best_fitness": 94,
+  "ga_best_fitness_by_gen": [
+    94,
+    94,
+    94,
+    94,
+    94,
+    94,
+    94,
+    94,
+    94
+  ],
+  "ga_generations_completed": 8,
+  "ga_individuals_evaluated": 450,
+  "ga_path": "/opt/run/out/2026-08-04_01_19_57.245067",
+  "ga_sec": 155077.6260011196,
+  "ga_stopping_checks": [
+    {
+      "cv_f1": 0.987,
+      "cv_precision": 0.987,
+      "cv_recall": 0.986,
+      "generation": 2,
+      "root_split": "NUM2 <= 40.924601: FALSE (58.0)",
+      "samples": 74,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "e5cc768ba838b82a93fd8b4eb1b145bed9ff6098bd603a7552458cec88359960",
+      "tree_leaves": 8,
+      "tree_nodes": 16
+    },
+    {
+      "cv_f1": 0.99,
+      "cv_precision": 0.99,
+      "cv_recall": 0.99,
+      "generation": 3,
+      "root_split": "NUM2 <= 40.924601: FALSE (79.0)",
+      "samples": 100,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "e5cc768ba838b82a93fd8b4eb1b145bed9ff6098bd603a7552458cec88359960",
+      "tree_leaves": 8,
+      "tree_nodes": 16
+    },
+    {
+      "cv_f1": 0.992,
+      "cv_precision": 0.992,
+      "cv_recall": 0.992,
+      "generation": 4,
+      "root_split": "NUM2 <= 40.924601: FALSE (102.0)",
+      "samples": 128,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "e5cc768ba838b82a93fd8b4eb1b145bed9ff6098bd603a7552458cec88359960",
+      "tree_leaves": 8,
+      "tree_nodes": 16
+    },
+    {
+      "cv_f1": 0.994,
+      "cv_precision": 0.994,
+      "cv_recall": 0.994,
+      "generation": 5,
+      "root_split": "NUM2 <= 41.15436: FALSE (124.0)",
+      "samples": 155,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "e5cc768ba838b82a93fd8b4eb1b145bed9ff6098bd603a7552458cec88359960",
+      "tree_leaves": 8,
+      "tree_nodes": 16
+    },
+    {
+      "cv_f1": 0.994,
+      "cv_precision": 0.995,
+      "cv_recall": 0.994,
+      "generation": 6,
+      "root_split": "NUM2 <= 41.15436: FALSE (147.0)",
+      "samples": 178,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "e5cc768ba838b82a93fd8b4eb1b145bed9ff6098bd603a7552458cec88359960",
+      "tree_leaves": 8,
+      "tree_nodes": 16
+    },
+    {
+      "cv_f1": 0.996,
+      "cv_precision": 0.996,
+      "cv_recall": 0.996,
+      "generation": 7,
+      "root_split": "NUM2 <= 41.15436: FALSE (168.0)",
+      "samples": 223,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "e5cc768ba838b82a93fd8b4eb1b145bed9ff6098bd603a7552458cec88359960",
+      "tree_leaves": 8,
+      "tree_nodes": 16
+    },
+    {
+      "cv_f1": 0.996,
+      "cv_precision": 0.996,
+      "cv_recall": 0.996,
+      "generation": 8,
+      "root_split": "NUM2 <= 41.15436: FALSE (199.0)",
+      "samples": 269,
+      "stop": true,
+      "tree_depth": 1,
+      "tree_hash": "e5cc768ba838b82a93fd8b4eb1b145bed9ff6098bd603a7552458cec88359960",
+      "tree_leaves": 8,
+      "tree_nodes": 16
+    }
+  ],
+  "ga_target_sats": 1000,
+  "j48_runs": [
+    {
+      "arff_path": "/opt/run/out/2026-08-04_01_19_57.245067/dataset_qty_2026-08-04_01_19_57.245067_per100.arff",
+      "j48_out_path": "/opt/run/out/2026-08-04_01_19_57.245067/J48-data-100.out",
+      "qty": 1.0,
+      "root_split": "NUM2 <= 40.924601: FALSE (114.0/1.0)",
+      "tree_depth": 1,
+      "tree_leaves": 8,
+      "tree_nodes": 18
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-04_01_19_57.245067/dataset_qty_2026-08-04_01_19_57.245067_per025.arff",
+      "j48_out_path": "/opt/run/out/2026-08-04_01_19_57.245067/J48-data-25.out",
+      "qty": 0.25,
+      "root_split": "NUM2 <= 40.377442: FALSE (31.0/1.0)",
+      "tree_depth": 2,
+      "tree_leaves": 10,
+      "tree_nodes": 21
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-04_01_19_57.245067/dataset_qty_2026-08-04_01_19_57.245067_per020.arff",
+      "j48_out_path": "/opt/run/out/2026-08-04_01_19_57.245067/J48-data-20.out",
+      "qty": 0.2,
+      "root_split": "NUM2 <= 38.62086: FALSE (24.0)",
+      "tree_depth": 2,
+      "tree_leaves": 10,
+      "tree_nodes": 21
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-04_01_19_57.245067/dataset_qty_2026-08-04_01_19_57.245067_per015.arff",
+      "j48_out_path": "/opt/run/out/2026-08-04_01_19_57.245067/J48-data-15.out",
+      "qty": 0.15,
+      "root_split": "NUM2 <= 38.03182: FALSE (19.0)",
+      "tree_depth": 1,
+      "tree_leaves": 8,
+      "tree_nodes": 18
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-04_01_19_57.245067/dataset_qty_2026-08-04_01_19_57.245067_per010.arff",
+      "j48_out_path": "/opt/run/out/2026-08-04_01_19_57.245067/J48-data-10.out",
+      "qty": 0.1,
+      "root_split": "NUM2 <= 38.03182: FALSE (13.0)",
+      "tree_depth": 1,
+      "tree_leaves": 8,
+      "tree_nodes": 18
+    }
+  ],
+  "max_generations": 100,
+  "output_dir": "/opt/run/out",
+  "population_size": 50,
+  "requirement_file": "replication/evaluation_inputs/effectiveness/CC1/CC1_CC001.py",
+  "requirement_sha256": "24dfb432274991f554821e2d1617aa6d37a35422ac1632c657a16e20166e0dee",
+  "runtime_sec": 155080.19868206978,
+  "seed": 4,
+  "success": true,
+  "traces_file": "replication/analysis/data/tracesCC.csv",
+  "traces_sha256": "48b1489168f3a6c19a8fa744ad8e76be308a9696eb883d5e02e7796083421412"
+}

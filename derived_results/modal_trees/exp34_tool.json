@@ -1,0 +1,81 @@
+{
+  "experiment_id": "exp34",
+  "normalized_rule_signature": "split:LOGICALS2[=:And->leaf:FALSE|=:Or->split:NUM3[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->leaf:TRUE]|=:Implies->leaf:FALSE]",
+  "normalized_rule_signature_sha256": "dd3d18001bd8bd87e48ebc35f0a73f576e1a16ab0e71d15f46c0523b6913d5b0",
+  "numeric_thresholds": [
+    5.440319,
+    5.440319
+  ],
+  "run_status": "completed_informative",
+  "schema_version": 1,
+  "seed": 0,
+  "source_j48_output": "raw_results/rq1_rq2/exp34/seed0/archive/evaluation_tree/J48-data-100.out",
+  "tree": {
+    "edges": [
+      {
+        "operator": "=",
+        "source": 0,
+        "target": 1,
+        "value": "And"
+      },
+      {
+        "operator": "=",
+        "source": 0,
+        "target": 2,
+        "value": "Or"
+      },
+      {
+        "operator": "<=",
+        "source": 2,
+        "target": 3,
+        "value": "5.440319"
+      },
+      {
+        "operator": ">",
+        "source": 2,
+        "target": 4,
+        "value": "5.440319"
+      },
+      {
+        "operator": "=",
+        "source": 0,
+        "target": 5,
+        "value": "Implies"
+      }
+    ],
+    "nodes": [
+      {
+        "feature": "LOGICALS2",
+        "id": 0,
+        "kind": "split"
+      },
+      {
+        "id": 1,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "feature": "NUM3",
+        "id": 2,
+        "kind": "split"
+      },
+      {
+        "id": 3,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "id": 4,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "id": 5,
+        "kind": "leaf",
+        "label": "FALSE"
+      }
+    ],
+    "root": 0
+  },
+  "tree_status": "available"
+}

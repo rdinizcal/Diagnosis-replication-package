@@ -1,0 +1,96 @@
+{
+  "experiment_id": "exp32",
+  "normalized_rule_signature": "split:NUM2[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->split:NUM0[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->split:NUM2[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->leaf:FALSE]]]",
+  "normalized_rule_signature_sha256": "eaaca8d89a115a39b9272226c5799310fc84f6b62019f1b3440f87f92e6990d8",
+  "numeric_thresholds": [
+    7.137962,
+    7.137962,
+    18506875.0,
+    18506875.0,
+    8.237984,
+    8.237984
+  ],
+  "run_status": "completed_informative",
+  "schema_version": 1,
+  "seed": 7,
+  "source_j48_output": "raw_results/rq1_rq2/exp32/seed7/archive/evaluation_tree/J48-data-100.out",
+  "tree": {
+    "edges": [
+      {
+        "operator": "<=",
+        "source": 0,
+        "target": 1,
+        "value": "7.137962"
+      },
+      {
+        "operator": ">",
+        "source": 0,
+        "target": 2,
+        "value": "7.137962"
+      },
+      {
+        "operator": "<=",
+        "source": 2,
+        "target": 3,
+        "value": "18506875"
+      },
+      {
+        "operator": ">",
+        "source": 2,
+        "target": 4,
+        "value": "18506875"
+      },
+      {
+        "operator": "<=",
+        "source": 4,
+        "target": 5,
+        "value": "8.237984"
+      },
+      {
+        "operator": ">",
+        "source": 4,
+        "target": 6,
+        "value": "8.237984"
+      }
+    ],
+    "nodes": [
+      {
+        "feature": "NUM2",
+        "id": 0,
+        "kind": "split"
+      },
+      {
+        "id": 1,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "feature": "NUM0",
+        "id": 2,
+        "kind": "split"
+      },
+      {
+        "id": 3,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "feature": "NUM2",
+        "id": 4,
+        "kind": "split"
+      },
+      {
+        "id": 5,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "id": 6,
+        "kind": "leaf",
+        "label": "FALSE"
+      }
+    ],
+    "root": 0
+  },
+  "tree_status": "available"
+}

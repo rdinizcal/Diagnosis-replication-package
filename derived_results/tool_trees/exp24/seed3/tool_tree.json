@@ -1,0 +1,120 @@
+{
+  "experiment_id": "exp24",
+  "normalized_rule_signature": "split:NUM4[<=:<NUMERIC_THRESHOLD>->split:NUM0[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->split:NUM0[<=:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->leaf:FALSE]|>:<NUMERIC_THRESHOLD>->leaf:TRUE]]|>:<NUMERIC_THRESHOLD>->leaf:FALSE]",
+  "normalized_rule_signature_sha256": "bf4b574fe6dc8fe93d58162a906be432e02c4d6e74c3df528eda12ae86180e8b",
+  "numeric_thresholds": [
+    15.0,
+    2283970.0,
+    2283970.0,
+    3257713.0,
+    13.429831,
+    13.429831,
+    3257713.0,
+    15.0
+  ],
+  "run_status": "completed_informative",
+  "schema_version": 1,
+  "seed": 3,
+  "source_j48_output": "raw_results/rq1_rq2/exp24/seed3/archive/evaluation_tree/J48-data-100.out",
+  "tree": {
+    "edges": [
+      {
+        "operator": "<=",
+        "source": 0,
+        "target": 1,
+        "value": "15"
+      },
+      {
+        "operator": "<=",
+        "source": 1,
+        "target": 2,
+        "value": "2283970"
+      },
+      {
+        "operator": ">",
+        "source": 1,
+        "target": 3,
+        "value": "2283970"
+      },
+      {
+        "operator": "<=",
+        "source": 3,
+        "target": 4,
+        "value": "3257713"
+      },
+      {
+        "operator": "<=",
+        "source": 4,
+        "target": 5,
+        "value": "13.429831"
+      },
+      {
+        "operator": ">",
+        "source": 4,
+        "target": 6,
+        "value": "13.429831"
+      },
+      {
+        "operator": ">",
+        "source": 3,
+        "target": 7,
+        "value": "3257713"
+      },
+      {
+        "operator": ">",
+        "source": 0,
+        "target": 8,
+        "value": "15"
+      }
+    ],
+    "nodes": [
+      {
+        "feature": "NUM4",
+        "id": 0,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM0",
+        "id": 1,
+        "kind": "split"
+      },
+      {
+        "id": 2,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "feature": "NUM0",
+        "id": 3,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM4",
+        "id": 4,
+        "kind": "split"
+      },
+      {
+        "id": 5,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "id": 6,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "id": 7,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "id": 8,
+        "kind": "leaf",
+        "label": "FALSE"
+      }
+    ],
+    "root": 0
+  },
+  "tree_status": "available"
+}

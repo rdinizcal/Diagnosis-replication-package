@@ -1,0 +1,6 @@
+requirement,signal,timestamp_microseconds,value,value_unit,outcome
+AT1,Speed,19990000,120.00171,mph,diagnosis
+AT2,Engine,7310000,4751.7885,rpm,diagnosis
+CC1,y5-y4,21190000,40.03113,m,diagnosis
+CCx,y5-y4,18180000,7.4824,m,diagnosis
+RR,d_pos_x-v_pos_x,3060000,2.5833682,m,diagnosis

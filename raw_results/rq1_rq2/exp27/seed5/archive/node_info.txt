@@ -1,0 +1,6 @@
+node: c229.nibi.sharcnet
+model name	: Intel(R) Xeon(R) 6972P
+constraint: <none>
+cpus: 8  mem: 16384
+started: 2026-08-04T10:51:16-04:00
+finished: 2026-08-09T10:41:15-04:00

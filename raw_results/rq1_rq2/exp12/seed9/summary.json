@@ -1,0 +1,183 @@
+{
+  "error": null,
+  "ga_best_fitness": 94,
+  "ga_best_fitness_by_gen": [
+    94,
+    94,
+    94,
+    94,
+    94,
+    88,
+    88,
+    88,
+    88
+  ],
+  "ga_generations_completed": 8,
+  "ga_individuals_evaluated": 450,
+  "ga_path": "/opt/run/out/2026-08-06_12_03_22.748535",
+  "ga_sec": 2925.8896639347076,
+  "ga_stopping_checks": [
+    {
+      "cv_f1": 0.935,
+      "cv_precision": 0.944,
+      "cv_recall": 0.94,
+      "generation": 1,
+      "root_split": "NUM4 <= 1662416: TRUE (7.0)",
+      "samples": 50,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "c3eaa2aa00719d32b8ecfb20eddfe3409b49a48639c7bf06d44a763d271b591c",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    },
+    {
+      "cv_f1": 0.948,
+      "cv_precision": 0.948,
+      "cv_recall": 0.948,
+      "generation": 2,
+      "root_split": "NUM4 <= 1683423: TRUE (16.0)",
+      "samples": 97,
+      "stop": false,
+      "tree_depth": 2,
+      "tree_hash": "7273b7385e6e035f03588ca80c74eedf4c0839698c9f2187f869c31e3c37f3ac",
+      "tree_leaves": 10,
+      "tree_nodes": 19
+    },
+    {
+      "cv_f1": 0.986,
+      "cv_precision": 0.986,
+      "cv_recall": 0.986,
+      "generation": 3,
+      "root_split": "NUM4 <= 1683423: TRUE (28.0)",
+      "samples": 143,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "c3eaa2aa00719d32b8ecfb20eddfe3409b49a48639c7bf06d44a763d271b591c",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    },
+    {
+      "cv_f1": 0.995,
+      "cv_precision": 0.995,
+      "cv_recall": 0.995,
+      "generation": 4,
+      "root_split": "NUM4 <= 1868836: TRUE (41.0)",
+      "samples": 188,
+      "stop": false,
+      "tree_depth": 2,
+      "tree_hash": "7273b7385e6e035f03588ca80c74eedf4c0839698c9f2187f869c31e3c37f3ac",
+      "tree_leaves": 10,
+      "tree_nodes": 19
+    },
+    {
+      "cv_f1": 0.991,
+      "cv_precision": 0.991,
+      "cv_recall": 0.991,
+      "generation": 5,
+      "root_split": "NUM4 <= 1868836: TRUE (47.0)",
+      "samples": 234,
+      "stop": false,
+      "tree_depth": 2,
+      "tree_hash": "7273b7385e6e035f03588ca80c74eedf4c0839698c9f2187f869c31e3c37f3ac",
+      "tree_leaves": 10,
+      "tree_nodes": 19
+    },
+    {
+      "cv_f1": 0.989,
+      "cv_precision": 0.99,
+      "cv_recall": 0.989,
+      "generation": 6,
+      "root_split": "NUM4 <= 1868836: TRUE (56.0)",
+      "samples": 282,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "c3eaa2aa00719d32b8ecfb20eddfe3409b49a48639c7bf06d44a763d271b591c",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    },
+    {
+      "cv_f1": 0.997,
+      "cv_precision": 0.997,
+      "cv_recall": 0.997,
+      "generation": 7,
+      "root_split": "NUM4 <= 1868836: TRUE (64.0)",
+      "samples": 326,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "c3eaa2aa00719d32b8ecfb20eddfe3409b49a48639c7bf06d44a763d271b591c",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    },
+    {
+      "cv_f1": 0.995,
+      "cv_precision": 0.995,
+      "cv_recall": 0.995,
+      "generation": 8,
+      "root_split": "NUM4 <= 1760690: TRUE (73.0)",
+      "samples": 366,
+      "stop": true,
+      "tree_depth": 1,
+      "tree_hash": "c3eaa2aa00719d32b8ecfb20eddfe3409b49a48639c7bf06d44a763d271b591c",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    }
+  ],
+  "ga_target_sats": 1000,
+  "j48_runs": [
+    {
+      "arff_path": "/opt/run/out/2026-08-06_12_03_22.748535/dataset_qty_2026-08-06_12_03_22.748535_per100.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_12_03_22.748535/J48-data-100.out",
+      "qty": 1.0,
+      "root_split": "NUM4 <= 1868836: TRUE (86.0)",
+      "tree_depth": 1,
+      "tree_leaves": 9,
+      "tree_nodes": 19
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_12_03_22.748535/dataset_qty_2026-08-06_12_03_22.748535_per025.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_12_03_22.748535/J48-data-25.out",
+      "qty": 0.25,
+      "root_split": "NUM4 <= 1683423: TRUE (26.0)",
+      "tree_depth": 1,
+      "tree_leaves": 9,
+      "tree_nodes": 19
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_12_03_22.748535/dataset_qty_2026-08-06_12_03_22.748535_per020.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_12_03_22.748535/J48-data-20.out",
+      "qty": 0.2,
+      "root_split": "NUM4 <= 1683423: TRUE (21.0)",
+      "tree_depth": 1,
+      "tree_leaves": 9,
+      "tree_nodes": 19
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_12_03_22.748535/dataset_qty_2026-08-06_12_03_22.748535_per015.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_12_03_22.748535/J48-data-15.out",
+      "qty": 0.15,
+      "root_split": "NUM4 <= 1662416: TRUE (14.0)",
+      "tree_depth": 1,
+      "tree_leaves": 9,
+      "tree_nodes": 19
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_12_03_22.748535/dataset_qty_2026-08-06_12_03_22.748535_per010.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_12_03_22.748535/J48-data-10.out",
+      "qty": 0.1,
+      "root_split": "NUM4 <= 1662416: TRUE (10.0)",
+      "tree_depth": 1,
+      "tree_leaves": 9,
+      "tree_nodes": 19
+    }
+  ],
+  "max_generations": 100,
+  "output_dir": "/opt/run/out",
+  "population_size": 50,
+  "requirement_file": "replication/evaluation_inputs/effectiveness/AT54/AT54_AT159.py",
+  "requirement_sha256": "9ed0aa6b0edc007c74729b6166945e2b068cfff50f72432ce7572fbc1a78aa88",
+  "runtime_sec": 2928.6925575733185,
+  "seed": 9,
+  "success": true,
+  "traces_file": "replication/analysis/data/tracesAT.csv",
+  "traces_sha256": "bcb8c2d0fb57b248ff8a55d12b6ce8872c0e958775bfbc64a13aafb138a582e2"
+}

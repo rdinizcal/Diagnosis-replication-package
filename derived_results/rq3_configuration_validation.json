@@ -1,0 +1,21 @@
+{
+  "checks": [
+    "configuration parser",
+    "requirement parser",
+    "five-seed completeness and non-seed identity",
+    "position existence and original-value agreement",
+    "mutation-family/type compatibility",
+    "per-position mutant generation"
+  ],
+  "configurations": 140,
+  "configured_position_checks": 435,
+  "requirement_configuration_pairs": 28,
+  "seed_histogram": {
+    "0": 28,
+    "1": 28,
+    "2": 28,
+    "3": 28,
+    "4": 28
+  },
+  "status": "pass"
+}

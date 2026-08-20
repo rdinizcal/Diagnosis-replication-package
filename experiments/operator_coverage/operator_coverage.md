@@ -1,0 +1,23 @@
+# Operator coverage results
+
+One row per mutation operator from Table `tab:mutations`. **Fired** counts the
+synthetic requirements on which the operator produced a well-formed, solver-evaluable mutant (verdict SAT or UNSAT, never ERROR).
+
+| Operator | Description | Applicable? | Fired (count) | Verdicts | Triggering requirement(s) |
+|----------|-------------|:-----------:|:-------------:|----------|---------------------------|
+| OP1 | Add negation (p -> not p) | yes | 3 | UNSAT;UNSAT;UNSAT | SYN1_time.py, SYN2_index.py, SYN3_record.py |
+| OP2 | Flip relational operator | yes | 3 | UNSAT;SAT;SAT | SYN1_time.py, SYN2_index.py, SYN3_record.py |
+| OP3 | Remove negation (not p -> p) | yes | 1 | UNSAT | SYN1_time.py |
+| OP4 | Flip logical connective (and/or/implies) | yes | 3 | UNSAT;UNSAT;SAT | SYN1_time.py, SYN2_index.py, SYN3_record.py |
+| OP4a | Swap implies operands | yes | 2 | UNSAT;UNSAT | SYN1_time.py, SYN2_index.py |
+| OP5 | Flip quantifier over time variable | yes | 1 | SAT | SYN1_time.py |
+| OP6 | Flip quantifier over signal-index variable | yes | 1 | SAT | SYN2_index.py |
+| OP7 | Flip quantifier over record variable | yes | 1 | UNSAT | SYN3_record.py |
+| OP8 | Flip arithmetic operator (time-term) | yes | 1 | UNSAT | SYN1_time.py |
+| OP9 | Flip arithmetic operator (index-term) | yes | 1 | UNSAT | SYN2_index.py |
+| OP10 | Flip arithmetic operator (value-term) | yes | 2 | UNSAT;SAT | SYN1_time.py, SYN2_index.py |
+| OP11 | Change time constant | yes | 1 | UNSAT | SYN1_time.py |
+| OP12 | Change index constant | yes | 1 | SAT | SYN2_index.py |
+| OP13 | Change value constant | yes | 3 | UNSAT;SAT;SAT | SYN1_time.py, SYN2_index.py, SYN3_record.py |
+| OP14 | Swap signal at index access | yes | 1 | SAT | SYN2_index.py |
+| OP15 | Swap signal at time access | yes | 1 | UNSAT | SYN1_time.py |

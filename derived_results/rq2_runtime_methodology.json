@@ -1,0 +1,16 @@
+{
+  "censoring": {
+    "limit_hours": 120,
+    "policy": "retain observed elapsed time; never relabel as convergence",
+    "runs": 36
+  },
+  "hardware_sensitive_outputs": "wall, mutation, checker, and decision-tree durations",
+  "logical_outputs": "status, verdicts, decided candidate sets, trees, confusion matrices, and counts are reproducible outputs",
+  "original_scheduler_metadata": "raw_results/rq1_rq2/exp*/seed*/archive/node_info.txt and rq2_per_run.csv",
+  "performance_rerun_tolerance": {
+    "applies_to": "experiment-level median phase and total times",
+    "conditions": "same CPU model, allocation, checker/tool versions, and exclusive/uncontended scheduling",
+    "interpretation": "outside tolerance requires investigation; it does not invalidate logical reproduction",
+    "relative": 0.2
+  }
+}

@@ -1,0 +1,110 @@
+WARNING: core mtj jar files are not available as resources to this classloader (jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+NUM5 <= 36.698225
+|   NUM2 <= 2907.902328: TRUE (115.0)
+|   NUM2 > 2907.902328
+|   |   NUM4 <= 3735594
+|   |   |   NUM5 <= 33.793605
+|   |   |   |   NUM4 <= 2622478: TRUE (23.0/1.0)
+|   |   |   |   NUM4 > 2622478: FALSE (56.0)
+|   |   |   NUM5 > 33.793605: TRUE (73.0)
+|   |   NUM4 > 3735594
+|   |   |   NUM5 <= 35.914093: FALSE (408.0)
+|   |   |   NUM5 > 35.914093
+|   |   |   |   NUM4 <= 4204640: TRUE (5.0)
+|   |   |   |   NUM4 > 4204640: FALSE (11.0)
+NUM5 > 36.698225
+|   NUM4 <= 5047093: TRUE (268.0/1.0)
+|   NUM4 > 5047093
+|   |   NUM5 <= 37.686352: FALSE (8.0)
+|   |   NUM5 > 37.686352
+|   |   |   NUM4 <= 5399067: TRUE (12.0)
+|   |   |   NUM4 > 5399067
+|   |   |   |   NUM2 <= 2915.286079: TRUE (6.0)
+|   |   |   |   NUM2 > 2915.286079
+|   |   |   |   |   NUM5 <= 38.661684: FALSE (7.0)
+|   |   |   |   |   NUM5 > 38.661684: TRUE (4.0)
+
+Number of Leaves  : 	13
+
+Size of the tree : 	25
+
+
+Time taken to build model: 0.03 seconds
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         994               99.7992 %
+Incorrectly Classified Instances         2                0.2008 %
+Kappa statistic                          0.996 
+K&B Relative Info Score                 99.32   %
+K&B Information Score                  990.553  bits      0.9945 bits/instance
+Class complexity | order 0             997.3348 bits      1.0013 bits/instance
+Class complexity | scheme               15.4405 bits      0.0155 bits/instance
+Complexity improvement     (Sf)        981.8943 bits      0.9858 bits/instance
+Mean absolute error                      0.0026
+Root mean squared error                  0.0362
+Relative absolute error                  0.7836 %
+Root relative squared error              8.8564 %
+Total Number of Instances              996     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.004    0.996      1.000    0.998      0.996    0.999     0.999     TRUE
+                 0.996    0.000    1.000      0.996    0.998      0.996    0.999     0.999     FALSE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         UNKNOWN
+Weighted Avg.    0.998    0.002    0.998      0.998    0.998      0.996    0.999     0.999     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 504   0   0 |   a = TRUE
+   2 490   0 |   b = FALSE
+   0   0   0 |   c = UNKNOWN
+
+Time taken to perform cross-validation: 0.05 seconds
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         986               98.996  %
+Incorrectly Classified Instances        10                1.004  %
+Kappa statistic                          0.9799
+K&B Relative Info Score                 97.6725 %
+K&B Information Score                  974.2871 bits      0.9782 bits/instance
+Class complexity | order 0             997.5037 bits      1.0015 bits/instance
+Class complexity | scheme             6473.0589 bits      6.4991 bits/instance
+Complexity improvement     (Sf)      -5475.5552 bits     -5.4975 bits/instance
+Mean absolute error                      0.0082
+Root mean squared error                  0.0814
+Relative absolute error                  2.4459 %
+Root relative squared error             19.9377 %
+Total Number of Instances              996     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.996    0.016    0.984      0.996    0.990      0.980    0.991     0.984     TRUE
+                 0.984    0.004    0.996      0.984    0.990      0.980    0.991     0.991     FALSE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         UNKNOWN
+Weighted Avg.    0.990    0.010    0.990      0.990    0.990      0.980    0.991     0.987     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 502   2   0 |   a = TRUE
+   8 484   0 |   b = FALSE
+   0   0   0 |   c = UNKNOWN
+

@@ -1,0 +1,106 @@
+WARNING: core mtj jar files are not available as resources to this classloader (jdk.internal.loader.ClassLoaders$AppClassLoader@18ff02e4)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+NUM2 <= 123.795802
+|   NUM1 <= 18007503
+|   |   NUM2 <= 106.457544
+|   |   |   NUM1 <= 13124417: TRUE (16.0)
+|   |   |   NUM1 > 13124417: FALSE (36.0)
+|   |   NUM2 > 106.457544: TRUE (185.0/3.0)
+|   NUM1 > 18007503
+|   |   NUM1 <= 21129920
+|   |   |   NUM2 <= 120
+|   |   |   |   NUM1 <= 19126159
+|   |   |   |   |   NUM2 <= 116.623662: FALSE (23.0)
+|   |   |   |   |   NUM2 > 116.623662: TRUE (5.0)
+|   |   |   |   NUM1 > 19126159: FALSE (92.0)
+|   |   |   NUM2 > 120: TRUE (21.0)
+|   |   NUM1 > 21129920: FALSE (350.0)
+NUM2 > 123.795802
+|   NUM1 <= 24173009: TRUE (267.0)
+|   NUM1 > 24173009
+|   |   NUM2 <= 130.247191: FALSE (18.0)
+|   |   NUM2 > 130.247191
+|   |   |   NUM2 <= 133.617421
+|   |   |   |   NUM1 <= 27712089: TRUE (8.0)
+|   |   |   |   NUM1 > 27712089: FALSE (2.0)
+|   |   |   NUM2 > 133.617421: TRUE (53.0)
+
+Number of Leaves  : 	13
+
+Size of the tree : 	25
+
+
+Time taken to build model: 0.07 seconds
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        1073               99.7212 %
+Incorrectly Classified Instances         3                0.2788 %
+Kappa statistic                          0.9944
+K&B Relative Info Score                 99.0493 %
+K&B Information Score                 1065.2494 bits      0.99   bits/instance
+Class complexity | order 0            1075.4744 bits      0.9995 bits/instance
+Class complexity | scheme               22.1321 bits      0.0206 bits/instance
+Complexity improvement     (Sf)       1053.3423 bits      0.9789 bits/instance
+Mean absolute error                      0.0055
+Root mean squared error                  0.0524
+Relative absolute error                  1.0979 %
+Root relative squared error             10.4781 %
+Total Number of Instances             1076     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.006    0.995      1.000    0.997      0.994    0.999     0.998     TRUE
+                 0.994    0.000    1.000      0.994    0.997      0.994    0.999     0.999     FALSE
+Weighted Avg.    0.997    0.003    0.997      0.997    0.997      0.994    0.999     0.998     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 552   0 |   a = TRUE
+   3 521 |   b = FALSE
+
+Time taken to perform cross-validation: 0.08 seconds
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        1063               98.7918 %
+Incorrectly Classified Instances        13                1.2082 %
+Kappa statistic                          0.9758
+K&B Relative Info Score                 97.3468 %
+K&B Information Score                 1046.9485 bits      0.973  bits/instance
+Class complexity | order 0            1075.4832 bits      0.9995 bits/instance
+Class complexity | scheme             8628.6599 bits      8.0192 bits/instance
+Complexity improvement     (Sf)      -7553.1767 bits     -7.0197 bits/instance
+Mean absolute error                      0.0137
+Root mean squared error                  0.1096
+Relative absolute error                  2.7401 %
+Root relative squared error             21.9252 %
+Total Number of Instances             1076     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.991    0.015    0.986      0.991    0.988      0.976    0.991     0.987     TRUE
+                 0.985    0.009    0.990      0.985    0.988      0.976    0.991     0.986     FALSE
+Weighted Avg.    0.988    0.012    0.988      0.988    0.988      0.976    0.991     0.987     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 547   5 |   a = TRUE
+   8 516 |   b = FALSE
+

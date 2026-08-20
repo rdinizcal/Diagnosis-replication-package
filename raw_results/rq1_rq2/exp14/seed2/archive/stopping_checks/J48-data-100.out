@@ -1,0 +1,106 @@
+WARNING: core mtj jar files are not available as resources to this classloader (jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+NUM2 <= 2915.116031: TRUE (249.0)
+NUM2 > 2915.116031
+|   NUM5 <= 36.492745
+|   |   NUM4 <= 3517861
+|   |   |   NUM5 <= 31.761812: FALSE (12.0/1.0)
+|   |   |   NUM5 > 31.761812
+|   |   |   |   NUM5 <= 33.396806
+|   |   |   |   |   NUM4 <= 2960927: TRUE (45.0/1.0)
+|   |   |   |   |   NUM4 > 2960927: FALSE (8.0)
+|   |   |   |   NUM5 > 33.396806: TRUE (62.0)
+|   |   NUM4 > 3517861
+|   |   |   NUM5 <= 35.935329: FALSE (319.0/1.0)
+|   |   |   NUM5 > 35.935329
+|   |   |   |   NUM4 <= 4136866: TRUE (20.0)
+|   |   |   |   NUM4 > 4136866: FALSE (33.0)
+|   NUM5 > 36.492745
+|   |   NUM4 <= 4452354: TRUE (147.0)
+|   |   NUM4 > 4452354
+|   |   |   NUM5 <= 37.416721: FALSE (18.0)
+|   |   |   NUM5 > 37.416721
+|   |   |   |   NUM5 <= 37.703031
+|   |   |   |   |   NUM4 <= 5031427: TRUE (3.0)
+|   |   |   |   |   NUM4 > 5031427: FALSE (2.0)
+|   |   |   |   NUM5 > 37.703031: TRUE (33.0)
+
+Number of Leaves  : 	13
+
+Size of the tree : 	25
+
+
+Time taken to build model: 0.03 seconds
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         948               99.6845 %
+Incorrectly Classified Instances         3                0.3155 %
+Kappa statistic                          0.9935
+K&B Relative Info Score                 98.8998 %
+K&B Information Score                  918.997  bits      0.9663 bits/instance
+Class complexity | order 0             929.2207 bits      0.9771 bits/instance
+Class complexity | scheme               21.642  bits      0.0228 bits/instance
+Complexity improvement     (Sf)        907.5786 bits      0.9543 bits/instance
+Mean absolute error                      0.0061
+Root mean squared error                  0.0551
+Relative absolute error                  1.2557 %
+Root relative squared error             11.2061 %
+Total Number of Instances              951     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.996    0.003    0.998      0.996    0.997      0.993    0.999     0.999     TRUE
+                 0.997    0.004    0.995      0.997    0.996      0.993    0.999     0.997     FALSE
+Weighted Avg.    0.997    0.003    0.997      0.997    0.997      0.993    0.999     0.998     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 558   2 |   a = TRUE
+   1 390 |   b = FALSE
+
+Time taken to perform cross-validation: 0.06 seconds
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         942               99.0536 %
+Incorrectly Classified Instances         9                0.9464 %
+Kappa statistic                          0.9804
+K&B Relative Info Score                 97.5329 %
+K&B Information Score                  906.2983 bits      0.953  bits/instance
+Class complexity | order 0             929.223  bits      0.9771 bits/instance
+Class complexity | scheme             6464.9393 bits      6.798  bits/instance
+Complexity improvement     (Sf)      -5535.7163 bits     -5.8209 bits/instance
+Mean absolute error                      0.0127
+Root mean squared error                  0.0971
+Relative absolute error                  2.6211 %
+Root relative squared error             19.7296 %
+Total Number of Instances              951     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.995    0.015    0.989      0.995    0.992      0.980    0.991     0.992     TRUE
+                 0.985    0.005    0.992      0.985    0.988      0.980    0.991     0.978     FALSE
+Weighted Avg.    0.991    0.011    0.991      0.991    0.991      0.980    0.991     0.986     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 557   3 |   a = TRUE
+   6 385 |   b = FALSE
+

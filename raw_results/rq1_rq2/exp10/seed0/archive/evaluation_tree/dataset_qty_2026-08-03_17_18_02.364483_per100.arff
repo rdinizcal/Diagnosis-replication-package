@@ -1,0 +1,311 @@
+@relation all.2026-08-03_17_18_02.364483
+
+
+@attribute QUANTIFIERS0 {ForAll,Exists}
+@attribute TERM0 {i,t2,gear[(i-1)],gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],gear[i],timestamps[i]}
+@attribute LOGICALS0 {And,Or,Implies}
+@attribute LOGICALS1 {And,Or,Implies}
+@attribute TERM1 {i,t2,gear[(i-1)],gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],gear[i],timestamps[i]}
+@attribute RELATIONALS0 {<,>,<=,>=}
+@attribute NUM0 NUMERIC
+@attribute TERM2 {i,t2,gear[(i-1)],gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],gear[i],timestamps[i]}
+@attribute RELATIONALS1 {<,>,<=,>=}
+@attribute NUM1 NUMERIC
+@attribute LOGICALS2 {And,Or,Implies}
+@attribute LOGICALS3 {And,Or,Implies}
+@attribute TERM3 {i,t2,gear[(i-1)],gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],gear[i],timestamps[i]}
+@attribute EQUALS0 {==,!=}
+@attribute NUM2 NUMERIC
+@attribute TERM4 {i,t2,gear[(i-1)],gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],gear[i],timestamps[i]}
+@attribute EQUALS1 {==,!=}
+@attribute NUM3 NUMERIC
+@attribute QUANTIFIERS1 {ForAll,Exists}
+@attribute TERM5 {i,t2,gear[(i-1)],gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],gear[i],timestamps[i]}
+@attribute LOGICALS4 {And,Or,Implies}
+@attribute LOGICALS5 {And,Or,Implies}
+@attribute TERM6 {i,t2,gear[(i-1)],gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],gear[i],timestamps[i]}
+@attribute RELATIONALS2 {<,>,<=,>=}
+@attribute TERM7 {i,t2,gear[(i-1)],gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],gear[i],timestamps[i]}
+@attribute TERM8 {i,t2,gear[(i-1)],gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],gear[i],timestamps[i]}
+@attribute RELATIONALS3 {<,>,<=,>=}
+@attribute TERM9 {i,t2,gear[(i-1)],gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],gear[i],timestamps[i]}
+@attribute NUM4 NUMERIC
+@attribute TERM10 {i,t2,gear[(i-1)],gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],gear[i],timestamps[i]}
+@attribute EQUALS2 {==,!=}
+@attribute NUM5 NUMERIC
+@attribute VEREDICT {TRUE, FALSE}
+
+@data
+ForAll,i,Implies,And,i,>=,0.000000,i,<,1665,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1832430,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],844742,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],117790,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,1782,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1092401,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1975531,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1039307,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1421236,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],392416,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],594440,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],353172,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1953397,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,1661,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2441845,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1182.972435,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1039307,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,422.756767,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],104323,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,1687,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4076256,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,186.665583,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1110184,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,1629,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2101399,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,1704,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3345574,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1256.172591,i,<,1782,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,980.350485,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1832430,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,1576,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4947610,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,360.195612,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],299183,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,841.244983,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1421236,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1263.690335,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],729152,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1095.417865,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1822454,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1232.971037,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],104323,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,156.944534,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],392416,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3738,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1421236,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,1661,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2669753,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,388.840385,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],330643,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,60.948040,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1110184,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,1782,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4214676,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,358.427550,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],392416,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,178.365430,i,<,1727,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,360.195612,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1113184,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,57.276615,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],729152,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,717.097004,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],631994,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,388.840385,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1033376,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1291.461905,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1033376,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1053.254285,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],299183,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,328.101277,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1113184,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,815.611233,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1953397,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,860.972705,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1822454,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,616.206754,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],299183,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1029.444783,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],299183,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1358.733163,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],299183,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,553.056189,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],299183,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,1872,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2012947,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1057.999673,i,<,4226,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1495590,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,186.665583,i,<,3746,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1110184,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,186.665583,i,<,2009,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1110184,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1303.043265,i,<,1629,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2101399,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1303.043265,i,<,1629,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2134560,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1303.043265,i,<,1629,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],684675,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1321.914923,i,<,4226,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1495590,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,156.944534,i,<,2280,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],392416,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,344.482855,i,<,3738,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1421236,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,912.539460,i,<,4114,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],257537,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1263.690335,i,<,4459,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],729152,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,182.067000,i,<,3746,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1110184,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,311.967060,i,<,3746,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1110184,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,681.072102,i,<,2009,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1110184,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,912.539460,i,<,3582,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],257537,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,436.589279,i,<,2280,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],392416,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,360.195612,i,<,1846,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],299183,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1321.914923,i,<,4109,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1495590,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,625.838220,i,<,2009,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1110184,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,912.539460,i,<,3307,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],257537,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,837.272383,i,<,4226,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1495590,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,513.468812,i,<,2924,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1644426,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1321.914923,i,<,2686,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1495590,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,360.195612,i,<,2641,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1113184,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,513.468812,i,<,3083,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1156057,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,311.967060,i,<,3746,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1010977,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1057.999673,i,<,2071,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1495590,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1263.690335,i,<,1714,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4214544,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,513.468812,i,<,4434,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1156057,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,837.272383,i,<,4226,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1237325,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1306.514060,i,<,4109,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1495590,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1228.510049,i,<,1984,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1454365,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,625.838220,i,<,2009,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],726702,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,815.611233,i,<,3185,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1953397,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1232.971037,i,<,1672,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3540466,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,815.611233,i,<,4255,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1953397,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1321.914923,i,<,2778,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1495590,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,360.195612,i,<,3474,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],1113184,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,1111.118106,i,<,3755,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],606812,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,57.276615,i,<,4467,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],729152,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,621.019273,i,<,1846,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],299183,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,912.539460,i,<,1661,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],257537,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,TRUE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4076256,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3452,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,422.756767,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2101399,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,1904,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2769895,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,2795,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4001448,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2185167,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3345574,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4140431,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1095.417865,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1375.528454,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1205.017581,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3757841,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1489.832330,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,1946,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2441845,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2791313,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4590498,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,1875,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3857,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,2253,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,49.458622,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1263.690335,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4400445,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4947610,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2308635,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,4204,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,486.487265,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3904,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,364.553433,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1057.999673,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,498.804224,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1174.677765,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1225.680455,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,186.665583,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4831443,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,1874,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,54.588056,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1441.546920,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1090.732844,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,4041,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,331.243907,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3282262,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3944459,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,513.468812,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,4290,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2104975,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,360.195612,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3476390,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,2.286333,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4760303,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,388.840385,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3799,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1075.986215,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,912.539460,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2178264,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3824,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,717.097004,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,2725,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4155766,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1120.448084,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2561139,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,49.458622,i,<,3286,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1057.999673,i,<,4226,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,54.588056,i,<,4158,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,364.553433,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2414894,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,359.123940,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4590498,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1057.999673,i,<,4409,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1325.812731,i,<,1946,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,364.553433,i,<,2270,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1263.690335,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3502118,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1263.690335,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4432087,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,2646,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2308635,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,4070,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2441845,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,1974,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2308635,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,1971,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4947610,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1095.417865,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4148046,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,4122,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3757841,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1205.017581,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2441382,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,2865,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3757841,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,4442,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3944459,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,224.124055,i,<,4290,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,513.468812,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4175299,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,4314,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2104975,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,940.113070,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2791313,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,297.060424,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3944459,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,147.114766,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4432087,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,3337,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3944459,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,2401,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2178264,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,646.831537,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4148046,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,178.365430,i,<,4041,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,388.840385,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4092813,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,912.539460,i,<,4114,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1057.999673,i,<,3541,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,814.213611,i,<,4226,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,787.661077,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3944459,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1263.499991,i,<,4158,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,1971,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3946264,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,513.468812,i,<,2854,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1057.999673,i,<,3091,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1111.118106,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3944459,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,178.365430,i,<,3071,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,49.458622,i,<,2077,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,513.468812,i,<,3083,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,814.213611,i,<,2120,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,60.948040,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4606551,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,575.121110,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2791313,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,178.365430,i,<,4016,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,2703,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2669753,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1263.690335,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4214544,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1232.971037,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3540466,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,148.816482,i,<,4041,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1228.510049,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3944459,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,814.213611,i,<,3011,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,2033,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2669753,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,153.870659,i,<,2077,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.000000,i,<,1872,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2561139,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,148.816482,i,<,3268,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1057.999673,i,<,2894,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,814.213611,i,<,3394,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,724.931982,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2561139,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,388.840385,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2526304,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,181.247416,i,<,2077,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,60.948040,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2119030,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1336.048375,i,<,3011,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,575.121110,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4207450,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,665.972631,i,<,3091,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,533.102045,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2119030,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,931.315206,i,<,2077,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,724.931982,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3651311,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,313.299133,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2526304,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,49.458622,i,<,3250,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,95.535231,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2526304,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1456.013690,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2561139,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,909.531767,i,<,2077,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,665.972631,i,<,2546,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,128.423610,i,<,3000,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4207450,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,148.816482,i,<,3789,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2500000,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1325.812731,i,<,1946,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3788394,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,54.588056,i,<,4158,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4345285,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1263.690335,i,<,3693,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4432087,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1276.974911,i,<,2865,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3757841,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1205.017581,i,<,2740,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2441382,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,297.060424,i,<,3184,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3944459,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,814.213611,i,<,4226,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2486269,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1417.174878,i,<,4442,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3944459,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,912.539460,i,<,4114,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3498213,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,513.468812,i,<,2924,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4175299,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,543.359805,i,<,3693,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4432087,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,912.539460,i,<,4114,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2742941,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,564.883399,i,<,2865,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3757841,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1111.118106,i,<,3755,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3944459,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,886.614778,i,<,3184,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3944459,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,513.468812,i,<,3083,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3742698,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,156.944534,i,<,2280,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3767226,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,636.313606,i,<,2924,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4175299,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,297.060424,i,<,3184,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4174839,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.379815,i,<,2865,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3757841,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,814.213611,i,<,3011,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3323859,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,105.683503,i,<,2033,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2669753,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1228.510049,i,<,1984,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3944459,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1232.971037,i,<,2950,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3540466,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,60.948040,i,<,2392,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4606551,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1269.337250,i,<,2280,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3767226,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1057.999673,i,<,2894,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3314468,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,513.468812,i,<,4478,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3742698,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,886.614778,i,<,2283,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3944459,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,1263.690335,i,<,3227,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4214544,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,0.379815,i,<,4489,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3757841,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,60.948040,i,<,2336,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2119030,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,360.195612,i,<,2641,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2385921,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,513.468812,i,<,2924,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4329564,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,513.468812,i,<,3879,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3742698,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,724.931982,i,<,4384,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2561139,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,524.703350,i,<,3184,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4174839,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,680.556258,i,<,3755,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],3944459,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,724.931982,i,<,3695,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2561139,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,564.883399,i,<,2865,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],2900337,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE
+ForAll,i,Implies,And,i,>=,636.313606,i,<,3521,Implies,And,gear[(i-1)],!=,3,gear[i],==,3,ForAll,t2,Implies,And,timestamps[i],<=,t2,t2,<=,timestamps[i],4175299,gear[ToInt((RealVal(0)+((t2-0.0)/10000.0)))],==,3,FALSE

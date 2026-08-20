@@ -1,0 +1,153 @@
+{
+  "budgets": {
+    "PGTO_sec": 432000,
+    "TCTO_sec": 3600,
+    "orchestration_wall_guard_sec": 432000
+  },
+  "decision_tree": {
+    "classifier": "weka.classifiers.trees.J48",
+    "options": {
+      "binary_splits": false,
+      "confidence_factor": 0.25,
+      "cross_validation_folds": 10,
+      "fold_rule": "min(10, labeled_instances)",
+      "min_num_obj": 2,
+      "reduced_error_pruning": false,
+      "seed": 1,
+      "subtree_raising": true,
+      "unpruned": false
+    },
+    "weka_version": "3.8.6"
+  },
+  "evaluation": {
+    "cache_enabled": false,
+    "cache_path": null,
+    "engine": "worker",
+    "parallel_workers": 1,
+    "trace_check_timeout_sec": 3600
+  },
+  "ga": {
+    "crossover_rate": 0.95,
+    "elitism": 2,
+    "generations": 10,
+    "mutation_rate": 0.9,
+    "population_size": 250,
+    "seed": 4,
+    "stopping": {
+      "check_every_generations": 1,
+      "max_samples": 1000,
+      "min_samples": 50,
+      "mode": "count",
+      "patience": 2,
+      "pr_threshold": 0.995
+    },
+    "target_sats": 1000
+  },
+  "heuristics": {
+    "adaptive_range": {
+      "enabled": false,
+      "endpoint_init": true,
+      "exploration_fraction": 0.3,
+      "max_widenings": 4,
+      "on_one_class": "continue",
+      "widen_factor": 1.5
+    },
+    "interval_inference": {
+      "empirical_validation_k": 2,
+      "enabled": false,
+      "mode": "label"
+    },
+    "time_quantization": {
+      "enabled": false,
+      "force_period": false,
+      "period": null,
+      "validate_every_n_hits": 50
+    },
+    "two_tier_timeout": {
+      "enabled": false,
+      "escalation": "once_per_formula",
+      "high_sec": 600,
+      "low_sec": 60
+    }
+  },
+  "input": {
+    "output_dir": "raw_results/rerun/rq3/phi3/G2/seed4",
+    "requirement_file": "data/requirements/phi3/property_phi3_retry.py",
+    "traces_file": "na"
+  },
+  "mutation": {
+    "allowed_changes": {
+      "10": {
+        "logical": [
+          "And",
+          "Or"
+        ]
+      },
+      "18": {
+        "numeric": [
+          2.5,
+          3.5
+        ]
+      },
+      "38": {
+        "numeric": [
+          0.5,
+          2.0
+        ]
+      },
+      "4": {
+        "numeric": [
+          2000000,
+          5000000
+        ]
+      },
+      "8": {
+        "numeric": [
+          3000000,
+          6000000
+        ]
+      }
+    },
+    "allowed_positions": [
+      4,
+      8,
+      10,
+      18,
+      38
+    ],
+    "enable_logical_flip": true,
+    "enable_numeric_perturbation": true,
+    "enable_quantifier_flip": false,
+    "enable_relop_flip": false,
+    "max_mutations": 2,
+    "original_values": {
+      "10": "And",
+      "18": 3.5,
+      "38": 1.0,
+      "4": 0,
+      "8": 9900000.0
+    }
+  },
+  "replication_metadata": {
+    "archive_caveat": "The original effective JSON was not retained. Domains and values were recovered from property sources and archived ARFF data.",
+    "archive_run_configuration_byte_identity": false,
+    "configuration_provenance": "reconstructed_current_snapshot_from_archived_rq3_evidence",
+    "current_position_namespace": "bundled_tool_preorder_encoder_at_05d0750",
+    "effective_max_simultaneous_mutations": 2,
+    "historical_allowed_positions": [
+      4,
+      8,
+      10,
+      18,
+      40
+    ],
+    "historical_position_namespace": "archived_2025_preorder_encoder",
+    "label_rationale": "interaction: guided domains; up to 2 simultaneous mutations",
+    "position_translation": {
+      "40": 38
+    },
+    "tool_commit_for_archived_run": "UNRECORDED",
+    "tool_snapshot_for_rerun": "05d0750395972662e9be0a1083b09a6dce7e3e65",
+    "verdict_polarity": "TRUE=satisfied; FALSE=violated; UNDECIDED=missing label"
+  }
+}

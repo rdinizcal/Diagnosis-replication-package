@@ -1,0 +1,9 @@
+{
+  "experiment_id": "exp27",
+  "run_status": "timeout",
+  "schema_version": 1,
+  "seed": 8,
+  "source_j48_output": null,
+  "tree": null,
+  "tree_status": "unavailable_run_censored_before_final_tree"
+}

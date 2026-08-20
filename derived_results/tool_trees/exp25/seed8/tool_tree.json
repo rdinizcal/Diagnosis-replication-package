@@ -1,0 +1,22 @@
+{
+  "experiment_id": "exp25",
+  "normalized_rule_signature": "leaf:TRUE",
+  "normalized_rule_signature_sha256": "445c2b7bccfd5ec136788d721dce0d001cbe73ebe261dadbc1151cec5d456991",
+  "numeric_thresholds": [],
+  "run_status": "completed_degenerate",
+  "schema_version": 1,
+  "seed": 8,
+  "source_j48_output": "raw_results/rq1_rq2/exp25/seed8/archive/J48-data-100.out",
+  "tree": {
+    "edges": [],
+    "nodes": [
+      {
+        "id": 0,
+        "kind": "leaf",
+        "label": "TRUE"
+      }
+    ],
+    "root": 0
+  },
+  "tree_status": "degenerate_one_class_reconstructed_from_arff"
+}

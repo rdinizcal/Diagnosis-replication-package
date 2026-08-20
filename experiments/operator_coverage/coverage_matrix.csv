@@ -1,0 +1,17 @@
+operator,implemented_in_active_sampler,covered_by_synthetic_suite,configured_in_34_benchmark_experiments,configured_experiments,actually_sampled_in_archived_runs,sampled_evidence_experiments,sampling_evidence_rule
+OP1,no,yes,no,,no,,no configured archived candidate evidence
+OP2,yes,yes,yes,exp30,yes,exp30,operator is declared by the canonical registry and an archived generation contains a candidate distinct from its generation HC; family-level evidence
+OP3,no,yes,no,,no,,no configured archived candidate evidence
+OP4,yes,yes,yes,exp26;exp33;exp34,yes,exp26;exp33;exp34,operator is declared by the canonical registry and an archived generation contains a candidate distinct from its generation HC; family-level evidence
+OP4a,no,yes,no,,no,,no configured archived candidate evidence
+OP5,yes,yes,yes,exp25;exp26;exp28,yes,exp25;exp26;exp28,operator is declared by the canonical registry and an archived generation contains a candidate distinct from its generation HC; family-level evidence
+OP6,yes,yes,no,,no,,no configured archived candidate evidence
+OP7,yes,yes,no,,no,,no configured archived candidate evidence
+OP8,no,yes,no,,no,,no configured archived candidate evidence
+OP9,no,yes,no,,no,,no configured archived candidate evidence
+OP10,no,yes,no,,no,,no configured archived candidate evidence
+OP11,yes,yes,yes,exp2;exp4;exp5;exp6;exp7;exp8;exp9;exp10;exp11;exp12;exp14;exp16;exp18;exp22;exp23;exp24;exp32,yes,exp2;exp4;exp5;exp6;exp7;exp8;exp9;exp10;exp11;exp12;exp14;exp16;exp18;exp22;exp23;exp24;exp32,operator is declared by the canonical registry and an archived generation contains a candidate distinct from its generation HC; family-level evidence
+OP12,yes,yes,no,,no,,no configured archived candidate evidence
+OP13,yes,yes,yes,exp1;exp2;exp3;exp4;exp13;exp14;exp15;exp16;exp17;exp18;exp19;exp20;exp21;exp22;exp24;exp27;exp28;exp29;exp30;exp31;exp32;exp33;exp34,yes,exp1;exp2;exp3;exp4;exp13;exp14;exp15;exp16;exp17;exp18;exp19;exp20;exp21;exp22;exp24;exp27;exp28;exp29;exp30;exp31;exp32;exp33;exp34,operator is declared by the canonical registry and an archived generation contains a candidate distinct from its generation HC; family-level evidence
+OP14,no,yes,no,,no,,no configured archived candidate evidence
+OP15,no,yes,no,,no,,no configured archived candidate evidence

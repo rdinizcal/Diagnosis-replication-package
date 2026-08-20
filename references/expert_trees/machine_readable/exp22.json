@@ -1,0 +1,91 @@
+{
+  "canonical_experiment_id": "exp22",
+  "canonicalization": {
+    "author": "UNRECORDED",
+    "date": "2026-08-18",
+    "original_vs_corrected": "verbatim boxes",
+    "role": "mechanical transcription; trace-semantic correction where declared"
+  },
+  "dimensions": [
+    {
+      "archive_to_expert_scale": 1000000.0,
+      "arff_attribute": "NUM0",
+      "kind": "numeric",
+      "maximum": 50.0,
+      "minimum": 0.0,
+      "name": "t0",
+      "unit": "s"
+    },
+    {
+      "archive_to_expert_scale": 1000000.0,
+      "arff_attribute": "NUM1",
+      "kind": "numeric",
+      "maximum": 100.0,
+      "minimum": 50.0,
+      "name": "t1",
+      "unit": "s"
+    },
+    {
+      "archive_to_expert_scale": 1.0,
+      "arff_attribute": "NUM2",
+      "kind": "numeric",
+      "maximum": 50.0,
+      "minimum": 30.0,
+      "name": "distance",
+      "unit": "m"
+    }
+  ],
+  "dot_path": "references/expert_trees/dot/exp22_expert.dot",
+  "evaluator": {
+    "satisfied_boxes": [
+      {
+        "distance": {
+          "lower_exclusive": 41.2,
+          "upper_inclusive": 50.0
+        },
+        "t0": {
+          "lower_exclusive": 0.0,
+          "upper_inclusive": 50.0
+        },
+        "t1": {
+          "lower_exclusive": 50.0,
+          "upper_inclusive": 100.0
+        }
+      },
+      {
+        "distance": {
+          "lower_exclusive": 30.0,
+          "upper_inclusive": 41.2
+        },
+        "t0": {
+          "lower_exclusive": 22.5,
+          "upper_inclusive": 50.0
+        },
+        "t1": {
+          "lower_exclusive": 50.0,
+          "upper_inclusive": 100.0
+        }
+      }
+    ],
+    "type": "satisfied_region_union"
+  },
+  "original_reference": {
+    "author_identifier_verbatim": "fedformi_new",
+    "case": 2,
+    "creation_date_verbatim": "Thu May 16 00:11:33 2024",
+    "path": "references/expert_trees/original_accuracy_scripts/AccuracyCC1.py",
+    "role": "expert prediction and original grid evaluator",
+    "sha256": "7e4b8a99ea734c1ad8221703d229be646c7b495745ca83100c2c1f65bdea79ba"
+  },
+  "pdf_path": "references/expert_trees/pdf/exp22_expert.pdf",
+  "requirement_family": "CC1",
+  "schema_version": 1,
+  "trace_witness_derivation": {
+    "extrema": null,
+    "reconstruction_required": "Recover the expert's annotated trace/plot, threshold crossings, and independent derivation notes; only the final region is archived.",
+    "representative_trace_check_mutations": null,
+    "status": "unavailable_final_tree_only",
+    "witness": null
+  },
+  "vector_path": "references/expert_trees/svg/exp22_expert.svg"
+}

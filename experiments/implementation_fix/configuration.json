@@ -1,0 +1,23 @@
+{
+  "commands": [
+    "python reproduce.py",
+    "python -m pytest -q test_verdict_matrix.py test_fix_verification.py"
+  ],
+  "expected_pytest_assertions": 16,
+  "expected_verdict_rows": 32,
+  "requirements": [
+    "phi1",
+    "phi2",
+    "phi3",
+    "phi4"
+  ],
+  "scenarios": [
+    "normal",
+    "retry",
+    "cut-in",
+    "smooth"
+  ],
+  "seed": null,
+  "study_id": "implementation_fix",
+  "upstream_commit": "1f18e6bf2f808b333a37ff60908adfab96fbabfd"
+}

@@ -1,0 +1,168 @@
+{
+  "experiment_id": "exp24",
+  "normalized_rule_signature": "split:NUM4[<=:<NUMERIC_THRESHOLD>->split:NUM0[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->split:NUM0[<=:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->split:NUM0[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->leaf:TRUE]|>:<NUMERIC_THRESHOLD>->leaf:FALSE]|>:<NUMERIC_THRESHOLD>->leaf:TRUE]]]|>:<NUMERIC_THRESHOLD>->leaf:FALSE]",
+  "normalized_rule_signature_sha256": "5f8799ee74ac1f1705ff138e3902cd5d19b30f01abcb4d8ab0d5096653980b49",
+  "numeric_thresholds": [
+    15.04414,
+    2736878.0,
+    2736878.0,
+    14.917573,
+    14.917573,
+    6572799.0,
+    15.015638,
+    3220703.0,
+    3220703.0,
+    15.015638,
+    6572799.0,
+    15.04414
+  ],
+  "run_status": "completed_informative",
+  "schema_version": 1,
+  "seed": 2,
+  "source_j48_output": "raw_results/rq1_rq2/exp24/seed2/archive/evaluation_tree/J48-data-100.out",
+  "tree": {
+    "edges": [
+      {
+        "operator": "<=",
+        "source": 0,
+        "target": 1,
+        "value": "15.04414"
+      },
+      {
+        "operator": "<=",
+        "source": 1,
+        "target": 2,
+        "value": "2736878"
+      },
+      {
+        "operator": ">",
+        "source": 1,
+        "target": 3,
+        "value": "2736878"
+      },
+      {
+        "operator": "<=",
+        "source": 3,
+        "target": 4,
+        "value": "14.917573"
+      },
+      {
+        "operator": ">",
+        "source": 3,
+        "target": 5,
+        "value": "14.917573"
+      },
+      {
+        "operator": "<=",
+        "source": 5,
+        "target": 6,
+        "value": "6572799"
+      },
+      {
+        "operator": "<=",
+        "source": 6,
+        "target": 7,
+        "value": "15.015638"
+      },
+      {
+        "operator": "<=",
+        "source": 7,
+        "target": 8,
+        "value": "3220703"
+      },
+      {
+        "operator": ">",
+        "source": 7,
+        "target": 9,
+        "value": "3220703"
+      },
+      {
+        "operator": ">",
+        "source": 6,
+        "target": 10,
+        "value": "15.015638"
+      },
+      {
+        "operator": ">",
+        "source": 5,
+        "target": 11,
+        "value": "6572799"
+      },
+      {
+        "operator": ">",
+        "source": 0,
+        "target": 12,
+        "value": "15.04414"
+      }
+    ],
+    "nodes": [
+      {
+        "feature": "NUM4",
+        "id": 0,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM0",
+        "id": 1,
+        "kind": "split"
+      },
+      {
+        "id": 2,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "feature": "NUM4",
+        "id": 3,
+        "kind": "split"
+      },
+      {
+        "id": 4,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "feature": "NUM0",
+        "id": 5,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM4",
+        "id": 6,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM0",
+        "id": 7,
+        "kind": "split"
+      },
+      {
+        "id": 8,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "id": 9,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "id": 10,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "id": 11,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "id": 12,
+        "kind": "leaf",
+        "label": "FALSE"
+      }
+    ],
+    "root": 0
+  },
+  "tree_status": "available"
+}

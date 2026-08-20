@@ -1,0 +1,192 @@
+{
+  "experiment_id": "exp24",
+  "normalized_rule_signature": "split:NUM4[<=:<NUMERIC_THRESHOLD>->split:NUM0[<=:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->split:NUM0[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->leaf:TRUE]|>:<NUMERIC_THRESHOLD>->leaf:FALSE]|>:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->split:NUM0[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->leaf:TRUE]]]]|>:<NUMERIC_THRESHOLD>->leaf:FALSE]",
+  "normalized_rule_signature_sha256": "7fd9504022b5fa70fb8fedea02783cfbdfd6039411a55f507e3bdf8c5dbe8284",
+  "numeric_thresholds": [
+    15.131762,
+    2941432.0,
+    12.299872,
+    1982991.0,
+    1982991.0,
+    12.299872,
+    2941432.0,
+    14.967184,
+    14.967184,
+    15.005628,
+    15.005628,
+    8001105.0,
+    8001105.0,
+    15.131762
+  ],
+  "run_status": "completed_informative",
+  "schema_version": 1,
+  "seed": 6,
+  "source_j48_output": "raw_results/rq1_rq2/exp24/seed6/archive/evaluation_tree/J48-data-100.out",
+  "tree": {
+    "edges": [
+      {
+        "operator": "<=",
+        "source": 0,
+        "target": 1,
+        "value": "15.131762"
+      },
+      {
+        "operator": "<=",
+        "source": 1,
+        "target": 2,
+        "value": "2941432"
+      },
+      {
+        "operator": "<=",
+        "source": 2,
+        "target": 3,
+        "value": "12.299872"
+      },
+      {
+        "operator": "<=",
+        "source": 3,
+        "target": 4,
+        "value": "1982991"
+      },
+      {
+        "operator": ">",
+        "source": 3,
+        "target": 5,
+        "value": "1982991"
+      },
+      {
+        "operator": ">",
+        "source": 2,
+        "target": 6,
+        "value": "12.299872"
+      },
+      {
+        "operator": ">",
+        "source": 1,
+        "target": 7,
+        "value": "2941432"
+      },
+      {
+        "operator": "<=",
+        "source": 7,
+        "target": 8,
+        "value": "14.967184"
+      },
+      {
+        "operator": ">",
+        "source": 7,
+        "target": 9,
+        "value": "14.967184"
+      },
+      {
+        "operator": "<=",
+        "source": 9,
+        "target": 10,
+        "value": "15.005628"
+      },
+      {
+        "operator": ">",
+        "source": 9,
+        "target": 11,
+        "value": "15.005628"
+      },
+      {
+        "operator": "<=",
+        "source": 11,
+        "target": 12,
+        "value": "8001105"
+      },
+      {
+        "operator": ">",
+        "source": 11,
+        "target": 13,
+        "value": "8001105"
+      },
+      {
+        "operator": ">",
+        "source": 0,
+        "target": 14,
+        "value": "15.131762"
+      }
+    ],
+    "nodes": [
+      {
+        "feature": "NUM4",
+        "id": 0,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM0",
+        "id": 1,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM4",
+        "id": 2,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM0",
+        "id": 3,
+        "kind": "split"
+      },
+      {
+        "id": 4,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "id": 5,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "id": 6,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "feature": "NUM4",
+        "id": 7,
+        "kind": "split"
+      },
+      {
+        "id": 8,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "feature": "NUM4",
+        "id": 9,
+        "kind": "split"
+      },
+      {
+        "id": 10,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "feature": "NUM0",
+        "id": 11,
+        "kind": "split"
+      },
+      {
+        "id": 12,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "id": 13,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "id": 14,
+        "kind": "leaf",
+        "label": "FALSE"
+      }
+    ],
+    "root": 0
+  },
+  "tree_status": "available"
+}

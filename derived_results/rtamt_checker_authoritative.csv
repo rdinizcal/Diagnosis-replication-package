@@ -1,0 +1,5 @@
+requirement,engine,checker_calls,checker_sec,seconds_per_call,accuracy_pct,duration_evidence,diagnosis_sec,source
+AT1,Z3,2300,30960.000000,13.460870,97.97,author_record_only_raw_log_absent,31680.000000,raw_results/checker_swap_rtamt/RESULTS.md
+AT1,RTAMT,1024,89.843666,0.087738,97.24,raw_timespan_json,124.240767,raw_results/checker_swap_rtamt/runs/AT1_seed1/timespan.json
+CCx,Z3,200,380160.000000,1900.800000,99.54,author_record_only_raw_log_absent,380160.000000,raw_results/checker_swap_rtamt/RESULTS.md
+CCx,RTAMT,229,349.193008,1.524860,99.88,raw_timespan_json,352.485915,raw_results/checker_swap_rtamt/runs/CCX_seed0/timespan.json

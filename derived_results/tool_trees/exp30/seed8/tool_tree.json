@@ -1,0 +1,92 @@
+{
+  "experiment_id": "exp30",
+  "normalized_rule_signature": "split:RELATIONALS6[=:<->leaf:TRUE|=:>->split:NUM4[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->leaf:TRUE]|=:<=->leaf:FALSE|=:>=->leaf:FALSE]",
+  "normalized_rule_signature_sha256": "f3ae926b2ecb1c32493ac48181dae58b8a7d500f8d9de627021def2e73cd38b7",
+  "numeric_thresholds": [
+    9.928987,
+    9.928987
+  ],
+  "run_status": "completed_informative",
+  "schema_version": 1,
+  "seed": 8,
+  "source_j48_output": "raw_results/rq1_rq2/exp30/seed8/archive/evaluation_tree/J48-data-100.out",
+  "tree": {
+    "edges": [
+      {
+        "operator": "=",
+        "source": 0,
+        "target": 1,
+        "value": "<"
+      },
+      {
+        "operator": "=",
+        "source": 0,
+        "target": 2,
+        "value": ">"
+      },
+      {
+        "operator": "<=",
+        "source": 2,
+        "target": 3,
+        "value": "9.928987"
+      },
+      {
+        "operator": ">",
+        "source": 2,
+        "target": 4,
+        "value": "9.928987"
+      },
+      {
+        "operator": "=",
+        "source": 0,
+        "target": 5,
+        "value": "<="
+      },
+      {
+        "operator": "=",
+        "source": 0,
+        "target": 6,
+        "value": ">="
+      }
+    ],
+    "nodes": [
+      {
+        "feature": "RELATIONALS6",
+        "id": 0,
+        "kind": "split"
+      },
+      {
+        "id": 1,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "feature": "NUM4",
+        "id": 2,
+        "kind": "split"
+      },
+      {
+        "id": 3,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "id": 4,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "id": 5,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "id": 6,
+        "kind": "leaf",
+        "label": "FALSE"
+      }
+    ],
+    "root": 0
+  },
+  "tree_status": "available"
+}

@@ -1,0 +1,102 @@
+WARNING: core mtj jar files are not available as resources to this classloader (jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+NUM1 <= 32758672
+|   NUM5 <= 70.026847
+|   |   NUM2 <= 2967.36677: TRUE (23.0)
+|   |   NUM2 > 2967.36677
+|   |   |   NUM4 <= 18074711
+|   |   |   |   NUM5 <= 57.586881: FALSE (2.0)
+|   |   |   |   NUM5 > 57.586881
+|   |   |   |   |   NUM4 <= 16830765: TRUE (10.0)
+|   |   |   |   |   NUM4 > 16830765
+|   |   |   |   |   |   NUM5 <= 66.766145: FALSE (3.0)
+|   |   |   |   |   |   NUM5 > 66.766145: TRUE (3.0)
+|   |   |   NUM4 > 18074711: FALSE (136.0)
+|   NUM5 > 70.026847
+|   |   NUM4 <= 21193375: TRUE (43.0)
+|   |   NUM4 > 21193375: FALSE (3.0)
+NUM1 > 32758672: TRUE (38.0)
+
+Number of Leaves  : 	9
+
+Size of the tree : 	17
+
+
+Time taken to build model: 0.02 seconds
+
+Time taken to test model on training data: 0 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         261              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+K&B Relative Info Score                100      %
+K&B Information Score                  260.4107 bits      0.9977 bits/instance
+Class complexity | order 0             260.4107 bits      0.9977 bits/instance
+Class complexity | scheme                0      bits      0      bits/instance
+Complexity improvement     (Sf)        260.4107 bits      0.9977 bits/instance
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              261     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     TRUE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     FALSE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         UNKNOWN
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 117   0   0 |   a = TRUE
+   0 144   0 |   b = FALSE
+   0   0   0 |   c = UNKNOWN
+
+Time taken to perform cross-validation: 0.03 seconds
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances         255               97.7011 %
+Incorrectly Classified Instances         6                2.2989 %
+Kappa statistic                          0.9537
+K&B Relative Info Score                 95.1838 %
+K&B Information Score                  248.068  bits      0.9505 bits/instance
+Class complexity | order 0             260.6201 bits      0.9985 bits/instance
+Class complexity | scheme             5375.0558 bits     20.5941 bits/instance
+Complexity improvement     (Sf)      -5114.4357 bits    -19.5955 bits/instance
+Mean absolute error                      0.0161
+Root mean squared error                  0.1232
+Relative absolute error                  4.8649 %
+Root relative squared error             30.3432 %
+Total Number of Instances              261     
+
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.991    0.035    0.959      0.991    0.975      0.954    0.981     0.961     TRUE
+                 0.965    0.009    0.993      0.965    0.979      0.954    0.981     0.980     FALSE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         UNKNOWN
+Weighted Avg.    0.977    0.020    0.978      0.977    0.977      0.954    0.981     0.971     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 116   1   0 |   a = TRUE
+   5 139   0 |   b = FALSE
+   0   0   0 |   c = UNKNOWN
+

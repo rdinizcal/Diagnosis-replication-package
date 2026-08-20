@@ -1,0 +1,119 @@
+@relation all.2026-08-12_10_59_54.677316
+
+
+@attribute QUANTIFIERS0 {ForAll,Exists}
+@attribute TERM0 {t1,t2,t3,y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))]}
+@attribute LOGICALS0 {And,Or,Implies}
+@attribute LOGICALS1 {And,Or,Implies}
+@attribute NUM0 NUMERIC
+@attribute RELATIONALS0 {<,>,<=,>=}
+@attribute TERM1 {t1,t2,t3,y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))]}
+@attribute TERM2 {t1,t2,t3,y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))]}
+@attribute RELATIONALS1 {<,>,<=,>=}
+@attribute NUM1 NUMERIC
+@attribute QUANTIFIERS1 {ForAll,Exists}
+@attribute TERM3 {t1,t2,t3,y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))]}
+@attribute LOGICALS2 {And,Or,Implies}
+@attribute LOGICALS3 {And,Or,Implies}
+@attribute TERM4 {t1,t2,t3,y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))]}
+@attribute RELATIONALS2 {<,>,<=,>=}
+@attribute TERM5 {t1,t2,t3,y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))]}
+@attribute TERM6 {t1,t2,t3,y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))]}
+@attribute RELATIONALS3 {<,>,<=,>=}
+@attribute TERM7 {t1,t2,t3,y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))]}
+@attribute NUM2 NUMERIC
+@attribute QUANTIFIERS2 {ForAll,Exists}
+@attribute TERM8 {t1,t2,t3,y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))]}
+@attribute LOGICALS4 {And,Or,Implies}
+@attribute LOGICALS5 {And,Or,Implies}
+@attribute TERM9 {t1,t2,t3,y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))]}
+@attribute RELATIONALS4 {<,>,<=,>=}
+@attribute TERM10 {t1,t2,t3,y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))]}
+@attribute TERM11 {t1,t2,t3,y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))]}
+@attribute RELATIONALS5 {<,>,<=,>=}
+@attribute TERM12 {t1,t2,t3,y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))]}
+@attribute NUM3 NUMERIC
+@attribute TERM13 {t1,t2,t3,y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))]}
+@attribute TERM14 {t1,t2,t3,y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))]}
+@attribute RELATIONALS6 {<,>,<=,>=}
+@attribute NUM4 NUMERIC
+@attribute VEREDICT {TRUE, FALSE}
+
+@data
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.193146,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.543166,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.523053,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.364377,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.014610,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.819974,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.364610,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.065038,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.603575,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.373119,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.364641,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.114727,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.005927,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.317701,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.213613,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.693905,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.661716,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.823835,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,9.619408,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,9.676686,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.523053,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,8.333395,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,8.804015,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,9.233772,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.194286,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,9.649039,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.926110,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.735211,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.408173,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,8.534365,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.227412,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.598532,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.373119,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,9.197564,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,8.267447,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.130541,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,9.705134,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,9.471123,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,8.007185,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,8.428302,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,8.148278,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.852327,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,9.512261,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.091819,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.693905,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,9.916728,TRUE
+Exists,t1,And,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.907206,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,9.921224,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,9.191869,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.783434,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,9.743526,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,9.385406,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,9.713837,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,9.645610,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.827139,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.992387,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,9.067238,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,8.831030,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,8.954549,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,8.412511,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,8.301101,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.390792,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.567851,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.812644,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,8.672052,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,8.244237,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.813833,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,9.137721,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.385617,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.759655,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,9.152213,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,6.267647,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,8.822753,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,8.871503,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.375226,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,Exists,t3,And,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.606586,TRUE
+ForAll,t1,Implies,And,0,<=,t1,t1,<=,65000000,Exists,t2,And,And,t1,<=,t2,t2,<=,t1,30000000,ForAll,t3,Implies,And,t2,<=,t3,t3,<=,t2,5000000,y5[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],y4[ToInt((RealVal(0)+((t3-0.0)/10000.0)))],>,7.955505,FALSE

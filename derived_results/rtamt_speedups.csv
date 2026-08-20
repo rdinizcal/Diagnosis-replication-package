@@ -1,0 +1,3 @@
+requirement,z3_seconds_per_call,rtamt_seconds_per_call,computed_speedup,speedup_evidence,rtamt_phase_sum_sec,rtamt_end_to_end_sec,tree_accuracy_pct,tree_nodes,tree_depth,tree_leaves,root_split
+AT1,13.460870,0.087738,153.421,estimate_due_to_missing_raw_z3_timing_log,124.240767,167.340678,97.24,54,7,27,NUM2 <= 129.998994
+CCx,1900.800000,1.524860,1246.540,estimate_due_to_missing_raw_z3_timing_log,352.485915,357.612423,99.88,18,1,8,NUM2 <= 7.383576: TRUE (163.0)

@@ -1,0 +1,11 @@
+digraph ExpertTree {
+rankdir=TB;
+node [shape=box,fontname=Helvetica];
+root [label="exp2 expert satisfied region"];
+rule [label="speed > vehicle_speed(t1); t0 is irrelevant"];
+root -> rule;
+rule -> sat [label="true"];
+rule -> unsat [label="false"];
+sat [label="SATISFIED",shape=ellipse];
+unsat [label="VIOLATED",shape=ellipse];
+}

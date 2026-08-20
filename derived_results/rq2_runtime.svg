@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="856" role="img">
+<title>RQ2 median total runtime by experiment</title>
+<style>text{font:12px sans-serif}.bar{fill:#3f6f8f}</style>
+<text x="5" y="32">exp1</text>
+<rect class="bar" x="90" y="20" width="2.28" height="15"/>
+<text x="900" y="32" text-anchor="end">0.39 h</text>
+<text x="5" y="56">exp2</text>
+<rect class="bar" x="90" y="44" width="5.67" height="15"/>
+<text x="900" y="56" text-anchor="end">0.97 h</text>
+<text x="5" y="80">exp3</text>
+<rect class="bar" x="90" y="68" width="1.22" height="15"/>
+<text x="900" y="80" text-anchor="end">0.21 h</text>
+<text x="5" y="104">exp4</text>
+<rect class="bar" x="90" y="92" width="1.26" height="15"/>
+<text x="900" y="104" text-anchor="end">0.22 h</text>
+<text x="5" y="128">exp5</text>
+<rect class="bar" x="90" y="116" width="1.44" height="15"/>
+<text x="900" y="128" text-anchor="end">0.25 h</text>
+<text x="5" y="152">exp6</text>
+<rect class="bar" x="90" y="140" width="1.77" height="15"/>
+<text x="900" y="152" text-anchor="end">0.30 h</text>
+<text x="5" y="176">exp7</text>
+<rect class="bar" x="90" y="164" width="1.31" height="15"/>
+<text x="900" y="176" text-anchor="end">0.22 h</text>
+<text x="5" y="200">exp8</text>
+<rect class="bar" x="90" y="188" width="2.60" height="15"/>
+<text x="900" y="200" text-anchor="end">0.44 h</text>
+<text x="5" y="224">exp9</text>
+<rect class="bar" x="90" y="212" width="2.76" height="15"/>
+<text x="900" y="224" text-anchor="end">0.47 h</text>
+<text x="5" y="248">exp10</text>
+<rect class="bar" x="90" y="236" width="3.45" height="15"/>
+<text x="900" y="248" text-anchor="end">0.59 h</text>
+<text x="5" y="272">exp11</text>
+<rect class="bar" x="90" y="260" width="2.29" height="15"/>
+<text x="900" y="272" text-anchor="end">0.39 h</text>
+<text x="5" y="296">exp12</text>
+<rect class="bar" x="90" y="284" width="4.18" height="15"/>
+<text x="900" y="296" text-anchor="end">0.72 h</text>
+<text x="5" y="320">exp13</text>
+<rect class="bar" x="90" y="308" width="9.32" height="15"/>
+<text x="900" y="320" text-anchor="end">1.60 h</text>
+<text x="5" y="344">exp14</text>
+<rect class="bar" x="90" y="332" width="21.36" height="15"/>
+<text x="900" y="344" text-anchor="end">3.66 h</text>
+<text x="5" y="368">exp15</text>
+<rect class="bar" x="90" y="356" width="13.99" height="15"/>
+<text x="900" y="368" text-anchor="end">2.40 h</text>
+<text x="5" y="392">exp16</text>
+<rect class="bar" x="90" y="380" width="23.52" height="15"/>
+<text x="900" y="392" text-anchor="end">4.03 h</text>
+<text x="5" y="416">exp17</text>
+<rect class="bar" x="90" y="404" width="11.26" height="15"/>
+<text x="900" y="416" text-anchor="end">1.93 h</text>
+<text x="5" y="440">exp18</text>
+<rect class="bar" x="90" y="428" width="23.85" height="15"/>
+<text x="900" y="440" text-anchor="end">4.08 h</text>
+<text x="5" y="464">exp19</text>
+<rect class="bar" x="90" y="452" width="13.17" height="15"/>
+<text x="900" y="464" text-anchor="end">2.25 h</text>
+<text x="5" y="488">exp20</text>
+<rect class="bar" x="90" y="476" width="35.83" height="15"/>
+<text x="900" y="488" text-anchor="end">6.13 h</text>
+<text x="5" y="512">exp21</text>
+<rect class="bar" x="90" y="500" width="182.58" height="15"/>
+<text x="900" y="512" text-anchor="end">31.26 h</text>
+<text x="5" y="536">exp22</text>
+<rect class="bar" x="90" y="524" width="196.21" height="15"/>
+<text x="900" y="536" text-anchor="end">33.59 h</text>
+<text x="5" y="560">exp23</text>
+<rect class="bar" x="90" y="548" width="38.56" height="15"/>
+<text x="900" y="560" text-anchor="end">6.60 h</text>
+<text x="5" y="584">exp24</text>
+<rect class="bar" x="90" y="572" width="85.58" height="15"/>
+<text x="900" y="584" text-anchor="end">14.65 h</text>
+<text x="5" y="608">exp25</text>
+<rect class="bar" x="90" y="596" width="1.35" height="15"/>
+<text x="900" y="608" text-anchor="end">0.23 h</text>
+<text x="5" y="632">exp26</text>
+<rect class="bar" x="90" y="620" width="6.19" height="15"/>
+<text x="900" y="632" text-anchor="end">1.06 h</text>
+<text x="5" y="656">exp27</text>
+<rect class="bar" x="90" y="644" width="700.00" height="15"/>
+<text x="900" y="656" text-anchor="end">119.83 h</text>
+<text x="5" y="680">exp28</text>
+<rect class="bar" x="90" y="668" width="700.00" height="15"/>
+<text x="900" y="680" text-anchor="end">119.83 h</text>
+<text x="5" y="704">exp29</text>
+<rect class="bar" x="90" y="692" width="299.75" height="15"/>
+<text x="900" y="704" text-anchor="end">51.31 h</text>
+<text x="5" y="728">exp30</text>
+<rect class="bar" x="90" y="716" width="271.36" height="15"/>
+<text x="900" y="728" text-anchor="end">46.45 h</text>
+<text x="5" y="752">exp31</text>
+<rect class="bar" x="90" y="740" width="700.00" height="15"/>
+<text x="900" y="752" text-anchor="end">119.83 h</text>
+<text x="5" y="776">exp32</text>
+<rect class="bar" x="90" y="764" width="700.00" height="15"/>
+<text x="900" y="776" text-anchor="end">119.83 h</text>
+<text x="5" y="800">exp33</text>
+<rect class="bar" x="90" y="788" width="1.35" height="15"/>
+<text x="900" y="800" text-anchor="end">0.23 h</text>
+<text x="5" y="824">exp34</text>
+<rect class="bar" x="90" y="812" width="1.30" height="15"/>
+<text x="900" y="824" text-anchor="end">0.22 h</text>
+</svg>

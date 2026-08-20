@@ -1,0 +1,131 @@
+{
+  "error": null,
+  "ga_best_fitness": 98,
+  "ga_best_fitness_by_gen": [
+    98,
+    98,
+    98,
+    98,
+    98,
+    98,
+    95,
+    95,
+    95
+  ],
+  "ga_generations_completed": 8,
+  "ga_individuals_evaluated": 450,
+  "ga_path": "/opt/run/out/2026-08-06_06_17_40.670988",
+  "ga_sec": 168917.5848736763,
+  "ga_stopping_checks": [
+    {
+      "cv_f1": 0.983,
+      "cv_precision": 0.981,
+      "cv_recall": 0.986,
+      "generation": 5,
+      "root_split": "NUM4 <= 9.833284: FALSE (197.0)",
+      "samples": 208,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "ed7e5dfca9b0323317c29410fd0fe1170867bccc70a1d030ad843c272e70ea4e",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    },
+    {
+      "cv_f1": 0.985,
+      "cv_precision": 0.983,
+      "cv_recall": 0.988,
+      "generation": 6,
+      "root_split": "NUM4 <= 9.833284: FALSE (228.0)",
+      "samples": 241,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "ed7e5dfca9b0323317c29410fd0fe1170867bccc70a1d030ad843c272e70ea4e",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    },
+    {
+      "cv_f1": 0.996,
+      "cv_precision": 0.997,
+      "cv_recall": 0.996,
+      "generation": 7,
+      "root_split": "NUM4 <= 9.877385: FALSE (255.0)",
+      "samples": 270,
+      "stop": false,
+      "tree_depth": 1,
+      "tree_hash": "ed7e5dfca9b0323317c29410fd0fe1170867bccc70a1d030ad843c272e70ea4e",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    },
+    {
+      "cv_f1": 0.997,
+      "cv_precision": 0.997,
+      "cv_recall": 0.997,
+      "generation": 8,
+      "root_split": "NUM4 <= 9.879864: FALSE (286.0)",
+      "samples": 302,
+      "stop": true,
+      "tree_depth": 1,
+      "tree_hash": "ed7e5dfca9b0323317c29410fd0fe1170867bccc70a1d030ad843c272e70ea4e",
+      "tree_leaves": 9,
+      "tree_nodes": 17
+    }
+  ],
+  "ga_target_sats": 1000,
+  "j48_runs": [
+    {
+      "arff_path": "/opt/run/out/2026-08-06_06_17_40.670988/dataset_qty_2026-08-06_06_17_40.670988_per100.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_06_17_40.670988/J48-data-100.out",
+      "qty": 1.0,
+      "root_split": "NUM4 <= 9: FALSE (10.0)",
+      "tree_depth": 1,
+      "tree_leaves": 8,
+      "tree_nodes": 18
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_06_17_40.670988/dataset_qty_2026-08-06_06_17_40.670988_per025.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_06_17_40.670988/J48-data-25.out",
+      "qty": 0.25,
+      "root_split": "NUM4 <= 9: FALSE (4.0)",
+      "tree_depth": 1,
+      "tree_leaves": 8,
+      "tree_nodes": 18
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_06_17_40.670988/dataset_qty_2026-08-06_06_17_40.670988_per020.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_06_17_40.670988/J48-data-20.out",
+      "qty": 0.2,
+      "root_split": null,
+      "tree_depth": 0,
+      "tree_leaves": 7,
+      "tree_nodes": 17
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_06_17_40.670988/dataset_qty_2026-08-06_06_17_40.670988_per015.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_06_17_40.670988/J48-data-15.out",
+      "qty": 0.15,
+      "root_split": null,
+      "tree_depth": 0,
+      "tree_leaves": 7,
+      "tree_nodes": 17
+    },
+    {
+      "arff_path": "/opt/run/out/2026-08-06_06_17_40.670988/dataset_qty_2026-08-06_06_17_40.670988_per010.arff",
+      "j48_out_path": "/opt/run/out/2026-08-06_06_17_40.670988/J48-data-10.out",
+      "qty": 0.1,
+      "root_split": null,
+      "tree_depth": 0,
+      "tree_leaves": 7,
+      "tree_nodes": 17
+    }
+  ],
+  "max_generations": 100,
+  "output_dir": "/opt/run/out",
+  "population_size": 50,
+  "requirement_file": "replication/evaluation_inputs/effectiveness/CC5/CC5_CC031.py",
+  "requirement_sha256": "ae2e06eae030bef24b8fe884c3f6db9ec898b8d701f757a123e64d9aed984eef",
+  "runtime_sec": 168921.97134327888,
+  "seed": 8,
+  "success": true,
+  "traces_file": "replication/analysis/data/tracesCC.csv",
+  "traces_sha256": "48b1489168f3a6c19a8fa744ad8e76be308a9696eb883d5e02e7796083421412"
+}

@@ -1,0 +1,77 @@
+{
+  "canonical_experiment_id": "exp1",
+  "canonicalization": {
+    "author": "UNRECORDED",
+    "date": "2026-08-18",
+    "original_vs_corrected": "verbatim boxes",
+    "role": "mechanical transcription; trace-semantic correction where declared"
+  },
+  "dimensions": [
+    {
+      "archive_to_expert_scale": 1000000.0,
+      "arff_attribute": "NUM0",
+      "kind": "numeric",
+      "maximum": 0.0,
+      "minimum": 0.0,
+      "name": "t0",
+      "unit": "s"
+    },
+    {
+      "archive_to_expert_scale": 1000000.0,
+      "arff_attribute": "NUM1",
+      "kind": "numeric",
+      "maximum": 20.0,
+      "minimum": 20.0,
+      "name": "t1",
+      "unit": "s"
+    },
+    {
+      "archive_to_expert_scale": 1.0,
+      "arff_attribute": "NUM2",
+      "kind": "numeric",
+      "maximum": 140.0,
+      "minimum": 100.0,
+      "name": "speed",
+      "unit": "mph"
+    }
+  ],
+  "dot_path": "references/expert_trees/dot/exp1_expert.dot",
+  "evaluator": {
+    "satisfied_boxes": [
+      {
+        "speed": {
+          "lower_exclusive": 120.02262,
+          "upper_inclusive": 140.0
+        },
+        "t0": {
+          "lower_exclusive": 0.0,
+          "upper_inclusive": 0.0
+        },
+        "t1": {
+          "lower_exclusive": 20.0,
+          "upper_inclusive": 20.0
+        }
+      }
+    ],
+    "type": "satisfied_region_union"
+  },
+  "original_reference": {
+    "author_identifier_verbatim": "fedformi_new",
+    "case": 1,
+    "creation_date_verbatim": "Thu May 16 00:11:33 2024",
+    "path": "references/expert_trees/original_accuracy_scripts/AccuracyAT1.py",
+    "role": "expert prediction and original grid evaluator",
+    "sha256": "7854ea71f24bdb511dbf242aa63de2b2e5b43a6197d111a6127097d75791ee2e"
+  },
+  "pdf_path": "references/expert_trees/pdf/exp1_expert.pdf",
+  "requirement_family": "AT1",
+  "schema_version": 1,
+  "trace_witness_derivation": {
+    "extrema": null,
+    "reconstruction_required": "Recover the expert's annotated trace/plot, threshold crossings, and independent derivation notes; only the final region is archived.",
+    "representative_trace_check_mutations": null,
+    "status": "unavailable_final_tree_only",
+    "witness": null
+  },
+  "vector_path": "references/expert_trees/svg/exp1_expert.svg"
+}

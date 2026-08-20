@@ -1,0 +1,24 @@
+{
+  "study_id": "baseline_td_sb_tempsy",
+  "upstream_repository": "https://github.com/SNTSVV/TD-SB-TemPsy.git",
+  "upstream_commit": "410753400e58e2a386a3e65f48374211214b4dc0",
+  "reproducibility_patch_head": "8efd304987a8f7355606fa3951576d00f316df51",
+  "ocl_import_fix_commit": "8164cb8cfc0a8c054d41ad8317642e6cbcfe384a",
+  "license": "Apache-2.0",
+  "environment": {
+    "java": "7",
+    "eclipse": "Mars 4.5.x",
+    "emf": "2.11.x",
+    "ocl": "Classic 3.5.0; OCL 6.0.1 was also tested"
+  },
+  "requirements": ["AT1", "AT2", "AT51", "AT52", "AT53", "AT54", "AT6a", "AT6b", "AT6c", "AT6abc", "CC1", "CC2", "CC3", "CC4", "CC5", "CCx", "RR"],
+  "timeout_per_requirement_sec": 3600,
+  "evidence_status": {
+    "converted_traces_and_xmi": "not_retained",
+    "stdout_stderr": "not_retained",
+    "timeout_logs": "not_retained",
+    "crash_logs": "not_retained",
+    "per_run_timing": "not_retained"
+  },
+  "claim_policy": "Historical numbers must not be presented as empirically verified until the 17 inputs are reconstructed and all runs are repeated."
+}

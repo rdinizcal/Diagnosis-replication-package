@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use this replication package, cite the associated article and this software artifact."
+title: "Diagnosis: replication package for Search-based Trace Diagnostic for Cyber-Physical Systems"
+type: dataset
+version: 1.0.0
+date-released: 2026-08-20
+authors:
+  - family-names: Caldas
+    given-names: Ricardo
+    affiliation: "Gran Sasso Science Institute (GSSI), L'Aquila, Italy"
+  - family-names: Araujo
+    given-names: Gabriel
+    affiliation: "University of Brasília, Brasília, Brazil"
+  - family-names: Formica
+    given-names: Federico
+    affiliation: "McMaster University, Hamilton, Canada"
+  - family-names: Rodrigues
+    given-names: Genaína
+    affiliation: "University of Brasília, Brasília, Brazil"
+  - family-names: Pelliccione
+    given-names: Patrizio
+    affiliation: "Gran Sasso Science Institute (GSSI), L'Aquila, Italy"
+  - family-names: Menghi
+    given-names: Claudio
+    affiliation: "University of Bergamo, Bergamo, Italy; McMaster University, Hamilton, Canada"
+repository-code: "https://github.com/rdinizcal/Diagnosis-replication-package"
+license: MIT
+keywords:
+  - cyber-physical systems
+  - trace diagnosis
+  - search-based software engineering
+  - replication package
+abstract: >-
+  Inputs, archived raw outputs, executable configurations, a frozen tool
+  snapshot, and analysis code for the Diagnosis evaluation. Missing auxiliary
+  evidence is identified explicitly in CLAIMS.md and ARTIFACT_EVALUATION.md.
+preferred-citation:
+  type: article
+  title: "Search-based Trace Diagnostic for Cyber-Physical Systems"
+  authors:
+    - family-names: Caldas
+      given-names: Ricardo
+    - family-names: Araujo
+      given-names: Gabriel
+    - family-names: Formica
+      given-names: Federico
+    - family-names: Rodrigues
+      given-names: Genaína
+    - family-names: Pelliccione
+      given-names: Patrizio
+    - family-names: Menghi
+      given-names: Claudio

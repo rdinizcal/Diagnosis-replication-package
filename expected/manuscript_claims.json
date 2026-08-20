@@ -1,0 +1,26 @@
+{
+  "manuscript": "_TSE__Search_based_Trace_Diagnostic_for_Cyber_Physical_Systems.pdf",
+  "sha256": "6db3ee8b1e5116334e89396b7672f5462c791ba1b1d1e6b10d2cef03812f961e",
+  "claims": {
+    "abstract_expert_aligned_experiments": {
+      "page": 1,
+      "paper_value": 33,
+      "derived_source": "derived_results/rq1_aggregate.json:n_experiments"
+    },
+    "rq1_answer_expert_aligned_experiments": {
+      "page": 15,
+      "paper_value": 29,
+      "derived_source": "derived_results/rq1_aggregate.json:n_experiments"
+    },
+    "rq2_completed_experiments": {
+      "page": 16,
+      "paper_value": 14,
+      "derived_source": "derived_results/table8_authoritative.csv:status!=timeout_or_incomplete"
+    },
+    "baseline_cases_with_retained_raw_evidence": {
+      "pages": [13, 14],
+      "paper_value": 17,
+      "derived_source": "experiments/baseline_td_sb_tempsy/evidence_status.csv:release_status==verified"
+    }
+  }
+}

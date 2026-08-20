@@ -1,0 +1,312 @@
+{
+  "experiment_id": "exp14",
+  "normalized_rule_signature": "split:NUM5[<=:<NUMERIC_THRESHOLD>->split:NUM2[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->split:NUM5[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->leaf:TRUE]|>:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->split:NUM5[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->leaf:TRUE]|>:<NUMERIC_THRESHOLD>->leaf:FALSE]]]|>:<NUMERIC_THRESHOLD>->split:NUM5[<=:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->split:NUM2[<=:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->split:NUM2[<=:<NUMERIC_THRESHOLD>->leaf:TRUE|>:<NUMERIC_THRESHOLD>->split:NUM2[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->leaf:TRUE]]]|>:<NUMERIC_THRESHOLD>->leaf:FALSE]]|>:<NUMERIC_THRESHOLD>->leaf:TRUE]]",
+  "normalized_rule_signature_sha256": "aefccfa005aae19338c599c56cef9c56f1ae22bd9e1fbbdb0aada95221ba130c",
+  "numeric_thresholds": [
+    35.871667,
+    2912.689092,
+    2912.689092,
+    2728959.0,
+    30.318265,
+    30.318265,
+    2728959.0,
+    3644200.0,
+    34.231806,
+    34.231806,
+    3644200.0,
+    35.871667,
+    38.044208,
+    4286822.0,
+    4286822.0,
+    3056.627595,
+    4561395.0,
+    4561395.0,
+    2921.411054,
+    2921.411054,
+    3043.785876,
+    3043.785876,
+    3056.627595,
+    38.044208
+  ],
+  "run_status": "completed_informative",
+  "schema_version": 1,
+  "seed": 5,
+  "source_j48_output": "raw_results/rq1_rq2/exp14/seed5/archive/evaluation_tree/J48-data-100.out",
+  "tree": {
+    "edges": [
+      {
+        "operator": "<=",
+        "source": 0,
+        "target": 1,
+        "value": "35.871667"
+      },
+      {
+        "operator": "<=",
+        "source": 1,
+        "target": 2,
+        "value": "2912.689092"
+      },
+      {
+        "operator": ">",
+        "source": 1,
+        "target": 3,
+        "value": "2912.689092"
+      },
+      {
+        "operator": "<=",
+        "source": 3,
+        "target": 4,
+        "value": "2728959"
+      },
+      {
+        "operator": "<=",
+        "source": 4,
+        "target": 5,
+        "value": "30.318265"
+      },
+      {
+        "operator": ">",
+        "source": 4,
+        "target": 6,
+        "value": "30.318265"
+      },
+      {
+        "operator": ">",
+        "source": 3,
+        "target": 7,
+        "value": "2728959"
+      },
+      {
+        "operator": "<=",
+        "source": 7,
+        "target": 8,
+        "value": "3644200"
+      },
+      {
+        "operator": "<=",
+        "source": 8,
+        "target": 9,
+        "value": "34.231806"
+      },
+      {
+        "operator": ">",
+        "source": 8,
+        "target": 10,
+        "value": "34.231806"
+      },
+      {
+        "operator": ">",
+        "source": 7,
+        "target": 11,
+        "value": "3644200"
+      },
+      {
+        "operator": ">",
+        "source": 0,
+        "target": 12,
+        "value": "35.871667"
+      },
+      {
+        "operator": "<=",
+        "source": 12,
+        "target": 13,
+        "value": "38.044208"
+      },
+      {
+        "operator": "<=",
+        "source": 13,
+        "target": 14,
+        "value": "4286822"
+      },
+      {
+        "operator": ">",
+        "source": 13,
+        "target": 15,
+        "value": "4286822"
+      },
+      {
+        "operator": "<=",
+        "source": 15,
+        "target": 16,
+        "value": "3056.627595"
+      },
+      {
+        "operator": "<=",
+        "source": 16,
+        "target": 17,
+        "value": "4561395"
+      },
+      {
+        "operator": ">",
+        "source": 16,
+        "target": 18,
+        "value": "4561395"
+      },
+      {
+        "operator": "<=",
+        "source": 18,
+        "target": 19,
+        "value": "2921.411054"
+      },
+      {
+        "operator": ">",
+        "source": 18,
+        "target": 20,
+        "value": "2921.411054"
+      },
+      {
+        "operator": "<=",
+        "source": 20,
+        "target": 21,
+        "value": "3043.785876"
+      },
+      {
+        "operator": ">",
+        "source": 20,
+        "target": 22,
+        "value": "3043.785876"
+      },
+      {
+        "operator": ">",
+        "source": 15,
+        "target": 23,
+        "value": "3056.627595"
+      },
+      {
+        "operator": ">",
+        "source": 12,
+        "target": 24,
+        "value": "38.044208"
+      }
+    ],
+    "nodes": [
+      {
+        "feature": "NUM5",
+        "id": 0,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM2",
+        "id": 1,
+        "kind": "split"
+      },
+      {
+        "id": 2,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "feature": "NUM4",
+        "id": 3,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM5",
+        "id": 4,
+        "kind": "split"
+      },
+      {
+        "id": 5,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "id": 6,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "feature": "NUM4",
+        "id": 7,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM5",
+        "id": 8,
+        "kind": "split"
+      },
+      {
+        "id": 9,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "id": 10,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "id": 11,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "feature": "NUM5",
+        "id": 12,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM4",
+        "id": 13,
+        "kind": "split"
+      },
+      {
+        "id": 14,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "feature": "NUM2",
+        "id": 15,
+        "kind": "split"
+      },
+      {
+        "feature": "NUM4",
+        "id": 16,
+        "kind": "split"
+      },
+      {
+        "id": 17,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "feature": "NUM2",
+        "id": 18,
+        "kind": "split"
+      },
+      {
+        "id": 19,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "feature": "NUM2",
+        "id": 20,
+        "kind": "split"
+      },
+      {
+        "id": 21,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "id": 22,
+        "kind": "leaf",
+        "label": "TRUE"
+      },
+      {
+        "id": 23,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "id": 24,
+        "kind": "leaf",
+        "label": "TRUE"
+      }
+    ],
+    "root": 0
+  },
+  "tree_status": "available"
+}

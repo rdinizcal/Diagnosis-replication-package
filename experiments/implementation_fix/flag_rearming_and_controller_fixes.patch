@@ -1,0 +1,69 @@
+--- sim_lc_faulty.py
++++ sim_lc.py
+@@ -151,21 +151,32 @@
+                 else:
+                     ego_acc = 0.0
+ 
+-        # F2 (AEB miscalibration): over-aggressive emergency brake with both
+-        # constants wrong w.r.t. ϕ2 — the trigger fires at TTC < 2.0 (should be
+-        # < 1.5 s) and the magnitude is -3.5 m/s² (should be limited to >= -3.0).
+-        # Placed after the ACC/same-lane rules so it overrides the milder ones,
+-        # mirroring where the old injection window sat.
+-        if fault.aeb_miscalibration and TTC < 2.0:
++        # F2 fix (AEB miscalibration): emergency hard brake gated on a GENUINE
++        # low-TTC event (TTC < 1.5 s). ϕ2 forbids ego_acc < -3.0 while TTC >= 1.5,
++        # so gating the -3.5 on TTC < 1.5 keeps the emergency brake yet never
++        # violates ϕ2. (Diagnosed constants: trigger 1.5 s, hard-brake bound -3.0.)
++        if fault.aeb_miscalibration and TTC < 1.5:
+             ego_acc = -3.5
++
++        # F3 fix (missing Euclidean-distance rule): brake whenever the vehicles are
++        # within 7 m in straight-line distance, regardless of lane. Uses the mildest
++        # deceleration that sets brake=True (-0.5), capped >= -3.0 so it never
++        # breaks ϕ2. (Diagnosed: ϕ4 distance threshold 7.0 m.)
++        if distance < 7.0:
++            ego_acc = min(ego_acc, -0.5)
+ 
+         # Ego reacts laterally to nearbY pos
+         y_gap = abs(ego_y - target_y)
+         x_gap = abs(ego_x - target_x)
+ 
+-        # F1 (evasion latch): once the maneuver is flagged complete the nudge is
+-        # suppressed and never re-armed, so the second-attempt intrusion gets no
+-        # evasive response.
++        # F1 fix (evasion latch stale-state): re-arm the latch when the target
++        # leaves the lateral intrusion zone, so a NEW intrusion re-enables the
++        # nudge. This preserves the anti-oscillation intent within one maneuver
++        # while firing on every distinct intrusion event.
++        if not (0.25 < target_y < 3.5):
++            evasion_completed = False
++            has_nudged = False
++
+         nudge_allowed = not (fault.evasion_latch and evasion_completed)
+ 
+         if 0.25 < target_y < 3.5 and y_gap < 2.5 and x_gap < 3.5 and nudge_allowed:
+@@ -253,13 +264,22 @@
+     fig.savefig(outpath, format="pdf", bbox_inches="tight")
+     plt.close(fig)
+ 
+-def run_sim_and_plot(selected_scenarios=None, out_dir="figures", save_pdf=True, show=False):
++def run_sim_and_plot(selected_scenarios=None, out_dir="figures", save_pdf=True, show=False, faulty=True):
+     if selected_scenarios is None:
+         sim_scenarios = scenarios
+     else:
+         sim_scenarios = selected_scenarios
+ 
+-    all_traces = pd.concat([simulate_scenario(s) for s in sim_scenarios])
++    # The motivating-example figures depict the seeded controller faults (the
++    # requirement violations of Table 1), so by default the plotted traces come from
++    # the faulty controller. The fixed controller (this module's simulate_scenario)
++    # repairs the faults and collapses the four scenarios onto near-identical,
++    # non-violating traces; pass faulty=False (CLI: --fixed) to plot that instead.
++    if faulty:
++        from sim_lc_faulty import simulate_scenario as _simulate
++    else:
++        _simulate = simulate_scenario
++    all_traces = pd.concat([_simulate(s) for s in sim_scenarios])
+ 
+     grouped = {name: df.reset_index(drop=True) for name, df in all_traces.groupby("scenario")}
+     cfg = RequirementsConfig()

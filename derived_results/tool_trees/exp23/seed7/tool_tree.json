@@ -1,0 +1,48 @@
+{
+  "experiment_id": "exp23",
+  "normalized_rule_signature": "split:NUM0[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->leaf:TRUE]",
+  "normalized_rule_signature_sha256": "fb0d0bfc283ab839343a93fd8705ce66d47359ce0dc99490b77b52e140c673ec",
+  "numeric_thresholds": [
+    3235404.0,
+    3235404.0
+  ],
+  "run_status": "completed_informative",
+  "schema_version": 1,
+  "seed": 7,
+  "source_j48_output": "raw_results/rq1_rq2/exp23/seed7/archive/J48-data-100.out",
+  "tree": {
+    "edges": [
+      {
+        "operator": "<=",
+        "source": 0,
+        "target": 1,
+        "value": "3235404"
+      },
+      {
+        "operator": ">",
+        "source": 0,
+        "target": 2,
+        "value": "3235404"
+      }
+    ],
+    "nodes": [
+      {
+        "feature": "NUM0",
+        "id": 0,
+        "kind": "split"
+      },
+      {
+        "id": 1,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "id": 2,
+        "kind": "leaf",
+        "label": "TRUE"
+      }
+    ],
+    "root": 0
+  },
+  "tree_status": "available"
+}

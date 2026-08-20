@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="768" role="img"><title>RQ3 mean runtime (seconds)</title>
+<style>text{font:12px sans-serif}.b{fill:#3f6f8f}</style>
+<text x="5" y="36">AT53/B</text>
+<rect class="b" x="120" y="24" width="419.62" height="16"/>
+<text x="825" y="36" text-anchor="end">4360.20</text>
+<text x="5" y="62">AT53/G</text>
+<rect class="b" x="120" y="50" width="426.05" height="16"/>
+<text x="825" y="62" text-anchor="end">4427.02</text>
+<text x="5" y="88">AT53/G2</text>
+<rect class="b" x="120" y="76" width="540.23" height="16"/>
+<text x="825" y="88" text-anchor="end">5613.34</text>
+<text x="5" y="114">AT53/G3</text>
+<rect class="b" x="120" y="102" width="599.09" height="16"/>
+<text x="825" y="114" text-anchor="end">6225.03</text>
+<text x="5" y="140">AT53/O1</text>
+<rect class="b" x="120" y="128" width="446.37" height="16"/>
+<text x="825" y="140" text-anchor="end">4638.06</text>
+<text x="5" y="166">AT53/O2</text>
+<rect class="b" x="120" y="154" width="205.01" height="16"/>
+<text x="825" y="166" text-anchor="end">2130.23</text>
+<text x="5" y="192">RR/B</text>
+<rect class="b" x="120" y="180" width="447.02" height="16"/>
+<text x="825" y="192" text-anchor="end">4644.92</text>
+<text x="5" y="218">RR/G</text>
+<rect class="b" x="120" y="206" width="276.72" height="16"/>
+<text x="825" y="218" text-anchor="end">2875.35</text>
+<text x="5" y="244">RR/G2</text>
+<rect class="b" x="120" y="232" width="200.70" height="16"/>
+<text x="825" y="244" text-anchor="end">2085.41</text>
+<text x="5" y="270">RR/G3</text>
+<rect class="b" x="120" y="258" width="163.29" height="16"/>
+<text x="825" y="270" text-anchor="end">1696.74</text>
+<text x="5" y="296">RR/O</text>
+<rect class="b" x="120" y="284" width="700.00" height="16"/>
+<text x="825" y="296" text-anchor="end">7273.52</text>
+<text x="5" y="322">phi2/B</text>
+<rect class="b" x="120" y="310" width="46.93" height="16"/>
+<text x="825" y="322" text-anchor="end">487.68</text>
+<text x="5" y="348">phi2/G</text>
+<rect class="b" x="120" y="336" width="42.11" height="16"/>
+<text x="825" y="348" text-anchor="end">437.54</text>
+<text x="5" y="374">phi2/G2</text>
+<rect class="b" x="120" y="362" width="46.82" height="16"/>
+<text x="825" y="374" text-anchor="end">486.53</text>
+<text x="5" y="400">phi2/G3</text>
+<rect class="b" x="120" y="388" width="47.54" height="16"/>
+<text x="825" y="400" text-anchor="end">493.98</text>
+<text x="5" y="426">phi2/O</text>
+<rect class="b" x="120" y="414" width="43.03" height="16"/>
+<text x="825" y="426" text-anchor="end">447.10</text>
+<text x="5" y="452">phi3/B</text>
+<rect class="b" x="120" y="440" width="86.94" height="16"/>
+<text x="825" y="452" text-anchor="end">903.35</text>
+<text x="5" y="478">phi3/G</text>
+<rect class="b" x="120" y="466" width="79.40" height="16"/>
+<text x="825" y="478" text-anchor="end">825.05</text>
+<text x="5" y="504">phi3/G2</text>
+<rect class="b" x="120" y="492" width="115.77" height="16"/>
+<text x="825" y="504" text-anchor="end">1202.94</text>
+<text x="5" y="530">phi3/G3</text>
+<rect class="b" x="120" y="518" width="110.78" height="16"/>
+<text x="825" y="530" text-anchor="end">1151.12</text>
+<text x="5" y="556">phi3/O1</text>
+<rect class="b" x="120" y="544" width="81.89" height="16"/>
+<text x="825" y="556" text-anchor="end">850.93</text>
+<text x="5" y="582">phi3/O2</text>
+<rect class="b" x="120" y="570" width="61.46" height="16"/>
+<text x="825" y="582" text-anchor="end">638.64</text>
+<text x="5" y="608">phi3/O3</text>
+<rect class="b" x="120" y="596" width="15.40" height="16"/>
+<text x="825" y="608" text-anchor="end">160.01</text>
+<text x="5" y="634">phi4/B</text>
+<rect class="b" x="120" y="622" width="47.30" height="16"/>
+<text x="825" y="634" text-anchor="end">491.53</text>
+<text x="5" y="660">phi4/G</text>
+<rect class="b" x="120" y="648" width="46.08" height="16"/>
+<text x="825" y="660" text-anchor="end">478.81</text>
+<text x="5" y="686">phi4/G2</text>
+<rect class="b" x="120" y="674" width="49.10" height="16"/>
+<text x="825" y="686" text-anchor="end">510.23</text>
+<text x="5" y="712">phi4/G3</text>
+<rect class="b" x="120" y="700" width="52.60" height="16"/>
+<text x="825" y="712" text-anchor="end">546.55</text>
+<text x="5" y="738">phi4/O</text>
+<rect class="b" x="120" y="726" width="48.80" height="16"/>
+<text x="825" y="738" text-anchor="end">507.06</text>
+</svg>

@@ -1,0 +1,12 @@
+{
+  "checker_share_pct_median_across_runs": 99.0,
+  "experiment_median_runtime_hours_median": 1.8,
+  "experiment_median_runtime_iqr_minutes_hours": [
+    23,
+    12.6
+  ],
+  "n_censored_120h": 36,
+  "n_completed_degenerate": 20,
+  "n_completed_informative": 284,
+  "n_run_slots": 340
+}
