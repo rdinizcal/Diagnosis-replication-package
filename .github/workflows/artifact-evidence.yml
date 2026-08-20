@@ -65,8 +65,11 @@ jobs:
             -v "$PWD/ci-derived:/opt/replication/derived_results" \
             diagnosis-artifact-ci python3 scripts/verify_auxiliaries.py --allow-incomplete
 
+  manuscript-consistency:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+
       - name: Evaluated-manuscript consistency gate
-        run: |
-          docker run --rm --network none \
-            -v "$PWD/ci-derived:/opt/replication/derived_results" \
-            diagnosis-artifact-ci python3 scripts/verify_manuscript_values.py
+        run: python3 scripts/verify_manuscript_values.py

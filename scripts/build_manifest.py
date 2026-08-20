@@ -71,5 +71,5 @@ for p in sorted(ROOT.rglob("*")):
     toolcommit="UNRECORDED" if role=="selected archived raw output" else "05d0750395972662e9be0a1083b09a6dce7e3e65"
     out.append({"artifact_path":s,"artifact_role":role,"associated_claim_table_figure":claim,"experiment":exp,"seed":seed,"input_sha256":inputsha,"configuration_sha256":cfgsha,"tool_commit":toolcommit,"environment_image_digest":IMAGE_DIGEST,"generation_command":cmd,"status":status,"checksum_sha256":sha(p)})
 with (ROOT/"MANIFEST.csv").open("w",newline="") as f:
-    w=csv.DictWriter(f,FIELDS);w.writeheader();w.writerows(out)
+    w=csv.DictWriter(f,FIELDS,lineterminator="\n");w.writeheader();w.writerows(out)
 print(f"wrote MANIFEST.csv with {len(out)} artifacts (manifest itself excluded to avoid a circular checksum)")
