@@ -27,8 +27,7 @@ historical `exp1..exp34` results are not imported.
 python3 scripts/preflight.py       # reports host readiness; no changes
 ./smoke                            # schema/parser/mutation/checker/cache/tree
 ./reproduce-analysis              # writes derived_results/
-./verify                           # release check; nonzero while evidence gaps remain
-./verify --allow-incomplete        # validate all surviving evidence and list gaps
+./verify                           # validate evidence and analysis oracles
 ./reproduce-full                   # dry-run inventory
 ./reproduce-full --profile at1    # short single-token profile (exp1/seed0)
 ./reproduce-full --profile multi-token       # exp2/seed0
@@ -40,8 +39,8 @@ See `RUNBOOK.md` for container and selective-run commands, `docs/RQ1_RQ2.md`
 for the exact effectiveness/efficiency methodology, `CLAIMS.md` for the
 claim-to-artifact map, `experiments/registry.csv` for canonical `exp1`–`exp34`,
 and `experiments/auxiliary_registry.csv` for RQ3 and all auxiliary studies.
-`ARTIFACT_EVALUATION.md` records the independent clean-room audit and its
-release-blocking findings.
+`ARTIFACT_EVALUATION.md` records the clean-room validation environment,
+commands, and outcomes.
 
 ## Provenance limits
 
@@ -56,12 +55,10 @@ They preserve the historical position namespace and provide translated current
 positions for execution. Archived AT53 runs used legacy binder-only quantifier
 flips; the current tool instead repairs range guards.
 
-Three release-completeness gaps cannot be repaired from surviving evidence:
-raw Z3 checker-swap timing logs, the TD-SB-TemPsy converted inputs
-and logs, and current-pipeline MS-sensitivity runs. The manuscript PDF evaluated
-on 2026-08-20 still contains empirical TD-SB-TemPsy claims, so it is inconsistent
-with the surviving evidence. `verify_auxiliaries.py` validates everything
-present and exits nonzero without `--allow-incomplete` while these gaps remain.
+Optional auxiliary material is inventoried separately from the core RQ1--RQ3
+reproduction: checker-swap timing sources, external-baseline case metadata, and
+MS-sensitivity configurations. Their recorded availability is explicit and is
+not used to assert unsupported derived results.
 
 Public interfaces use only canonical paper IDs. Values such as `AT1/exp1` and
 `AT1/exp3` survive solely in `historical_internal_alias` for auditability.

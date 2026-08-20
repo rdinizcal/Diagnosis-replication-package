@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate coverage, provenance, RQ1/RQ2 arithmetic, and paper-facing oracles."""
+"""Validate coverage, provenance, RQ1/RQ2 arithmetic, and analysis oracles."""
 from __future__ import annotations
 
 import csv
@@ -67,7 +67,7 @@ def main() -> None:
         require(round(100*tp/(tp+fp), 1) == float(row["precision_pct"]), "precision arithmetic")
         require(round(100*tp/(tp+fn), 1) == float(row["recall_pct"]), "recall arithmetic")
     aggregate = json.loads((ROOT / "derived_results" / "rq1_aggregate.json").read_text())
-    require(aggregate["n_experiments"] == 29 and aggregate["precision_mean_of_experiment_medians"] == 98.8 and aggregate["recall_mean_of_experiment_medians"] == 97.5, "manuscript RQ1 aggregate")
+    require(aggregate["n_experiments"] == 29 and aggregate["precision_mean_of_experiment_medians"] == 98.8 and aggregate["recall_mean_of_experiment_medians"] == 97.5, "RQ1 aggregate")
 
     inventory = rows(ROOT / "derived_results" / "tool_tree_inventory.csv")
     require(len(inventory) == 340, "tool-tree slot inventory")

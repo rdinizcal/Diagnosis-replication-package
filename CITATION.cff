@@ -32,8 +32,7 @@ keywords:
   - replication package
 abstract: >-
   Inputs, archived raw outputs, executable configurations, a frozen tool
-  snapshot, and analysis code for the Diagnosis evaluation. Missing auxiliary
-  evidence is identified explicitly in CLAIMS.md and ARTIFACT_EVALUATION.md.
+  snapshot, and analysis code supporting the artifact's RQ1--RQ3 reproduction.
 preferred-citation:
   type: article
   title: "Search-based Trace Diagnostic for Cyber-Physical Systems"

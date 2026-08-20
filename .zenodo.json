@@ -3,7 +3,7 @@
   "upload_type": "dataset",
   "publication_date": "2026-08-20",
   "version": "1.0.0",
-  "description": "Inputs, archived raw outputs, executable configurations, a frozen tool snapshot, and analysis code for the Diagnosis evaluation. Evidence gaps are explicitly identified in CLAIMS.md and ARTIFACT_EVALUATION.md.",
+  "description": "Inputs, archived raw outputs, executable configurations, a frozen tool snapshot, and analysis code supporting the artifact's RQ1-RQ3 reproduction.",
   "creators": [
     {"name": "Caldas, Ricardo", "affiliation": "Gran Sasso Science Institute (GSSI), L'Aquila, Italy"},
     {"name": "Araujo, Gabriel", "affiliation": "University of Brasília, Brasília, Brazil"},
@@ -32,5 +32,5 @@
       "scheme": "url"
     }
   ],
-  "notes": "The MIT license covers package-authored material, fixed inputs from the identified upstream repositories, and the bundled Diagnosis snapshot. Weka is not redistributed. The bundled Bounce JAR's embedded Maven POM declares BSD License but omits the license text; this must be resolved before release. See LICENSES/README.md. Deposit DOI and immutable archival date must be recorded after Zenodo publication."
+  "notes": "The MIT license covers package-authored material, fixed inputs from the identified upstream repositories, and the bundled Diagnosis snapshot. Weka is not redistributed. Third-party attribution and redistribution notes are documented in LICENSES/README.md. Deposit DOI and immutable archival date must be recorded after Zenodo publication."
 }

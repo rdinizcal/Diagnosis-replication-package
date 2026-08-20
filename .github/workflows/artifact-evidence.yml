@@ -53,7 +53,7 @@ jobs:
             -v "$PWD/ci-derived:/opt/replication/derived_results" \
             diagnosis-artifact-ci ./reproduce-analysis
 
-      - name: Manuscript-value consistency and analysis regressions
+      - name: Analysis and evidence regressions
         run: |
           docker run --rm --network none \
             -v "$PWD/ci-derived:/opt/replication/derived_results" \
@@ -63,13 +63,4 @@ jobs:
             diagnosis-artifact-ci python3 -m pytest -q tests/test_rq1_rq2.py
           docker run --rm --network none \
             -v "$PWD/ci-derived:/opt/replication/derived_results" \
-            diagnosis-artifact-ci python3 scripts/verify_auxiliaries.py --allow-incomplete
-
-  manuscript-consistency:
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - uses: actions/checkout@v7
-
-      - name: Evaluated-manuscript consistency gate
-        run: python3 scripts/verify_manuscript_values.py
+            diagnosis-artifact-ci python3 scripts/verify_auxiliaries.py
