@@ -32,5 +32,5 @@
       "scheme": "url"
     }
   ],
-  "notes": "The MIT license covers package-authored material, fixed inputs from the identified upstream repositories, and the bundled Diagnosis snapshot. Weka is not redistributed. Third-party attribution and redistribution notes are documented in LICENSES/README.md. Deposit DOI and immutable archival date must be recorded after Zenodo publication."
+  "notes": "The MIT license covers package-authored material, fixed inputs from the identified upstream repositories, and the bundled Diagnosis snapshot. Weka is not redistributed. Third-party attribution and redistribution notes are documented in LICENSES/README.md."
 }

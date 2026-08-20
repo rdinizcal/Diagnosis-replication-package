@@ -7,8 +7,7 @@ workflow. The locked environment builds from the repository, smoke and analysis
 workflows run without network access after setup, and generated outputs satisfy
 the packaged analysis oracles.
 
-Validation date: 2026-08-20. Evaluator timezone: Europe/Rome. The exact release
-commit will be fixed by the version tag and recorded with the Zenodo deposit.
+Validation date: 2026-08-20. Evaluator timezone: Europe/Rome.
 
 ## Validated workflows
 
@@ -64,7 +63,7 @@ measurements.
   `LICENSE`, `tool/LICENSE`, `LICENSES/`, and the provenance records.
 - No package file exceeds GitHub's 100 MiB per-file limit. The unpacked payload
   is approximately 840 MiB and a measured compressed audit archive was about
-  116 MiB; final release size and SHA-256 should be recorded after tagging.
+  116 MiB.
 
 ## Exact validation commands
 
@@ -106,5 +105,3 @@ docker run --rm --network none diagnosis-artifact python3 -m pytest -q \
 - The original historical tool/image identity for selected RQ1/RQ2 runs was
   not recorded; reruns use the declared pinned source.
 - RQ3 launch configurations are reconstructions documented in their metadata.
-- Final DOI, immutable archival date, archive checksum, and release commit are
-  populated when the versioned Zenodo deposit is created.

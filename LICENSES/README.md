@@ -10,8 +10,8 @@ primary research inputs and retain their upstream terms. Weka 3.8.6 is GPL-3.0,
 Z3 is MIT, RTAMT is BSD-3-Clause, Graphviz is EPL-1.0, NumPy/SciPy/Matplotlib use
 their respective BSD/PSF-compatible licenses. Bounce 0.18 is bundled because
 Weka requires it; its embedded Maven POM declares “BSD License” but the JAR does
-not include a license text. Redistributors must review the Bounce upstream terms
-before release and must not infer that this notice overrides them.
+not include a license text. Bounce redistribution follows its upstream terms;
+this inventory does not replace or override them.
 
 TD-SB-TemPsy is not bundled. The pinned public upstream declares Apache-2.0;
 `experiments/baseline_td_sb_tempsy/fetch_and_patch.sh` retrieves the exact
