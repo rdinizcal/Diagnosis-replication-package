@@ -1,0 +1,20 @@
+#!/bin/sh
+# ./run smoke | results | experiments [options]   (see README.md)
+set -eu
+cd "$(dirname "$0")"
+PYTHON=${PYTHON:-python3}
+case "${1:-}" in
+  smoke)
+    "$PYTHON" scripts/validate_configs.py
+    "$PYTHON" scripts/smoke.py ;;
+  results)
+    "$PYTHON" scripts/reproduce_analysis.py
+    "$PYTHON" scripts/verify.py
+    "$PYTHON" scripts/verify_auxiliaries.py ;;
+  experiments)
+    shift
+    exec "$PYTHON" scripts/reproduce_full.py "$@" ;;
+  *)
+    echo "usage: ./run smoke | results | experiments [--profile at1|multi-token|discrete-operator] [--execute]" >&2
+    exit 2 ;;
+esac
