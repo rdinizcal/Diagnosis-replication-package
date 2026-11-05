@@ -1,8 +1,8 @@
 FROM python:3.13.5-slim-bookworm@sha256:4c2cf9917bd1cbacc5e9b07320025bdb7cdf2df7b0ceaccb55e9dd7e30987419
 ARG WEKA_URL=https://repo1.maven.org/maven2/nz/ac/waikato/cms/weka/weka-stable/3.8.6/weka-stable-3.8.6.jar
 ARG WEKA_SHA256=932ea2f342b58fe45736389e9c426d5b5955e610d1f5f6485117f532068915e9
-# Debian as of the tested image, so the pinned package versions stay available.
-RUN rm -f /etc/apt/sources.list.d/debian.sources && printf 'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian/20260821T000000Z bookworm main\ndeb [check-valid-until=no] http://snapshot.debian.org/archive/debian/20260821T000000Z bookworm-updates main\ndeb [check-valid-until=no] http://snapshot.debian.org/archive/debian-security/20260821T000000Z bookworm-security main\n' > /etc/apt/sources.list && apt-get update && apt-get install -y --no-install-recommends openjdk-17-jre-headless=17.0.20+8-1~deb12u1 graphviz=2.42.2-7+deb12u1 ca-certificates curl && rm -rf /var/lib/apt/lists/*
+COPY environment/install_debian_packages.sh /tmp/install_debian_packages.sh
+RUN sh /tmp/install_debian_packages.sh
 WORKDIR /opt/replication
 COPY environment/requirements-lock.txt /tmp/requirements-lock.txt
 COPY environment/rtamt-compat-lock.txt /tmp/rtamt-compat-lock.txt
