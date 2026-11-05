@@ -52,9 +52,15 @@ def main() -> None:
                 row["requirement"] == "ϕ3" and row["satisfied"] == "False" for row in fix), "flag witness")
     print("OK implementation fix: 8 traces, 32 verdicts, executed retry witness")
 
-    baseline = rows(ROOT / "experiments/baseline_td_sb_tempsy/evidence_status.csv")
-    require(len(baseline) == 17, "baseline inventory")
-    print("OK baseline inventory: 17 cases catalogued with explicit status")
+    baseline = rows(ROOT / "raw_results/baseline_td_sb_tempsy/outcomes.csv")
+    inputs = ROOT / "experiments/baseline_td_sb_tempsy/inputs"
+    require(len(baseline) == 17, "baseline outcomes")
+    require(all((inputs / "CsvLogs" / row["trace_csv"]).is_file() for row in baseline), "baseline traces")
+    require(all((inputs / "XmiProperties" / row["specification_xmi"]).is_file()
+                for row in baseline if row["specification_xmi"]), "baseline specifications")
+    counts = rows(ROOT / "derived_results/baseline_outcome_counts.csv")
+    require([int(row["count"]) for row in counts] == [5, 4, 8], "baseline outcome counts")
+    print("OK baseline: 17 outcomes, inputs present, 5 diagnoses / 4 no output / 8 unsupported")
     ms = rows(ROOT / "derived_results/ms_sensitivity_comparison.csv")
     require(len(ms) == 4, "MS matrix")
     ms_configs = sorted((ROOT / "experiments/ms_sensitivity/configs").rglob("seed*.json"))

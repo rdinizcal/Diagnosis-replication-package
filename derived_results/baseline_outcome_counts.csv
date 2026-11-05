@@ -1,0 +1,4 @@
+outcome,requirements,count
+diagnosis,AT1;AT2;CC1;CCx;RR,5
+no_output,AT51;AT52;AT53;AT54,4
+unsupported,AT6a;AT6b;AT6c;AT6abc;CC2;CC3;CC4;CC5,8

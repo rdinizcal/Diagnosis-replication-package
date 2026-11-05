@@ -13,7 +13,8 @@ SCRIPTS = ROOT / "scripts"
 def main() -> None:
     for script in ("build_expert_references.py", "rq1_effectiveness.py", "rq2_efficiency.py",
                    "modal_trees.py", "validate_rq3_configs.py", "rq3_auxiliary.py",
-                   "rtamt_differential.py", "rtamt_auxiliary.py"):
+                   "rtamt_differential.py", "rtamt_auxiliary.py",
+                   "baseline_outcomes.py"):
         subprocess.run([sys.executable, str(SCRIPTS / script)], cwd=ROOT, check=True)
     subprocess.run(
         [sys.executable, str(ROOT / "experiments" / "ms_sensitivity" / "generate_table.py")],

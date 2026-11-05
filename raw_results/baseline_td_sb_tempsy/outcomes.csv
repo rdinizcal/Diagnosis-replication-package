@@ -1,0 +1,18 @@
+requirement,trace_csv,specification_xmi,trace_horizon_s,supported,reason,outcome,tool_output
+AT1,traceAT1.csv,AT1_Glob.xmi,20,yes,,diagnosis,"Result is:[Tuple{vSignal = 'Speed', Records = Sequence{Tuple{timestamp = 1.999E7, signalValue = 120.00171}}, Interval = null, violationType = i_dp_assert_1}]"
+AT2,traceAT2.csv,AT2_Glob.xmi,10,yes,,diagnosis,"Result is:[Tuple{vSignal = 'Engine', Records = Sequence{Tuple{timestamp = 7310000.0, signalValue = 4751.7885}}, Interval = null, violationType = i_dp_assert_1}]"
+AT51,traceAT51.csv,AT51_Glob.xmi,32.5,yes,,no_output,"Note: It loads the trace and the xmi, but it never prints a diagnosis"
+AT52,traceAT52.csv,AT52_Glob.xmi,32.5,yes,,no_output,"Note: It loads the trace and the xmi, but it never prints a diagnosis"
+AT53,traceAT53.csv,AT53_Glob.xmi,32.5,yes,,no_output,"Note: It loads the trace and the xmi, but it never prints a diagnosis"
+AT54,traceAT54.csv,AT54_Glob.xmi,32.5,yes,,no_output,"Note: It loads the trace and the xmi, but it never prints a diagnosis"
+AT6a,traceAT6A.csv,AT6a.xmi,30,no,requires Before/Between scopes,unsupported_crash,"Error message: Exception in thread ""main"" java.lang.NullPointerException: Cannot invoke ""Object.toString()"" because the return value of ""org.eclipse.ocl.OCL.evaluate(Object, org.eclipse.ocl.expressions.OCLExpression)"" is null"
+AT6b,traceAT6B.csv,AT6b.xmi,30,no,requires Before/Between scopes,unsupported_crash,"Error message: Exception in thread ""main"" java.lang.NullPointerException: Cannot invoke ""Object.toString()"" because the return value of ""org.eclipse.ocl.OCL.evaluate(Object, org.eclipse.ocl.expressions.OCLExpression)"" is null"
+AT6c,traceAT6C.csv,AT6c.xmi,30,no,requires Before/Between scopes,unsupported_crash,"Error message: Exception in thread ""main"" java.lang.NullPointerException: Cannot invoke ""Object.toString()"" because the return value of ""org.eclipse.ocl.OCL.evaluate(Object, org.eclipse.ocl.expressions.OCLExpression)"" is null"
+AT6abc,traceAT6ABC.csv,AT6abc.xmi,30,no,requires Before/Between scopes,unsupported_crash,"Error message: Exception in thread ""main"" java.lang.NullPointerException: Cannot invoke ""Object.toString()"" because the return value of ""org.eclipse.ocl.OCL.evaluate(Object, org.eclipse.ocl.expressions.OCLExpression)"" is null"
+CC1,traceCC1.csv,CC1_Glob.xmi,100,yes,,diagnosis,"Result is:[Tuple{vSignal = 'y5y4', Records = Sequence{Tuple{timestamp = 2.119E7, signalValue = 40.03113}}, Interval = null, violationType = i_dp_assert_1}]"
+CC2,traceCC2.csv,,100,no,requires nested temporal operators,unsupported,
+CC3,traceCC3.csv,,100,no,requires nested temporal operators,unsupported,
+CC4,traceCC4.csv,,100,no,requires nested temporal operators,unsupported,
+CC5,traceCC5.csv,,100,no,requires nested temporal operators,unsupported,
+CCx,traceCCX.csv,CCx_Glob.xmi,50,yes,,diagnosis,"Result is:[Tuple{vSignal = 'y5y4', Records = Sequence{Tuple{timestamp = 1.818E7, signalValue = 7.4824}}, Interval = null, violationType = i_dp_assert_1}]"
+RR,traceRR.csv,RR.xmi,15.93,yes,,diagnosis,"Result is:[Tuple{vSignal = 'err_pos_x', Records = Sequence{Tuple{timestamp = 3060000.0, signalValue = 2.58336820982424}}, Interval = null, violationType = i_dp_assert_1}]"

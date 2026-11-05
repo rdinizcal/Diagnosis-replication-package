@@ -11,14 +11,29 @@
     "emf": "2.11.x",
     "ocl": "Classic 3.5.0; OCL 6.0.1 was also tested"
   },
-  "requirements": ["AT1", "AT2", "AT51", "AT52", "AT53", "AT54", "AT6a", "AT6b", "AT6c", "AT6abc", "CC1", "CC2", "CC3", "CC4", "CC5", "CCx", "RR"],
+  "requirements": [
+    "AT1",
+    "AT2",
+    "AT51",
+    "AT52",
+    "AT53",
+    "AT54",
+    "AT6a",
+    "AT6b",
+    "AT6c",
+    "AT6abc",
+    "CC1",
+    "CC2",
+    "CC3",
+    "CC4",
+    "CC5",
+    "CCx",
+    "RR"
+  ],
   "timeout_per_requirement_sec": 3600,
-  "evidence_status": {
-    "converted_traces_and_xmi": "not_retained",
-    "stdout_stderr": "not_retained",
-    "timeout_logs": "not_retained",
-    "crash_logs": "not_retained",
-    "per_run_timing": "not_retained"
+  "inputs": {
+    "traces": "experiments/baseline_td_sb_tempsy/inputs/CsvLogs",
+    "specifications": "experiments/baseline_td_sb_tempsy/inputs/XmiProperties"
   },
-  "claim_policy": "Historical numbers must not be presented as empirically verified until the 17 inputs are reconstructed and all runs are repeated."
+  "outcomes": "raw_results/baseline_td_sb_tempsy/outcomes.csv"
 }

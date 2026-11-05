@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sBTemPsy:PropertiesBlock
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:sBTemPsy="http://www.svv.lu/offline/SBTemPsy">
+  <properties
+      xsi:type="sBTemPsy:Property">
+    <scope xsi:type="sBTemPsy:Globally"/>
+    <pattern
+        xsi:type="sBTemPsy:Order">
+      <cause
+          xsi:type="sBTemPsy:StateAssertion">
+        <signal
+            id="Gear"/>
+        <dAPred
+            rOp="==">
+          <value
+              val="4.0"/>
+        </dAPred>
+      </cause>
+      <causeEffectDistance
+          comparingOperator="exactly">
+        <boundary
+            val="2.5"/>
+      </causeEffectDistance>
+      <effect>
+        <effectsPList
+            xsi:type="sBTemPsy:EventAssertion">
+          <condition
+              xsi:type="sBTemPsy:Assertion">
+            <signal
+                id="Gear"/>
+            <dAPred
+                rOp="==">
+              <value
+                  val="4.0"/>
+            </dAPred>
+          </condition>
+        </effectsPList>
+      </effect>
+    </pattern>
+  </properties>
+</sBTemPsy:PropertiesBlock>

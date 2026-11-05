@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sBTemPsy:PropertiesBlock
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:sBTemPsy="http://www.svv.lu/offline/SBTemPsy"
+    xsi:schemaLocation="http://www.svv.lu/offline/SBTemPsy ../models/sbtempsy.ecore">
+  <properties
+      xsi:type="sBTemPsy:Property">
+    <scope xsi:type="sBTemPsy:Globally"/>
+    <pattern
+        xsi:type="sBTemPsy:EventAssertion">
+      <condition
+          xsi:type="sBTemPsy:AndCondition">
+        <condition1
+            xsi:type="sBTemPsy:Assertion">
+          <signal
+              id="err_pos_x"/>
+          <dAPred
+          	  rOp="&lt;">
+        	<value
+            	val="0.2"/>
+          </dAPred>
+        </condition1>
+        <condition2
+            xsi:type="sBTemPsy:Assertion">
+          <signal
+              id="d2obs"/>
+          <dAPred
+          	  rOp="&gt;">
+        	<value
+            	val="0.5"/>
+          </dAPred>
+        </condition2>
+      </condition>
+    </pattern>
+  </properties>
+</sBTemPsy:PropertiesBlock>

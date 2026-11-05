@@ -1,0 +1,6 @@
+requirement,signal,timestamp_us,value
+AT1,Speed,19990000.0,120.00171
+AT2,Engine,7310000.0,4751.7885
+CC1,y5y4,21190000.0,40.03113
+CCx,y5y4,18180000.0,7.4824
+RR,err_pos_x,3060000.0,2.58336820982424
