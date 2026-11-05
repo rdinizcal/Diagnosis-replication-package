@@ -6,6 +6,7 @@ import ast
 import csv
 import hashlib
 import json
+import os
 import re
 import subprocess
 from pathlib import Path
@@ -282,7 +283,8 @@ def main() -> None:
         dot = dots / f"exp{exp}_expert.dot"; svg = vectors / f"exp{exp}_expert.svg"; pdf = pdfs / f"exp{exp}_expert.pdf"
         write_dot(record, dot)
         subprocess.run(["dot", "-Tsvg", str(dot), "-o", str(svg)], check=True)
-        subprocess.run(["dot", "-Tpdf", str(dot), "-o", str(pdf)], check=True)
+        subprocess.run(["dot", "-Tpdf", str(dot), "-o", str(pdf)], check=True,
+                       env={**os.environ, "SOURCE_DATE_EPOCH": "0"})  # byte-stable PDFs
         record["dot_path"] = str(dot.relative_to(ROOT)); record["vector_path"] = str(svg.relative_to(ROOT)); record["pdf_path"] = str(pdf.relative_to(ROOT))
         target = REF / "machine_readable" / f"exp{exp}.json"
         target.parent.mkdir(parents=True, exist_ok=True)

@@ -5,6 +5,7 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
+import os
 import statistics
 import subprocess
 from collections import Counter, defaultdict
@@ -41,10 +42,14 @@ def arff_label(archive: Path) -> str:
     return decided[0] if len(decided) == 1 else "UNAVAILABLE"
 
 
+# A fixed timestamp keeps the PDFs byte-identical across regenerations.
+REPRODUCIBLE = {**os.environ, "SOURCE_DATE_EPOCH": "0"}
+
+
 def render(dot_path: Path) -> tuple[Path, Path]:
     svg, pdf = dot_path.with_suffix(".svg"), dot_path.with_suffix(".pdf")
     subprocess.run(["dot", "-Tsvg", str(dot_path), "-o", str(svg)], check=True)
-    subprocess.run(["dot", "-Tpdf", str(dot_path), "-o", str(pdf)], check=True)
+    subprocess.run(["dot", "-Tpdf", str(dot_path), "-o", str(pdf)], check=True, env=REPRODUCIBLE)
     return svg, pdf
 
 
