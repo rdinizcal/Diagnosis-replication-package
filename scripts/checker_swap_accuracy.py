@@ -68,26 +68,20 @@ def parse_sat_boxes(tree_text):
     return boxes
 
 
-def in_boxes(p, boxes):
-    return any(b[0] <= p[0] <= b[1] and b[2] <= p[1] <= b[3] and b[4] <= p[2] <= b[5]
-              for b in boxes)
-
-
 def at1_accuracy(tree_path, N=100):
     """Precision, recall and accuracy of an AT1 tree on the 101^3 grid."""
     td = trace("AT1", "AT")
     tf = interp1d(td[:, 0], td[:, 1])  # analytical expert: SAT iff thr > v_speed(window_hi)
     boxes = parse_sat_boxes(Path(tree_path).read_text())
-    tp = tn = fp = fn = 0; p = np.zeros(3)
-    for i in range(N + 1):
-        p[0] = 0.0 + 10.0 / N * i
-        for j in range(N + 1):
-            p[1] = 10.0 + 20.0 / N * j
-            for k in range(N + 1):
-                p[2] = 100.0 + 40.0 / N * k
-                tb = in_boxes(p, boxes); eb = p[2] > tf(p[1])
-                tp += tb and eb; tn += (not tb) and (not eb)
-                fp += tb and (not eb); fn += (not tb) and eb
+    i = np.arange(N + 1)
+    p0, p1, p2 = 0.0 + 10.0 / N * i, 10.0 + 20.0 / N * i, 100.0 + 40.0 / N * i
+    P0, P1, P2 = np.meshgrid(p0, p1, p2, indexing="ij")
+    tb = np.zeros(P0.shape, bool)
+    for b in boxes:
+        tb |= (b[0] <= P0) & (P0 <= b[1]) & (b[2] <= P1) & (P1 <= b[3]) & (b[4] <= P2) & (P2 <= b[5])
+    eb = P2 > tf(p1)[None, :, None]
+    tp, tn = int((tb & eb).sum()), int((~tb & ~eb).sum())
+    fp, fn = int((tb & ~eb).sum()), int((~tb & eb).sum())
     return tp/(tp+fp), tp/(tp+fn), (tp+tn)/(tp+tn+fp+fn)
 
 
