@@ -44,7 +44,7 @@ def main():
         if not p.is_file() or sha(p)!=row["sha256"]:errors += fail(f"auxiliary config hash mismatch: {row['path']}");continue
         selected=schema if row["schema"]=="config.schema.json" else aux_schema
         for e in schema_errors(json.loads(p.read_text()),selected):errors += fail(f"schema {row['path']}: {e}")
-    if len(auxiliary)!=6:errors += fail(f"expected 6 materialized auxiliary configurations, found {len(auxiliary)}")
+    if len(auxiliary)!=5:errors += fail(f"expected 5 materialized auxiliary configurations, found {len(auxiliary)}")
     with (ROOT / "experiments/registry.csv").open(newline="") as f: registry = list(csv.DictReader(f))
     if [r["paper_experiment_id"] for r in registry] != [f"exp{i}" for i in range(1, 35)]:
         errors += fail("canonical registry is not exactly exp1..exp34 in order")

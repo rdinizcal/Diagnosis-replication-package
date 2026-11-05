@@ -61,15 +61,6 @@ def main() -> None:
     counts = rows(ROOT / "derived_results/baseline_outcome_counts.csv")
     require([int(row["count"]) for row in counts] == [5, 4, 8], "baseline outcome counts")
     print("OK baseline: 17 outcomes, inputs present, 5 diagnoses / 4 no output / 8 unsupported")
-    ms = rows(ROOT / "derived_results/ms_sensitivity_comparison.csv")
-    require(len(ms) == 4, "MS matrix")
-    ms_configs = sorted((ROOT / "experiments/ms_sensitivity/configs").rglob("seed*.json"))
-    require(len(ms_configs) == 40, "40 MS configurations")
-    require(all(json.loads(path.read_text())["replication_metadata"]["tool_snapshot_for_rerun"] ==
-                "05d0750395972662e9be0a1083b09a6dce7e3e65" for path in ms_configs),
-            "MS pipeline snapshot")
-    require(sum(int(row["completed_seeds"]) for row in ms) <= 40, "MS completion accounting")
-    print("OK MS sensitivity inventory: 40 configurations and status table")
 
     forbidden = ("example" + ".com", "zenodo.org/record/" + "XXXX",
                  "INSERT" + "_URL", "TODO" + "_URL", "<" + "URL>")

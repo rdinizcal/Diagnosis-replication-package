@@ -1,5 +1,0 @@
-experiment,MS,expected_seeds,completed_seeds,runtime,precision,recall,status
-exp2,100,10,0,,,,not_executed
-exp2,1000,10,0,,,,not_executed
-exp4,100,10,0,,,,not_executed
-exp4,1000,10,0,,,,not_executed

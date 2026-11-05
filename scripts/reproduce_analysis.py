@@ -16,11 +16,6 @@ def main() -> None:
                    "rtamt_differential.py", "rtamt_auxiliary.py",
                    "baseline_outcomes.py", "fig_boxplot.py", "trace_stats.py"):
         subprocess.run([sys.executable, str(SCRIPTS / script)], cwd=ROOT, check=True)
-    subprocess.run(
-        [sys.executable, str(ROOT / "experiments" / "ms_sensitivity" / "generate_table.py")],
-        cwd=ROOT,
-        check=True,
-    )
     print("analysis regeneration PASS")
 
 

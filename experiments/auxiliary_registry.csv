@@ -31,4 +31,3 @@ operator_coverage,operator_coverage:all,SYN1_time;SYN2_index;SYN3_record,all_OP1
 checker_swap_rtamt,checker_swap:AT1;CCX,AT1;CCX,RTAMT,"[1, 0]",see configs,see configs,1,experiments/checker_swap_rtamt/configs/*.json,captured_auxiliary_config
 baseline_td_sb_tempsy,baseline:17_requirements,benchmark17,TD-SB-TemPsy,[],n/a,n/a,n/a,experiments/baseline_td_sb_tempsy/configuration.json,captured_inputs_and_outcomes
 implementation_fix,fix:phi1_phi4,phi1;phi2;phi3;phi4,fixed_controller,[],n/a,n/a,n/a,experiments/implementation_fix/configuration.json,executable_auxiliary
-ms_sensitivity,exp2_exp4_ms100_ms1000,exp2;exp4,MS100;MS1000,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",see configs,only ga.target_sats differs,1,experiments/ms_sensitivity/configs/**,materialized_not_executed
