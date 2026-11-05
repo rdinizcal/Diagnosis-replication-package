@@ -28,7 +28,7 @@ exp26,10,10,0,123305d85da9e94a01359b4d8485cf73d5656fbf37dbc0d9e547384cfc40c99d,s
 exp27,0,0,,,no_final_tree,,,,
 exp28,0,0,,,no_final_tree,,,,
 exp29,10,10,0,43d493fc6a1518e4ef1e8db9ec9f4509c9715d13917174d301412db029f21f4c,selected_informative,derived_results/modal_trees/exp29_tool.json,derived_results/modal_trees/exp29_tool.dot,derived_results/modal_trees/exp29_tool.svg,derived_results/modal_trees/exp29_tool.pdf
-exp30,10,7,7,f3ae926b2ecb1c32493ac48181dae58b8a7d500f8d9de627021def2e73cd38b7,selected_informative,derived_results/modal_trees/exp30_tool.json,derived_results/modal_trees/exp30_tool.dot,derived_results/modal_trees/exp30_tool.svg,derived_results/modal_trees/exp30_tool.pdf
+exp30,9,5,2,5d53f7962312430c804c6b03475b07561e5ad56a8a0e0965a421f0e9b5f3225d,selected_informative,derived_results/modal_trees/exp30_tool.json,derived_results/modal_trees/exp30_tool.dot,derived_results/modal_trees/exp30_tool.svg,derived_results/modal_trees/exp30_tool.pdf
 exp31,0,0,,,no_final_tree,,,,
 exp32,4,3,1,eaaca8d89a115a39b9272226c5799310fc84f6b62019f1b3440f87f92e6990d8,selected_informative,derived_results/modal_trees/exp32_tool.json,derived_results/modal_trees/exp32_tool.dot,derived_results/modal_trees/exp32_tool.svg,derived_results/modal_trees/exp32_tool.pdf
 exp33,10,10,8,33eae6e102c8a4e30e26241398ed89b64b61e14d0f61b1f9d8bcfbd67f868345,selected_informative,derived_results/modal_trees/exp33_tool.json,derived_results/modal_trees/exp33_tool.dot,derived_results/modal_trees/exp33_tool.svg,derived_results/modal_trees/exp33_tool.pdf

@@ -66,7 +66,7 @@
     "two_tier_timeout": {
       "enabled": true,
       "escalation": "once_per_formula",
-      "high_sec": 1800,
+      "high_sec": 600,
       "low_sec": 60
     }
   },

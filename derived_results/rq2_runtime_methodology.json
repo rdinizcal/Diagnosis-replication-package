@@ -2,7 +2,7 @@
   "censoring": {
     "limit_hours": 120,
     "policy": "retain observed elapsed time; never relabel as convergence",
-    "runs": 36
+    "runs": 37
   },
   "hardware_sensitive_outputs": "wall, mutation, checker, and decision-tree durations",
   "logical_outputs": "status, verdicts, decided candidate sets, trees, confusion matrices, and counts are reproducible outputs",

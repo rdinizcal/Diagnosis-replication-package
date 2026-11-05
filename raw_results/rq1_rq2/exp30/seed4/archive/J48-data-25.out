@@ -5,12 +5,12 @@ WARNING: core mtj jar files are not available as resources to this classloader (
 J48 pruned tree
 ------------------
 
-RELATIONALS6 = <: TRUE (28.0)
+RELATIONALS6 = <: TRUE (10.0)
 RELATIONALS6 = >
-|   NUM4 <= 9.70155: FALSE (26.0)
-|   NUM4 > 9.70155: TRUE (3.0)
-RELATIONALS6 = <=: TRUE (0.0)
-RELATIONALS6 = >=: TRUE (0.0)
+|   NUM4 <= 9.618788: FALSE (42.0)
+|   NUM4 > 9.618788: TRUE (3.0/1.0)
+RELATIONALS6 = <=: FALSE (0.0)
+RELATIONALS6 = >=: FALSE (0.0)
 
 Number of Leaves  : 	5
 
@@ -23,66 +23,66 @@ Time taken to test model on training data: 0 seconds
 
 === Error on training data ===
 
-Correctly Classified Instances          57              100      %
-Incorrectly Classified Instances         0                0      %
-Kappa statistic                          1     
-K&B Relative Info Score                100      %
-K&B Information Score                   56.6836 bits      0.9944 bits/instance
-Class complexity | order 0              56.6836 bits      0.9944 bits/instance
-Class complexity | scheme                0      bits      0      bits/instance
-Complexity improvement     (Sf)         56.6836 bits      0.9944 bits/instance
-Mean absolute error                      0     
-Root mean squared error                  0     
-Relative absolute error                  0      %
-Root relative squared error              0      %
-Total Number of Instances               57     
+Correctly Classified Instances          54               98.1818 %
+Incorrectly Classified Instances         1                1.8182 %
+Kappa statistic                          0.9483
+K&B Relative Info Score                 92.5786 %
+K&B Information Score                   38.5572 bits      0.701  bits/instance
+Class complexity | order 0              41.6481 bits      0.7572 bits/instance
+Class complexity | scheme                2.7549 bits      0.0501 bits/instance
+Complexity improvement     (Sf)         38.8932 bits      0.7071 bits/instance
+Mean absolute error                      0.0242
+Root mean squared error                  0.1101
+Relative absolute error                  6.9917 %
+Root relative squared error             26.6493 %
+Total Number of Instances               55     
 
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     TRUE
-                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     FALSE
-Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+                 1.000    0.023    0.923      1.000    0.960      0.950    0.998     0.987     TRUE
+                 0.977    0.000    1.000      0.977    0.988      0.950    0.998     0.999     FALSE
+Weighted Avg.    0.982    0.005    0.983      0.982    0.982      0.950    0.998     0.996     
 
 
 === Confusion Matrix ===
 
   a  b   <-- classified as
- 31  0 |  a = TRUE
-  0 26 |  b = FALSE
+ 12  0 |  a = TRUE
+  1 42 |  b = FALSE
 
 Time taken to perform cross-validation: 0.01 seconds
 
 
 === Stratified cross-validation ===
 
-Correctly Classified Instances          57              100      %
-Incorrectly Classified Instances         0                0      %
-Kappa statistic                          1     
-K&B Relative Info Score                100      %
-K&B Information Score                   56.8209 bits      0.9969 bits/instance
-Class complexity | order 0              56.8209 bits      0.9969 bits/instance
-Class complexity | scheme                0      bits      0      bits/instance
-Complexity improvement     (Sf)         56.8209 bits      0.9969 bits/instance
-Mean absolute error                      0     
-Root mean squared error                  0     
-Relative absolute error                  0      %
-Root relative squared error              0      %
-Total Number of Instances               57     
+Correctly Classified Instances          52               94.5455 %
+Incorrectly Classified Instances         3                5.4545 %
+Kappa statistic                          0.8352
+K&B Relative Info Score                 82.8387 %
+K&B Information Score                   34.6856 bits      0.6306 bits/instance
+Class complexity | order 0              41.8713 bits      0.7613 bits/instance
+Class complexity | scheme               12.521  bits      0.2277 bits/instance
+Complexity improvement     (Sf)         29.3503 bits      0.5336 bits/instance
+Mean absolute error                      0.0512
+Root mean squared error                  0.2067
+Relative absolute error                 14.7101 %
+Root relative squared error             49.8982 %
+Total Number of Instances               55     
 
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     TRUE
-                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     FALSE
-Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+                 0.833    0.023    0.909      0.833    0.870      0.836    0.981     0.929     TRUE
+                 0.977    0.167    0.955      0.977    0.966      0.836    0.981     0.991     FALSE
+Weighted Avg.    0.945    0.135    0.945      0.945    0.945      0.836    0.981     0.977     
 
 
 === Confusion Matrix ===
 
   a  b   <-- classified as
- 31  0 |  a = TRUE
-  0 26 |  b = FALSE
+ 10  2 |  a = TRUE
+  1 42 |  b = FALSE
 

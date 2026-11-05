@@ -289,7 +289,7 @@ exp29,6,completed_informative,True,True,True,True,True,True,True,True,True,True
 exp29,7,completed_informative,True,True,True,True,True,True,True,True,True,True
 exp29,8,completed_informative,True,True,True,True,True,True,True,True,True,True
 exp29,9,completed_informative,True,True,True,True,True,True,True,True,True,True
-exp30,0,completed_informative,True,True,True,True,True,True,True,True,True,True
+exp30,0,timeout,True,True,True,True,False,True,True,False,True,True
 exp30,1,completed_informative,True,True,True,True,True,True,True,True,True,True
 exp30,2,completed_informative,True,True,True,True,True,True,True,True,True,True
 exp30,3,completed_informative,True,True,True,True,True,True,True,True,True,True

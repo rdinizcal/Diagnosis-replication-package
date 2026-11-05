@@ -5,8 +5,8 @@
     23,
     12.6
   ],
-  "n_censored_120h": 36,
+  "n_censored_120h": 37,
   "n_completed_degenerate": 20,
-  "n_completed_informative": 284,
+  "n_completed_informative": 283,
   "n_run_slots": 340
 }

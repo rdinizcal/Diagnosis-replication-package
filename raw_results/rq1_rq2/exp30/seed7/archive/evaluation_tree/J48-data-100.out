@@ -7,35 +7,37 @@ J48 pruned tree
 
 RELATIONALS6 = <: TRUE (73.0)
 RELATIONALS6 = >
-|   NUM4 <= 9.959314: FALSE (100.0)
-|   NUM4 > 9.959314: TRUE (6.0)
+|   NUM4 <= 9.770924: FALSE (145.0)
+|   NUM4 > 9.770924
+|   |   NUM4 <= 9.991908: FALSE (12.0)
+|   |   NUM4 > 9.991908: TRUE (3.0)
 RELATIONALS6 = <=: FALSE (0.0)
 RELATIONALS6 = >=: FALSE (0.0)
 
-Number of Leaves  : 	5
+Number of Leaves  : 	6
 
-Size of the tree : 	7
+Size of the tree : 	9
 
 
-Time taken to build model: 0.04 seconds
+Time taken to build model: 0.03 seconds
 
-Time taken to test model on training data: 0.01 seconds
+Time taken to test model on training data: 0 seconds
 
 === Error on training data ===
 
-Correctly Classified Instances         179              100      %
+Correctly Classified Instances         233              100      %
 Incorrectly Classified Instances         0                0      %
 Kappa statistic                          1     
 K&B Relative Info Score                100      %
-K&B Information Score                  177.2189 bits      0.99   bits/instance
-Class complexity | order 0             177.2189 bits      0.99   bits/instance
+K&B Information Score                  212.2591 bits      0.911  bits/instance
+Class complexity | order 0             212.2591 bits      0.911  bits/instance
 Class complexity | scheme                0      bits      0      bits/instance
-Complexity improvement     (Sf)        177.2189 bits      0.99   bits/instance
+Complexity improvement     (Sf)        212.2591 bits      0.911  bits/instance
 Mean absolute error                      0     
 Root mean squared error                  0     
 Relative absolute error                  0      %
 Root relative squared error              0      %
-Total Number of Instances              179     
+Total Number of Instances              233     
 
 
 === Detailed Accuracy By Class ===
@@ -49,27 +51,27 @@ Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000
 === Confusion Matrix ===
 
    a   b   <-- classified as
-  79   0 |   a = TRUE
-   0 100 |   b = FALSE
+  76   0 |   a = TRUE
+   0 157 |   b = FALSE
 
 Time taken to perform cross-validation: 0.02 seconds
 
 
 === Stratified cross-validation ===
 
-Correctly Classified Instances         179              100      %
+Correctly Classified Instances         233              100      %
 Incorrectly Classified Instances         0                0      %
 Kappa statistic                          1     
 K&B Relative Info Score                100      %
-K&B Information Score                  177.2295 bits      0.9901 bits/instance
-Class complexity | order 0             177.2295 bits      0.9901 bits/instance
+K&B Information Score                  212.3193 bits      0.9112 bits/instance
+Class complexity | order 0             212.3193 bits      0.9112 bits/instance
 Class complexity | scheme                0      bits      0      bits/instance
-Complexity improvement     (Sf)        177.2295 bits      0.9901 bits/instance
+Complexity improvement     (Sf)        212.3193 bits      0.9112 bits/instance
 Mean absolute error                      0     
 Root mean squared error                  0     
 Relative absolute error                  0      %
 Root relative squared error              0      %
-Total Number of Instances              179     
+Total Number of Instances              233     
 
 
 === Detailed Accuracy By Class ===
@@ -83,6 +85,6 @@ Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000
 === Confusion Matrix ===
 
    a   b   <-- classified as
-  79   0 |   a = TRUE
-   0 100 |   b = FALSE
+  76   0 |   a = TRUE
+   0 157 |   b = FALSE
 

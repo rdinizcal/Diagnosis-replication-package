@@ -1,19 +1,20 @@
 {
-    "TOTAL": 250,
-    "": 246,
-    "cache_hits": 91,
-    "cache_misses": 159,
-    "cache_distinct": 159,
+    "TOTAL": 200,
+    "": 149,
+    "REQUIREMENT UNDECIDED": 51,
+    "cache_hits": 72,
+    "cache_misses": 128,
+    "cache_distinct": 128,
     "worker_restarts": 0,
     "worker_fallbacks": 0,
     "inferred_satisfied": 0,
     "inferred_violated": 0,
     "inferred_undecided": 0,
-    "real_solves": 159,
+    "real_solves": 128,
     "region_memory_skips": 0,
     "tier1_decided": 0,
-    "tier2_decided": 155,
-    "tier2_undecided": 4,
+    "tier2_decided": 77,
+    "tier2_undecided": 51,
     "monotonicity_violations": 0,
     "time_quantization": true,
     "quantized_positions": {
@@ -21,7 +22,7 @@
         "43": 10000.0,
         "49": 10000.0
     },
-    "quant_hits_exact": 91,
+    "quant_hits_exact": 72,
     "quant_hits_canonical": 0,
     "quant_validations": 0,
     "quantization_violations": 0,
@@ -46,6 +47,5 @@
         "43": "INCREASING",
         "49": "DECREASING",
         "54": "DECREASING"
-    },
-    "REQUIREMENT UNDECIDED": 4
+    }
 }

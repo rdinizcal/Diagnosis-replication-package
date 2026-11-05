@@ -1,10 +1,12 @@
 {
   "experiment_id": "exp30",
-  "normalized_rule_signature": "split:RELATIONALS6[=:<->leaf:TRUE|=:>->split:NUM4[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->leaf:TRUE]|=:<=->leaf:TRUE|=:>=->leaf:TRUE]",
-  "normalized_rule_signature_sha256": "a3155de5d9f43fb2102b600f2850b9ff8b068eefa9bb1e0605f8fc1524bd8a2d",
+  "normalized_rule_signature": "split:RELATIONALS6[=:<->leaf:TRUE|=:>->split:NUM4[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->split:NUM4[<=:<NUMERIC_THRESHOLD>->leaf:FALSE|>:<NUMERIC_THRESHOLD>->leaf:TRUE]]|=:<=->leaf:FALSE|=:>=->leaf:FALSE]",
+  "normalized_rule_signature_sha256": "5d53f7962312430c804c6b03475b07561e5ad56a8a0e0965a421f0e9b5f3225d",
   "numeric_thresholds": [
-    9.706404,
-    9.706404
+    9.6572,
+    9.6572,
+    10.034847,
+    10.034847
   ],
   "run_status": "completed_informative",
   "schema_version": 1,
@@ -28,24 +30,36 @@
         "operator": "<=",
         "source": 2,
         "target": 3,
-        "value": "9.706404"
+        "value": "9.6572"
       },
       {
         "operator": ">",
         "source": 2,
         "target": 4,
-        "value": "9.706404"
+        "value": "9.6572"
+      },
+      {
+        "operator": "<=",
+        "source": 4,
+        "target": 5,
+        "value": "10.034847"
+      },
+      {
+        "operator": ">",
+        "source": 4,
+        "target": 6,
+        "value": "10.034847"
       },
       {
         "operator": "=",
         "source": 0,
-        "target": 5,
+        "target": 7,
         "value": "<="
       },
       {
         "operator": "=",
         "source": 0,
-        "target": 6,
+        "target": 8,
         "value": ">="
       }
     ],
@@ -71,19 +85,29 @@
         "label": "FALSE"
       },
       {
+        "feature": "NUM4",
         "id": 4,
-        "kind": "leaf",
-        "label": "TRUE"
+        "kind": "split"
       },
       {
         "id": 5,
         "kind": "leaf",
-        "label": "TRUE"
+        "label": "FALSE"
       },
       {
         "id": 6,
         "kind": "leaf",
         "label": "TRUE"
+      },
+      {
+        "id": 7,
+        "kind": "leaf",
+        "label": "FALSE"
+      },
+      {
+        "id": 8,
+        "kind": "leaf",
+        "label": "FALSE"
       }
     ],
     "root": 0

@@ -28,7 +28,7 @@ exp26,CC3,median across all 10 seeds; 120h censored elapsed times included,10,10
 exp27,CC4,median across all 10 seeds; 120h censored elapsed times included,10,0,0,10,431398,55.978714,421354.837547,0,904,timeout_or_incomplete
 exp28,CC4,median across all 10 seeds; 120h censored elapsed times included,10,0,0,10,431398,209.841867,426121.767443,0,1176,timeout_or_incomplete
 exp29,CC5,median across all 10 seeds; 120h censored elapsed times included,10,10,10,0,184731.543535,14.930883,184690.893225,0.04025,370,informative_all_seeds
-exp30,CC5,median across all 10 seeds; 120h censored elapsed times included,10,10,10,0,167237.428569,4.925778,167215.996642,1.216938,230,informative_all_seeds
+exp30,CC5,median across all 10 seeds; 120h censored elapsed times included,10,9,9,1,200195.405586,11.616831,200154.686841,1.428438,363.5,timeout_or_incomplete
 exp31,CCx,median across all 10 seeds; 120h censored elapsed times included,10,0,0,10,431398,55.333137,419450.322999,0,774,timeout_or_incomplete
 exp32,CCx,median across all 10 seeds; 120h censored elapsed times included,10,4,4,6,431397,49.275222,414958.046326,0,754.5,timeout_or_incomplete
 exp33,RR,median across all 10 seeds; 120h censored elapsed times included,10,10,10,0,831.592037,1.473903,824.175466,0.337692,184.5,informative_all_seeds

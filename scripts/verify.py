@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate coverage, provenance, RQ1/RQ2 arithmetic, and analysis oracles."""
+"""Validate coverage, provenance, RQ1/RQ2 arithmetic, and paper-facing oracles."""
 from __future__ import annotations
 
 import csv
@@ -33,14 +33,14 @@ def main() -> None:
     require(all(json.loads(row["seed_set_json"]) == list(range(10)) for row in registry), "declared seed sets")
     reconciliation = rows(ROOT / "raw_results" / "normalized" / "experiment_seed_reconciliation.csv")
     require(len(reconciliation) == 340 and len({(r["canonical_experiment_id"], r["seed"]) for r in reconciliation}) == 340, "340 unique slots")
-    require(Counter(r["status"] for r in reconciliation) == Counter(completed_informative=284, completed_degenerate=20, timeout=36), "reconciled outcomes")
+    require(Counter(r["status"] for r in reconciliation) == Counter(completed_informative=283, completed_degenerate=20, timeout=37), "reconciled outcomes")
 
     evidence = rows(ROOT / "raw_results" / "rq1_rq2" / "EVIDENCE_MATRIX.csv")
     require(len(evidence) == 340, "evidence matrix coverage")
     always = ("effective_configuration", "generated_candidates_generation_fitness", "unique_formulas_verdict_duration",
               "cache_hit_miss_timeout_tiers", "j48_training_data", "run_log", "scheduler_metadata")
     require(all(row[key] == "True" for row in evidence for key in always), "mandatory raw evidence")
-    require(sum(row["stopping_history"] == "False" for row in evidence) == 36, "stopping histories unavailable only for censored runs")
+    require(sum(row["stopping_history"] == "False" for row in evidence) == 37, "stopping histories unavailable only for censored runs")
 
     expert = rows(ROOT / "references" / "expert_trees" / "INDEX.csv")
     require(len(expert) == 34, "34 expert trees")
@@ -57,7 +57,7 @@ def main() -> None:
 
     specs = {item["experiment_id"]: item for item in json.loads((ROOT / "derived_results" / "rq1_grid_specifications.json").read_text())}
     pr = rows(ROOT / "derived_results" / "rq1_per_seed_confusion.csv")
-    require(len(pr) == 340 and sum(row["scored"] == "true" for row in pr) == 284, "RQ1 slot/scored counts")
+    require(len(pr) == 340 and sum(row["scored"] == "true" for row in pr) == 283, "RQ1 slot/scored counts")
     for row in pr:
         require(row["checker_undecided_excluded_from_tree_evaluation"] == "true", "undecided policy")
         if row["scored"] != "true": continue
@@ -67,11 +67,11 @@ def main() -> None:
         require(round(100*tp/(tp+fp), 1) == float(row["precision_pct"]), "precision arithmetic")
         require(round(100*tp/(tp+fn), 1) == float(row["recall_pct"]), "recall arithmetic")
     aggregate = json.loads((ROOT / "derived_results" / "rq1_aggregate.json").read_text())
-    require(aggregate["n_experiments"] == 29 and aggregate["precision_mean_of_experiment_medians"] == 98.8 and aggregate["recall_mean_of_experiment_medians"] == 97.5, "RQ1 aggregate")
+    require(aggregate["n_experiments"] == 29 and aggregate["precision_mean_of_experiment_medians"] == 98.8 and aggregate["recall_mean_of_experiment_medians"] == 97.4, "manuscript RQ1 aggregate")
 
     inventory = rows(ROOT / "derived_results" / "tool_tree_inventory.csv")
     require(len(inventory) == 340, "tool-tree slot inventory")
-    require(Counter(row["tree_status"] for row in inventory) == Counter(available=284, degenerate_one_class_reconstructed_from_arff=20, unavailable_run_censored_before_final_tree=36), "tool-tree statuses")
+    require(Counter(row["tree_status"] for row in inventory) == Counter(available=283, degenerate_one_class_reconstructed_from_arff=20, unavailable_run_censored_before_final_tree=37), "tool-tree statuses")
     for row in inventory:
         require((ROOT / row["json"]).is_file(), "tool-tree JSON")
         if row["tree_status"].startswith(("available", "degenerate")):
@@ -83,7 +83,7 @@ def main() -> None:
 
     runs = rows(ROOT / "derived_results" / "rq2_per_run.csv")
     require(len(runs) == 340, "RQ2 per-run coverage")
-    require(sum(row["censored_at_120h"] == "true" for row in runs) == 36, "120-hour censoring")
+    require(sum(row["censored_at_120h"] == "true" for row in runs) == 37, "120-hour censoring")
     require(sum(row["classification"] == "degenerate_one_class" for row in runs) == 20, "degenerate classification")
     required = ("total_wall_sec", "mutation_sec", "checker_sec", "decision_tree_sec", "checker_calls", "unique_calls", "cache_hits",
                 "timeout_escalations", "undecided_calls", "stop_reason", "scheduler_node", "cpu_model", "allocated_cpus", "allocated_memory_mb")

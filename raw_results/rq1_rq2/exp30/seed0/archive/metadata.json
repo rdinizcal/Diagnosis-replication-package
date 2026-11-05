@@ -1,19 +1,19 @@
 {
-  "archived_source_run": "diagnosis-experiments/diagnosis-runs/20260812103600/exp30_CC5_s0/2026-08-12_10_36_00.475017",
-  "authoritative_campaign": "20260812103600",
+  "archived_source_run": "diagnosis-experiments/diagnosis-runs/20260903113951/exp30_CC5_s0/2026-09-03_11_39_51.857300",
+  "authoritative_campaign": "20260903113951",
   "canonical_experiment_id": "exp30",
-  "censored": false,
-  "censoring_limit_sec": null,
+  "censored": true,
+  "censoring_limit_sec": 432000,
   "evidence": {
     "cache_hit_miss_timeout_tiers": true,
     "effective_configuration": true,
-    "evaluation_tree": true,
+    "evaluation_tree": false,
     "generated_candidates_generation_fitness": true,
     "j48_training_data": true,
     "raw_j48_output": true,
     "run_log": true,
     "scheduler_metadata": true,
-    "stopping_history": true,
+    "stopping_history": false,
     "unique_formulas_verdict_duration": true
   },
   "omissions": {
@@ -23,8 +23,11 @@
   "repository_head_at_reconciliation_not_run_commit": "05d0750395972662e9be0a1083b09a6dce7e3e65",
   "seed": 0,
   "selection_policy": "reconciliation allow-list; independent of result quality/runtime",
-  "status": "completed_informative",
-  "stop_reason": "cv_pr_stable",
+  "status": "timeout",
+  "stop_reason": "wall_guard_or_PGTO_no_summary",
   "tool_commit_at_run": "UNRECORDED",
-  "unavailable_evidence": {}
+  "unavailable_evidence": {
+    "evaluation_tree": "not present in the reconciliation-selected source run; preserve as unavailable, do not reconstruct from another campaign",
+    "stopping_history": "not present in the reconciliation-selected source run; preserve as unavailable, do not reconstruct from another campaign"
+  }
 }
