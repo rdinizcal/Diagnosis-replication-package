@@ -3,7 +3,7 @@
   "n_experiments": 29,
   "precision_max": 100.0,
   "precision_mean_of_experiment_medians": 98.8,
-  "precision_median_of_experiment_medians": 99.7,
+  "precision_median_of_experiment_medians": 99.8,
   "precision_min": 95.0,
   "precision_sample_sd": 1.5,
   "recall_max": 100.0,

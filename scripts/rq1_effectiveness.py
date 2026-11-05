@@ -1,29 +1,24 @@
 #!/usr/bin/env python3
 """Regenerate seed-level RQ1 confusion matrices from the packaged evidence.
 
-Same value-grid metric as code/Diagnosis/.../Accuracy*.py: the tool's J48 tree and the
+Same value-grid metric as the expert's Accuracy*.py scripts: the tool's J48 tree and the
 expert are each turned into SATISFIED regions over the mutated parameters and compared
 over an N=100 grid per dimension; precision=TP/(TP+FP), recall=TP/(TP+FN). Aggregated
-over the COMPLETED seeds in results/ (median + IQR).
+over the COMPLETED seeds in raw_results/rq1_rq2/ (median + IQR).
 
 Grid arithmetic, the half-open (lo,hi] membership rule and its lower-edge exception, and
 every expert disjunction are ported verbatim from the Accuracy*.py reference scripts.
-The mutated ranges in DIMS are cross-checked against configs/cc_batch/exp<N>_<REQ>.json
+The mutated ranges in DIMS are cross-checked against the experiment configurations
 at load time, so a wrong range fails loudly instead of producing a plausible number.
 
-Tool boxes come from each seed's tree rebuilt on the full decided dataset, exactly as
-scripts/regen_trees.py does it (two classes, undecided rows dropped, cut 1.0); the tree
-is written once to <run>/<stamp>/regen/ and reused. NUMx -> parameter dim is resolved by
+Tool boxes come from each seed's tree rebuilt on the full decided dataset (two classes,
+undecided rows dropped, cut 1.0); the tree is stored in <seed>/regen/ and reused. NUMx -> parameter dim is resolved by
 which mutated range holds the split's values (time knobs are in microseconds). The grid
 is swept one slice of dimension 0 at a time, so 4-D cases stay in a few MB and run in
 seconds.
 
-Rebuilding needs Weka: $WEKA_JAR, else the jar shipped with the diagnosis checkout.
-
-    python3 analysis/pr_harness2.py validate    # reproduce known CSV values
-    python3 analysis/pr_harness2.py 20 32        # compute experiments
-
-Needs numpy and scipy (e.g. running_example/.venv/bin/python).
+The stored trees make Weka unnecessary; deleting a regen/ folder rebuilds that tree,
+which needs $WEKA_JAR. Needs numpy and scipy.
 """
 from __future__ import annotations
 import argparse, csv, glob, hashlib, json, os, re, sys, statistics
@@ -393,7 +388,7 @@ def grid_pr(boxes, expert, dims, grid, axes=None):
 
 # --- the tool side --------------------------------------------------------------------
 def weka_classpath():
-    """$WEKA_JAR, else the jar of a diagnosis checkout beside this one; + bounce.jar."""
+    """$WEKA_JAR, else a known install location; + bounce.jar."""
     base = os.environ.get("WEKA_JAR")
     if not base:
         for cand in ("/opt/weka/weka.jar",
@@ -405,14 +400,14 @@ def weka_classpath():
     if not base:
         raise RuntimeError("no Weka jar: set $WEKA_JAR to weka.jar")
     paths = [p for p in base.split(":") if p]
-    for bounce in (os.path.join(REPO, "third_party", "bounce.jar"), "/opt/weka/bounce.jar"):
+    for bounce in (os.path.join(REPO, "environment", "vendor", "bounce-0.18.jar"), "/opt/weka/bounce.jar"):
         if os.path.exists(bounce) and bounce not in paths:
             paths.append(bounce)
     return ":".join(paths)
 
 
 def regen_tree(run_dir):
-    """The tree relearnt on everything the run decided, as scripts/regen_trees.py does.
+    """The tree relearnt on everything the run decided.
 
     The trees a run leaves behind were trained on a capped, score-biased slice of its
     samples and admitted undecided rows as a third class, so they do not describe what
@@ -426,7 +421,7 @@ def regen_tree(run_dir):
     src = sorted(glob.glob(f"{run_dir}/dataset_qty_*_all.arff"))
     if not src:
         return None
-    sys.path.insert(0, REPO)
+    sys.path.insert(0, os.path.join(REPO, "tool"))
     from diagnosis.diagnostics.j48 import run_j48
     header, rows = [], []
     in_data = False
@@ -447,19 +442,14 @@ def regen_tree(run_dir):
     stamp = os.path.basename(src[0])[len("dataset_qty_"):-len("_all.arff")]
     cut = os.path.join(run_dir, "regen", f"dataset_qty_{stamp}_per100.arff")
     open(cut, "w", encoding="utf-8").write("\n".join(head + sats + unsats) + "\n")
-    return run_j48(cut, 1.0, os.path.join(run_dir, "regen"), weka_jar=weka_classpath())
-
-
-def final_tree_out(run_dir):
-    """The archived evaluation tree; the run's final J48 tree as a fallback."""
-    preferred = os.path.join(run_dir, "evaluation_tree", "J48-data-100.out")
-    if os.path.exists(preferred):
-        return preferred
-    for d in (os.path.join(run_dir, "stopping_checks"), run_dir):
-        outs = glob.glob(f"{d}/J48-data-*.out")
-        if outs:
-            return max(outs, key=lambda p: int(re.search(r"J48-data-(\d+)\.out", p).group(1)))
-    return None
+    out = run_j48(cut, 1.0, os.path.join(run_dir, "regen"), weka_jar=weka_classpath())
+    if "J48 pruned tree" not in open(out, errors="replace").read():
+        raise RuntimeError(f"{run_dir}: Weka did not learn a tree; see {out}")
+    os.remove(cut)
+    model = os.path.join(run_dir, "regen", "J48-data-100.model")
+    if os.path.exists(model):
+        os.remove(model)
+    return out
 
 
 SPLIT = re.compile(r"^((?:\|   )*)\s*(\w+)\s*(<=|>|=)\s*([^:]+?)\s*"
@@ -536,13 +526,12 @@ def tool_boxes(tree_out, dims):
 
 
 def completed_seed_trees(pe):
-    """Canonical seed archives that have a summary (i.e. the run finished)."""
+    """Canonical seed runs that have a summary (i.e. the run finished)."""
     out = []
     for seed_dir in sorted(glob.glob(f"{RESULTS}/exp{pe}/seed*"),
                            key=lambda p: int(os.path.basename(p)[4:])):
-        archive = os.path.join(seed_dir, "archive")
-        if os.path.exists(os.path.join(archive, "summary.json")):
-            out.append((int(os.path.basename(seed_dir)[4:]), archive))
+        if os.path.exists(os.path.join(seed_dir, "summary.json")):
+            out.append((int(os.path.basename(seed_dir)[4:]), seed_dir))
     return out
 
 
@@ -550,9 +539,9 @@ def pr_multiseed(pe):
     check_dims(pe)
     cfg = CFG[pe]
     dims = cfg["dims"]
-    Ps, Rs, rawPs, rawRs, seeds, confusion = [], [], [], [], [], []
+    Ps, Rs, rawPs, rawRs, seeds, confusion, trees = [], [], [], [], [], [], []
     for seed, run in completed_seed_trees(pe):
-        to = final_tree_out(run)
+        to = regen_tree(run)
         if not to:
             continue
         boxes, grid = tool_boxes(to, dims)
@@ -561,7 +550,7 @@ def pr_multiseed(pe):
         P, R, counts = grid_pr(boxes, cfg["expert"], dims, grid)
         if P is not None and R is not None:
             rawPs.append(P); rawRs.append(R); Ps.append(round(P, 1)); Rs.append(round(R, 1));
-            seeds.append(seed); confusion.append(counts)
+            seeds.append(seed); confusion.append(counts); trees.append(to)
 
     def med_iqr(xs):
         """Median and IQR with linear-interpolated quartiles (as in the original CSV)."""
@@ -578,7 +567,7 @@ def pr_multiseed(pe):
     pm, pi = med_iqr(Ps); rm, ri = med_iqr(Rs)
     return dict(exp=pe, req=cfg["req"], n=len(Ps), seeds=seeds,
                 p_med=pm, p_iqr=pi, r_med=rm, r_iqr=ri, p=Ps, r=Rs,
-                confusion=confusion)
+                confusion=confusion, trees=trees)
 
 
 # Published medians (analysis/precision_recall_multiseed.csv), one per experiment shape:
@@ -757,13 +746,11 @@ def main():
                       "numeric_rule": "lo + (hi-lo)*i/100 for i=0..100 inclusive",
                       "categorical_rule": "one cell midpoint per admissible operator; full configured domain",
                       "axes": axis_specs, "cartesian_size": int(np.prod([len(axis) for axis in axes]))})
-        for seed, precision, recall, counts in zip(result["seeds"], result["p"], result["r"], result["confusion"]):
+        for seed, precision, recall, counts, tree in zip(result["seeds"], result["p"], result["r"],
+                                                          result["confusion"], result["trees"]):
             tp, tn, fp, fn = counts; reconciled = state[(pe, seed)]
-            archive = Path(RESULTS) / f"exp{pe}" / f"seed{seed}" / "archive"
-            tree = archive / "evaluation_tree" / "J48-data-100.out"
-            if not tree.exists(): tree = archive / "J48-data-100.out"
-            training = list((archive / "evaluation_tree").glob("dataset_qty_*_per100.arff"))
-            if training and "UNDECIDED" in training[0].read_text(errors="replace"):
+            tree = Path(tree).resolve()
+            if "UNDECIDED" in tree.read_text(errors="replace").split("J48 pruned tree", 1)[-1]:
                 raise AssertionError(f"exp{pe}/seed{seed}: UNDECIDED entered evaluation-tree training")
             seed_rows.append({"experiment_id": f"exp{pe}", "requirement": result["req"], "seed": seed,
                               "status": reconciled["status"], "scored": "true", "exclusion_reason": "",
