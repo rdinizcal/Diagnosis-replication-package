@@ -72,7 +72,7 @@
   },
   "input": {
     "output_dir": "raw_results/rerun/rq3/phi4/O/seed2",
-    "requirement_file": "data/requirements/phi4/property_phi4_normal.py",
+    "requirement_file": "inputs/requirements/phi4/property_phi4_normal.py",
     "traces_file": "na"
   },
   "mutation": {
@@ -114,7 +114,7 @@
     ],
     "historical_position_namespace": "archived_2025_preorder_encoder",
     "label_rationale": "omit: guided configuration with the position named by the suffix removed",
-    "launch_template": "evaluation_inputs/sensitivity/phi4/phi4_O.json",
+    "launch_template": "inputs/launch_templates/sensitivity/phi4/phi4_O.json",
     "position_translation": {},
     "run_record": "raw_results/rq3_sensitivity/phi4/O/seed2/summary.json",
     "tool_commit_for_archived_run": "UNRECORDED",

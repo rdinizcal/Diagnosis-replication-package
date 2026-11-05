@@ -8,8 +8,8 @@ matplotlib.use("pdf")
 import matplotlib.pyplot as plt  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
-CSV = ROOT / "derived_results" / "appendix_precision_recall_authoritative.csv"
-OUT = ROOT / "derived_results" / "rq1_boxplot.pdf"
+CSV = ROOT / "analysis" / "appendix_precision_recall_authoritative.csv"
+OUT = ROOT / "analysis" / "rq1_boxplot.pdf"
 
 rows = [r for r in csv.DictReader(open(CSV)) if r["n_scored"] and int(r["n_scored"]) > 0]
 P = [float(r["precision_median"]) for r in rows]

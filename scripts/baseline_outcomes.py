@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "raw_results" / "baseline_td_sb_tempsy" / "outcomes.csv"
-OUT = ROOT / "derived_results"
+OUT = ROOT / "analysis"
 LABELS = {"diagnosis": "Diagnosis returned", "no_output": "No output within the time limit",
           "unsupported": "Unsupported (crash or not expressible)"}
 WITNESS = re.compile(r"vSignal = '([^']+)', Records = Sequence\{Tuple\{timestamp = ([-\d.E]+), "

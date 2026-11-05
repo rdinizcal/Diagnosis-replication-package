@@ -15,7 +15,7 @@ csv.field_size_limit(10**8)
 
 
 ROOT = Path(__file__).resolve().parents[1]
-REF = ROOT / "references" / "expert_trees"
+REF = ROOT / "inputs" / "expert_trees"
 ORIGINAL = REF / "original_accuracy_scripts"
 
 SOURCE = {
@@ -157,7 +157,7 @@ def assignment_series(source: Path, name: str) -> list[float]:
 
 def trace_rows(exp: int) -> list[dict[str, float]]:
     if exp == 2:
-        with (ROOT / "data" / "traces" / "tracesAT.csv").open(newline="") as stream:
+        with (ROOT / "inputs" / "traces" / "tracesAT.csv").open(newline="") as stream:
             row = next(item for item in csv.reader(stream) if item and item[0].strip() == "AT1")
         points = [part.strip().lstrip("[").rstrip("]") for part in row[1].split(";")]
         values = [[float(value) for value in part.split()] for part in points if part]
@@ -166,13 +166,13 @@ def trace_rows(exp: int) -> list[dict[str, float]]:
     if exp in (14, 16, 18, 20):
         req = {14: "AT6A/AT6A_AT192.py", 16: "AT6B/AT6B_AT272.py",
                18: "AT6C/AT6C_AT311.py", 20: "AT6ABC/AT6ABC_AT232.py"}[exp]
-        source = ROOT / "data" / "requirements" / req
+        source = ROOT / "inputs" / "requirements" / req
         times = [value / 1e6 for value in assignment_series(source, "timestamps")]
         engine, vehicle = assignment_series(source, "e_speed"), assignment_series(source, "v_speed")
         return [{"time_s": t, "engine_speed": e, "vehicle_speed": v}
                 for t, e, v in zip(times, engine, vehicle)]
     if exp in (33, 34):
-        source = ROOT / "data" / "requirements" / "RR" / "property_RR_RR.py"
+        source = ROOT / "inputs" / "requirements" / "RR" / "property_RR_RR.py"
         times = [value / 1e6 for value in assignment_series(source, "timestamps")]
         d2 = assignment_series(source, "d2obs")
         desired, current = assignment_series(source, "des_x"), assignment_series(source, "cur_x")
@@ -185,7 +185,7 @@ def trace_rows(exp: int) -> list[dict[str, float]]:
 
 def write_witnesses(exp: int) -> tuple[str, str, str]:
     rows = trace_rows(exp)
-    out = ROOT / "references" / "trace_witnesses" / "expert"
+    out = ROOT / "inputs" / "trace_witnesses" / "expert"
     out.mkdir(parents=True, exist_ok=True)
     csv_path = out / f"exp{exp}.csv"
     with csv_path.open("w", newline="") as stream:
@@ -256,7 +256,7 @@ def main() -> None:
             "evaluator": ({"type": "trace_rule", "rule": TRACE_RULES[exp]}
                           if trace else {"type": "satisfied_region_union", "satisfied_boxes": boxes(raw_boxes, dims)}),
             "original_reference": {
-                "path": f"references/expert_trees/original_accuracy_scripts/{source_name}",
+                "path": f"inputs/expert_trees/original_accuracy_scripts/{source_name}",
                 "case": case, "sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
                 "author_identifier_verbatim": "fedformi_new",
                 "creation_date_verbatim": "Thu May 16 00:11:33 2024",

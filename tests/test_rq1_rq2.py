@@ -23,8 +23,8 @@ def test_registry_and_seed_accounting():
 
 
 def test_rq1_confusions_and_undecided_exclusion():
-    specs = {item["experiment_id"]: item for item in json.loads((ROOT / "derived_results/rq1_grid_specifications.json").read_text())}
-    data = rows("derived_results/rq1_per_seed_confusion.csv")
+    specs = {item["experiment_id"]: item for item in json.loads((ROOT / "analysis/rq1_grid_specifications.json").read_text())}
+    data = rows("analysis/rq1_per_seed_confusion.csv")
     assert len(data) == 340
     assert sum(row["scored"] == "true" for row in data) == 283
     for row in data:
@@ -34,15 +34,15 @@ def test_rq1_confusions_and_undecided_exclusion():
 
 
 def test_rq1_manuscript_aggregate():
-    value = json.loads((ROOT / "derived_results/rq1_aggregate.json").read_text())
+    value = json.loads((ROOT / "analysis/rq1_aggregate.json").read_text())
     assert value["n_experiments"] == 29
     assert value["precision_mean_of_experiment_medians"] == 98.8
     assert value["recall_mean_of_experiment_medians"] == 97.4
 
 
 def test_rq2_counts_and_table8_medians():
-    data = rows("derived_results/rq2_per_run.csv")
-    table = {row["canonical_experiment_id"]: row for row in rows("derived_results/table8_authoritative.csv")}
+    data = rows("analysis/rq2_per_run.csv")
+    table = {row["canonical_experiment_id"]: row for row in rows("analysis/table8_authoritative.csv")}
     assert len(data) == 340
     assert sum(row["censored_at_120h"] == "true" for row in data) == 37
     assert sum(row["classification"] == "degenerate_one_class" for row in data) == 20
@@ -52,9 +52,9 @@ def test_rq2_counts_and_table8_medians():
 
 
 def test_expert_tool_and_modal_tree_coverage():
-    expert = rows("references/expert_trees/INDEX.csv")
-    tool = rows("derived_results/tool_tree_inventory.csv")
-    modal = rows("derived_results/modal_tree_selection.csv")
+    expert = rows("inputs/expert_trees/INDEX.csv")
+    tool = rows("analysis/tool_tree_inventory.csv")
+    modal = rows("analysis/modal_tree_selection.csv")
     assert len(expert) == 34 and len(tool) == 340 and len(modal) == 34
     assert sum(row["tree_status"] == "unavailable_run_censored_before_final_tree" for row in tool) == 37
     assert sum(row["status"].startswith("selected") for row in modal) == 31

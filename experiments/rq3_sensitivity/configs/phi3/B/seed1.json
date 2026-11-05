@@ -72,7 +72,7 @@
   },
   "input": {
     "output_dir": "raw_results/rerun/rq3/phi3/B/seed1",
-    "requirement_file": "data/requirements/phi3/property_phi3_retry.py",
+    "requirement_file": "inputs/requirements/phi3/property_phi3_retry.py",
     "traces_file": "na"
   },
   "mutation": {
@@ -141,7 +141,7 @@
     ],
     "historical_position_namespace": "archived_2025_preorder_encoder",
     "label_rationale": "broad: widest archived admissible domains and alternatives",
-    "launch_template": "evaluation_inputs/sensitivity/phi3/phi3_B.json",
+    "launch_template": "inputs/launch_templates/sensitivity/phi3/phi3_B.json",
     "position_translation": {
       "40": 38
     },

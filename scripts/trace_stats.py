@@ -6,8 +6,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-TRACES = ROOT / "data" / "traces"
-OUT = ROOT / "derived_results" / "trace_statistics.csv"
+TRACES = ROOT / "inputs" / "traces"
+OUT = ROOT / "analysis" / "trace_statistics.csv"
 
 csv.field_size_limit(sys.maxsize)
 records = {}

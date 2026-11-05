@@ -1,0 +1,76 @@
+{
+  "canonical_experiment_id": "exp24",
+  "canonicalization": {
+    "author": "scripts/build_expert_references.py",
+    "date": "2026-08-18",
+    "original_vs_corrected": "verbatim boxes",
+    "role": "mechanical transcription; trace-semantic correction where declared"
+  },
+  "dimensions": [
+    {
+      "archive_to_expert_scale": 1000000.0,
+      "arff_attribute": "NUM0",
+      "kind": "numeric",
+      "maximum": 20.0,
+      "minimum": 0.0,
+      "name": "t0",
+      "unit": "s"
+    },
+    {
+      "archive_to_expert_scale": 1000000.0,
+      "arff_attribute": "NUM1",
+      "kind": "numeric",
+      "maximum": 10.0,
+      "minimum": 0.0,
+      "name": "t1",
+      "unit": "s"
+    },
+    {
+      "archive_to_expert_scale": 1.0,
+      "arff_attribute": "NUM2",
+      "kind": "numeric",
+      "maximum": 18.0,
+      "minimum": 12.0,
+      "name": "distance",
+      "unit": "m"
+    }
+  ],
+  "dot_path": "inputs/expert_trees/dot/exp24_expert.dot",
+  "evaluator": {
+    "satisfied_boxes": [
+      {
+        "distance": {
+          "lower_exclusive": 12.0,
+          "upper_inclusive": 15.1
+        },
+        "t0": {
+          "lower_exclusive": 3.25,
+          "upper_inclusive": 20.0
+        },
+        "t1": {
+          "lower_exclusive": 0.0,
+          "upper_inclusive": 10.0
+        }
+      }
+    ],
+    "type": "satisfied_region_union"
+  },
+  "original_reference": {
+    "author_identifier_verbatim": "fedformi_new",
+    "case": 2,
+    "creation_date_verbatim": "Thu May 16 00:11:33 2024",
+    "path": "inputs/expert_trees/original_accuracy_scripts/AccuracyCC2.py",
+    "role": "expert prediction and original grid evaluator",
+    "sha256": "ed32352fc53ebad8beaaa40c8f813a2f72f82c352f8b61204c8303f7158ef741"
+  },
+  "pdf_path": "inputs/expert_trees/pdf/exp24_expert.pdf",
+  "requirement_family": "CC2",
+  "schema_version": 1,
+  "trace_witness_derivation": {
+    "extrema": null,
+    "representative_trace_check_mutations": null,
+    "status": "expert_region",
+    "witness": null
+  },
+  "vector_path": "inputs/expert_trees/svg/exp24_expert.svg"
+}

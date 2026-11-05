@@ -15,8 +15,8 @@ from j48_tree import normalized_signature, numeric_thresholds, parse, to_dot
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "raw_results" / "rq1_rq2"
-OUT = ROOT / "derived_results" / "tool_trees"
-MODAL = ROOT / "derived_results" / "modal_trees"
+OUT = ROOT / "analysis" / "tool_trees"
+MODAL = ROOT / "analysis" / "modal_trees"
 
 
 def read_rows(path: Path) -> list[dict[str, str]]:
@@ -138,7 +138,7 @@ def main() -> None:
                          "pdf_command": f"dot -Tpdf {stem.with_suffix('.dot').relative_to(ROOT)} -o {pdf.relative_to(ROOT)}"})
     for name, data in (("tool_tree_inventory.csv", inventory), ("modal_tree_selection.csv", selections),
                        ("appendix_tool_tree_manifest.csv", appendix)):
-        with (ROOT / "derived_results" / name).open("w", newline="") as stream:
+        with (ROOT / "analysis" / name).open("w", newline="") as stream:
             writer = csv.DictWriter(stream, fieldnames=list(data[0])); writer.writeheader(); writer.writerows(data)
     print(f"tool trees: {len(inventory)} run slots; {sum(bool(r['representative_seed'] != '') for r in selections)} modal selections")
 

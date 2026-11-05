@@ -1,0 +1,104 @@
+{
+  "canonical_experiment_id": "exp32",
+  "canonicalization": {
+    "author": "scripts/build_expert_references.py",
+    "date": "2026-08-18",
+    "original_vs_corrected": "verbatim boxes",
+    "role": "mechanical transcription; trace-semantic correction where declared"
+  },
+  "dimensions": [
+    {
+      "archive_to_expert_scale": 1000000.0,
+      "arff_attribute": "NUM0",
+      "kind": "numeric",
+      "maximum": 25.0,
+      "minimum": 0.0,
+      "name": "t0",
+      "unit": "s"
+    },
+    {
+      "archive_to_expert_scale": 1000000.0,
+      "arff_attribute": "NUM1",
+      "kind": "numeric",
+      "maximum": 75.0,
+      "minimum": 25.0,
+      "name": "t1",
+      "unit": "s"
+    },
+    {
+      "archive_to_expert_scale": 1.0,
+      "arff_attribute": "NUM2",
+      "kind": "numeric",
+      "maximum": 10.0,
+      "minimum": 5.0,
+      "name": "distance",
+      "unit": "m"
+    }
+  ],
+  "dot_path": "inputs/expert_trees/dot/exp32_expert.dot",
+  "evaluator": {
+    "satisfied_boxes": [
+      {
+        "distance": {
+          "lower_exclusive": 5.0,
+          "upper_inclusive": 7.4
+        },
+        "t0": {
+          "lower_exclusive": 0.0,
+          "upper_inclusive": 18.2
+        },
+        "t1": {
+          "lower_exclusive": 25.0,
+          "upper_inclusive": 75.0
+        }
+      },
+      {
+        "distance": {
+          "lower_exclusive": 5.0,
+          "upper_inclusive": 8.9
+        },
+        "t0": {
+          "lower_exclusive": 18.2,
+          "upper_inclusive": 25.0
+        },
+        "t1": {
+          "lower_exclusive": 25.0,
+          "upper_inclusive": 75.0
+        }
+      },
+      {
+        "distance": {
+          "lower_exclusive": 8.9,
+          "upper_inclusive": 9.3
+        },
+        "t0": {
+          "lower_exclusive": 18.2,
+          "upper_inclusive": 25.0
+        },
+        "t1": {
+          "lower_exclusive": 25.0,
+          "upper_inclusive": 39.6
+        }
+      }
+    ],
+    "type": "satisfied_region_union"
+  },
+  "original_reference": {
+    "author_identifier_verbatim": "fedformi_new",
+    "case": 2,
+    "creation_date_verbatim": "Thu May 16 00:11:33 2024",
+    "path": "inputs/expert_trees/original_accuracy_scripts/AccuracyCCx.py",
+    "role": "expert prediction and original grid evaluator",
+    "sha256": "89fb6aefa8503aba9328eee154d50a4043bf2c027548673ecb0796a6921383d4"
+  },
+  "pdf_path": "inputs/expert_trees/pdf/exp32_expert.pdf",
+  "requirement_family": "CCX",
+  "schema_version": 1,
+  "trace_witness_derivation": {
+    "extrema": null,
+    "representative_trace_check_mutations": null,
+    "status": "expert_region",
+    "witness": null
+  },
+  "vector_path": "inputs/expert_trees/svg/exp32_expert.svg"
+}

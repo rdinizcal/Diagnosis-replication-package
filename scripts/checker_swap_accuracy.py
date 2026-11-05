@@ -11,7 +11,7 @@ from pathlib import Path
 import numpy as np
 from scipy.interpolate import interp1d
 
-TRACES = Path(__file__).resolve().parents[1] / "data" / "traces"
+TRACES = Path(__file__).resolve().parents[1] / "inputs" / "traces"
 # feature -> (param index, unit divisor). NUM0=lo(us), NUM1=hi(us), NUM2=thr.
 FEAT = {"NUM0": (0, 1e6), "NUM1": (1, 1e6), "NUM2": (2, 1.0)}
 CCX_RANGE = (5.0, 10.0)

@@ -133,7 +133,7 @@ def main() -> None:
             },
             "omissions": {
                 "temp.py": "duplicate generated checker program; formulas and verdicts retained in generations/cache",
-                "run_requirement_copy": "duplicate of immutable requirement under data/requirements",
+                "run_requirement_copy": "duplicate of immutable requirement under inputs/requirements",
             },
         }
 

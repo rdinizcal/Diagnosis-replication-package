@@ -72,7 +72,7 @@
   },
   "input": {
     "output_dir": "raw_results/rerun/rq3/phi2/G/seed3",
-    "requirement_file": "data/requirements/phi2/property_phi2_cutin.py",
+    "requirement_file": "inputs/requirements/phi2/property_phi2_cutin.py",
     "traces_file": "na"
   },
   "mutation": {
@@ -114,7 +114,7 @@
     ],
     "historical_position_namespace": "archived_2025_preorder_encoder",
     "label_rationale": "guided: domain-plausible narrowed domains; one mutation at a time",
-    "launch_template": "evaluation_inputs/sensitivity/phi2/phi2_G.json",
+    "launch_template": "inputs/launch_templates/sensitivity/phi2/phi2_G.json",
     "position_translation": {},
     "run_record": "raw_results/rq3_sensitivity/phi2/G/seed3/summary.json",
     "tool_commit_for_archived_run": "UNRECORDED",

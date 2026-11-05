@@ -48,7 +48,7 @@ def main():
     with (ROOT / "experiments/registry.csv").open(newline="") as f: registry = list(csv.DictReader(f))
     if [r["paper_experiment_id"] for r in registry] != [f"exp{i}" for i in range(1, 35)]:
         errors += fail("canonical registry is not exactly exp1..exp34 in order")
-    with (ROOT / "data/provenance/inputs.csv").open(newline="") as f:
+    with (ROOT / "inputs/provenance/inputs.csv").open(newline="") as f:
         for row in csv.DictReader(f):
             p = ROOT / row["artifact_path"]
             if not p.is_file() or sha(p) != row["sha256"]: errors += fail(f"input checksum mismatch: {p}")

@@ -1,0 +1,61 @@
+{
+  "canonical_experiment_id": "exp2",
+  "canonicalization": {
+    "author": "scripts/build_expert_references.py",
+    "date": "2026-08-18",
+    "original_vs_corrected": "trace-derived canonical rule",
+    "role": "mechanical transcription; trace-semantic correction where declared"
+  },
+  "dimensions": [
+    {
+      "archive_to_expert_scale": 1000000.0,
+      "arff_attribute": "NUM0",
+      "kind": "numeric",
+      "maximum": 10.0,
+      "minimum": 0.0,
+      "name": "t0",
+      "unit": "s"
+    },
+    {
+      "archive_to_expert_scale": 1000000.0,
+      "arff_attribute": "NUM1",
+      "kind": "numeric",
+      "maximum": 30.0,
+      "minimum": 10.0,
+      "name": "t1",
+      "unit": "s"
+    },
+    {
+      "archive_to_expert_scale": 1.0,
+      "arff_attribute": "NUM2",
+      "kind": "numeric",
+      "maximum": 140.0,
+      "minimum": 100.0,
+      "name": "speed",
+      "unit": "mph"
+    }
+  ],
+  "dot_path": "inputs/expert_trees/dot/exp2_expert.dot",
+  "evaluator": {
+    "rule": "speed > vehicle_speed(t1); t0 is irrelevant",
+    "type": "trace_rule"
+  },
+  "original_reference": {
+    "author_identifier_verbatim": "fedformi_new",
+    "case": 2,
+    "creation_date_verbatim": "Thu May 16 00:11:33 2024",
+    "path": "inputs/expert_trees/original_accuracy_scripts/AccuracyAT1.py",
+    "role": "expert prediction and original grid evaluator",
+    "sha256": "7854ea71f24bdb511dbf242aa63de2b2e5b43a6197d111a6127097d75791ee2e"
+  },
+  "pdf_path": "inputs/expert_trees/pdf/exp2_expert.pdf",
+  "requirement_family": "AT1",
+  "schema_version": 1,
+  "trace_witness_derivation": {
+    "extrema": "inputs/trace_witnesses/expert/exp2_extrema.json",
+    "representative_trace_check_mutations": "inputs/trace_witnesses/expert/exp2_representative_mutations.csv",
+    "status": "trace_rule_with_witness",
+    "witness": "inputs/trace_witnesses/expert/exp2.csv"
+  },
+  "vector_path": "inputs/expert_trees/svg/exp2_expert.svg"
+}

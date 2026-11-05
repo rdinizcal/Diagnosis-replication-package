@@ -20,13 +20,13 @@ def require(condition: bool, message: str) -> None:
 
 
 def main() -> None:
-    rq3 = rows(ROOT / "derived_results/rq3_per_run.csv")
-    catalogue = rows(ROOT / "derived_results/rq3_configuration_catalogue.csv")
-    rq3_validation = json.loads((ROOT / "derived_results/rq3_configuration_validation.json").read_text())
+    rq3 = rows(ROOT / "analysis/rq3_per_run.csv")
+    catalogue = rows(ROOT / "analysis/rq3_configuration_catalogue.csv")
+    rq3_validation = json.loads((ROOT / "analysis/rq3_configuration_validation.json").read_text())
     require(len(rq3) == 140 and len(catalogue) == 28, "RQ3 coverage")
     require(rq3_validation["status"] == "pass" and rq3_validation["configurations"] == 140,
             "RQ3 executable configurations")
-    require(all(int(row["n_runs"]) == 5 for row in rows(ROOT / "derived_results/table9_authoritative.csv")), "RQ3 five seeds")
+    require(all(int(row["n_runs"]) == 5 for row in rows(ROOT / "analysis/table9_authoritative.csv")), "RQ3 five seeds")
     require(all((ROOT / row["launch_template"]).is_file() for row in catalogue), "RQ3 launch templates")
     print("OK RQ3: 140 raw runs, 28 configurations, generated Table 9")
 
@@ -36,9 +36,9 @@ def main() -> None:
     require(len(rows(op / "coverage_matrix.csv")) == 16, "operator matrix")
     print("OK operators: OP1-OP15 + OP4a fixtures and four-way matrix")
 
-    paired = rows(ROOT / "derived_results/rtamt_paired_verdicts.csv")
+    paired = rows(ROOT / "analysis/rtamt_paired_verdicts.csv")
     require(len(paired) == 4350 and all(row["classification"] == "match" for row in paired), "RTAMT differential")
-    for row in rows(ROOT / "derived_results/rtamt_speedups.csv"):
+    for row in rows(ROOT / "analysis/rtamt_speedups.csv"):
         expected = float(row["z3_seconds_per_call"]) / float(row["rtamt_seconds_per_call"])
         require(abs(expected - float(row["computed_speedup"])) < 0.01, "computed speedup")
     hardware = json.loads((ROOT / "experiments/checker_swap_rtamt/hardware.json").read_text())
@@ -53,12 +53,12 @@ def main() -> None:
     print("OK implementation fix: 8 traces, 32 verdicts, executed retry witness")
 
     baseline = rows(ROOT / "raw_results/baseline_td_sb_tempsy/outcomes.csv")
-    inputs = ROOT / "experiments/baseline_td_sb_tempsy/inputs"
+    inputs = ROOT / "inputs/baseline_td_sb_tempsy"
     require(len(baseline) == 17, "baseline outcomes")
     require(all((inputs / "CsvLogs" / row["trace_csv"]).is_file() for row in baseline), "baseline traces")
     require(all((inputs / "XmiProperties" / row["specification_xmi"]).is_file()
                 for row in baseline if row["specification_xmi"]), "baseline specifications")
-    counts = rows(ROOT / "derived_results/baseline_outcome_counts.csv")
+    counts = rows(ROOT / "analysis/baseline_outcome_counts.csv")
     require([int(row["count"]) for row in counts] == [5, 4, 8], "baseline outcome counts")
     print("OK baseline: 17 outcomes, inputs present, 5 diagnoses / 4 no output / 8 unsupported")
 

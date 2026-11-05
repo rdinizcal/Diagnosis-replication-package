@@ -72,7 +72,7 @@
   },
   "input": {
     "output_dir": "raw_results/rerun/rq3/RR/B/seed0",
-    "requirement_file": "data/requirements/RR/property_RR_RR.py",
+    "requirement_file": "inputs/requirements/RR/property_RR_RR.py",
     "traces_file": "na"
   },
   "mutation": {
@@ -123,7 +123,7 @@
     ],
     "historical_position_namespace": "archived_2025_preorder_encoder",
     "label_rationale": "broad: widest archived admissible domains and alternatives",
-    "launch_template": "evaluation_inputs/sensitivity/RR/RR_B.json",
+    "launch_template": "inputs/launch_templates/sensitivity/RR/RR_B.json",
     "position_translation": {},
     "run_record": "raw_results/rq3_sensitivity/RR/B/seed0/summary.json",
     "tool_commit_for_archived_run": "UNRECORDED",

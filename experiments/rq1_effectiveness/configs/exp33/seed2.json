@@ -72,7 +72,7 @@
   },
   "input": {
     "output_dir": "raw_results/rerun/rq1_rq2/exp33/seed2",
-    "requirement_file": "data/requirements/RR/property_RR_RR.py",
+    "requirement_file": "inputs/requirements/RR/property_RR_RR.py",
     "traces_file": "na"
   },
   "mutation": {

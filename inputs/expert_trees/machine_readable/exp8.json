@@ -1,0 +1,90 @@
+{
+  "canonical_experiment_id": "exp8",
+  "canonicalization": {
+    "author": "scripts/build_expert_references.py",
+    "date": "2026-08-18",
+    "original_vs_corrected": "verbatim boxes",
+    "role": "mechanical transcription; trace-semantic correction where declared"
+  },
+  "dimensions": [
+    {
+      "archive_to_expert_scale": 100,
+      "arff_attribute": "NUM0",
+      "kind": "numeric",
+      "maximum": 15.0,
+      "minimum": 0.0,
+      "name": "t0",
+      "unit": "s"
+    },
+    {
+      "archive_to_expert_scale": 100,
+      "arff_attribute": "NUM1",
+      "kind": "numeric",
+      "maximum": 45.0,
+      "minimum": 15.0,
+      "name": "t1",
+      "unit": "s"
+    },
+    {
+      "archive_to_expert_scale": 1000000.0,
+      "arff_attribute": "NUM4",
+      "kind": "numeric",
+      "maximum": 5.0,
+      "minimum": 0.0,
+      "name": "delay",
+      "unit": "s"
+    }
+  ],
+  "dot_path": "inputs/expert_trees/dot/exp8_expert.dot",
+  "evaluator": {
+    "satisfied_boxes": [
+      {
+        "delay": {
+          "lower_exclusive": 0.0,
+          "upper_inclusive": 5.0
+        },
+        "t0": {
+          "lower_exclusive": 1.76,
+          "upper_inclusive": 15.0
+        },
+        "t1": {
+          "lower_exclusive": 15.0,
+          "upper_inclusive": 45.0
+        }
+      },
+      {
+        "delay": {
+          "lower_exclusive": 0.0,
+          "upper_inclusive": 1.2
+        },
+        "t0": {
+          "lower_exclusive": 0.0,
+          "upper_inclusive": 1.76
+        },
+        "t1": {
+          "lower_exclusive": 15.0,
+          "upper_inclusive": 45.0
+        }
+      }
+    ],
+    "type": "satisfied_region_union"
+  },
+  "original_reference": {
+    "author_identifier_verbatim": "fedformi_new",
+    "case": 2,
+    "creation_date_verbatim": "Thu May 16 00:11:33 2024",
+    "path": "inputs/expert_trees/original_accuracy_scripts/AccuracyAT52.py",
+    "role": "expert prediction and original grid evaluator",
+    "sha256": "f30f993fdc5c5309e901a50afce1390aa1e281f083f4e9aafc1f407c21c2f651"
+  },
+  "pdf_path": "inputs/expert_trees/pdf/exp8_expert.pdf",
+  "requirement_family": "AT5",
+  "schema_version": 1,
+  "trace_witness_derivation": {
+    "extrema": null,
+    "representative_trace_check_mutations": null,
+    "status": "expert_region",
+    "witness": null
+  },
+  "vector_path": "inputs/expert_trees/svg/exp8_expert.svg"
+}

@@ -11,11 +11,11 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "derived_results"
+OUT = ROOT / "analysis"
 RQ3_CONFIGS = ROOT / "experiments" / "rq3_sensitivity" / "configs"
 
 # Historical position IDs belong to the 2025 encoder used by the launch templates in
-# evaluation_inputs/sensitivity. Values below are the unmutated literals of the bundled
+# inputs/launch_templates/sensitivity. Values below are the unmutated literals of the bundled
 # original properties, as every archived ARFF header and data row confirms.
 ORIGINALS = {
     "phi2": {12: -3.0, 15: 1.5},

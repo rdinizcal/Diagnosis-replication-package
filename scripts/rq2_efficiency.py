@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "raw_results" / "rq1_rq2"
-OUT = ROOT / "derived_results"
+OUT = ROOT / "analysis"
 
 
 def rows(path: Path) -> list[dict[str, str]]:

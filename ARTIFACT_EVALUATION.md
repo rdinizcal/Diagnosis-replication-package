@@ -52,7 +52,7 @@ measurements.
 - Active configuration and scripts use repository-relative paths; historical
   absolute paths may appear only as inert provenance fields in archived data.
 - Clean-checkout execution does not depend on untracked sibling files.
-- Runtime writes are confined to `derived_results/` and
+- Runtime writes are confined to `analysis/` and
   `raw_results/rerun/`; archived inputs remain immutable.
 - Runtime tests use `--network none` after the documented environment build.
 - Canonical experiment IDs are `exp1` through `exp34`; historical aliases are

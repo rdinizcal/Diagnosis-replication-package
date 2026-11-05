@@ -1,0 +1,144 @@
+{
+  "canonical_experiment_id": "exp34",
+  "canonicalization": {
+    "author": "scripts/build_expert_references.py",
+    "date": "2026-08-18",
+    "original_vs_corrected": "corrected_from_trace; original AccuracyRR boxes retained in provenance",
+    "role": "mechanical transcription; trace-semantic correction where declared"
+  },
+  "dimensions": [
+    {
+      "archive_to_expert_scale": 1.0,
+      "arff_attribute": "LOGICALS2",
+      "kind": "categorical",
+      "maximum": 2.0,
+      "minimum": 0.0,
+      "name": "logical",
+      "unit": "categorical",
+      "values": [
+        "And",
+        "Or",
+        "Implies"
+      ]
+    },
+    {
+      "archive_to_expert_scale": 1.0,
+      "arff_attribute": "NUM2",
+      "kind": "numeric",
+      "maximum": 2.5,
+      "minimum": 0.0,
+      "name": "d2obs",
+      "unit": "m"
+    },
+    {
+      "archive_to_expert_scale": 1.0,
+      "arff_attribute": "NUM3",
+      "kind": "numeric",
+      "maximum": 7.0,
+      "minimum": 5.0,
+      "name": "distance",
+      "unit": "m"
+    }
+  ],
+  "dot_path": "inputs/expert_trees/dot/exp34_expert.dot",
+  "evaluator": {
+    "rule": "forall t: logical(d2obs(t) > d2obs_threshold, desired_x(t)-current_x(t) < distance)",
+    "type": "trace_rule"
+  },
+  "original_reference": {
+    "author_identifier_verbatim": "fedformi_new",
+    "case": 2,
+    "creation_date_verbatim": "Thu May 16 00:11:33 2024",
+    "known_issue": "Original AccuracyRR axis/units do not match the authoritative mutation registry; canonical evaluator is trace-derived.",
+    "original_dimensions": [
+      {
+        "archive_to_expert_scale": 1.0,
+        "arff_attribute": "LOGICALS2",
+        "kind": "categorical",
+        "maximum": 2.0,
+        "minimum": 0.0,
+        "name": "logical",
+        "unit": "categorical",
+        "values": [
+          "And",
+          "Or"
+        ]
+      },
+      {
+        "archive_to_expert_scale": 1.0,
+        "arff_attribute": "NUM2",
+        "kind": "numeric",
+        "maximum": 2.5,
+        "minimum": 0.0,
+        "name": "d2obs",
+        "unit": "m"
+      },
+      {
+        "archive_to_expert_scale": 1.0,
+        "arff_attribute": "NUM3",
+        "kind": "numeric",
+        "maximum": 700.0,
+        "minimum": 500.0,
+        "name": "distance",
+        "unit": "cm"
+      }
+    ],
+    "original_satisfied_boxes": [
+      {
+        "d2obs": {
+          "lower_exclusive": 0.0,
+          "upper_inclusive": 0.687
+        },
+        "distance": {
+          "lower_exclusive": 548,
+          "upper_inclusive": 700
+        },
+        "logical": {
+          "lower_exclusive": 0.0,
+          "upper_inclusive": 1.0
+        }
+      },
+      {
+        "d2obs": {
+          "lower_exclusive": 0.0,
+          "upper_inclusive": 0.687
+        },
+        "distance": {
+          "lower_exclusive": 500,
+          "upper_inclusive": 548
+        },
+        "logical": {
+          "lower_exclusive": 1.0,
+          "upper_inclusive": 2.0
+        }
+      },
+      {
+        "d2obs": {
+          "lower_exclusive": 0.0,
+          "upper_inclusive": 2.5
+        },
+        "distance": {
+          "lower_exclusive": 548,
+          "upper_inclusive": 700
+        },
+        "logical": {
+          "lower_exclusive": 1.0,
+          "upper_inclusive": 2.0
+        }
+      }
+    ],
+    "path": "inputs/expert_trees/original_accuracy_scripts/AccuracyRR.py",
+    "role": "expert prediction and original grid evaluator",
+    "sha256": "0f13b755b2aa003b30b2053e3b7ce41d2bacc84c57bcd899a8cf79ef2ad8b15c"
+  },
+  "pdf_path": "inputs/expert_trees/pdf/exp34_expert.pdf",
+  "requirement_family": "RR",
+  "schema_version": 1,
+  "trace_witness_derivation": {
+    "extrema": "inputs/trace_witnesses/expert/exp34_extrema.json",
+    "representative_trace_check_mutations": "inputs/trace_witnesses/expert/exp34_representative_mutations.csv",
+    "status": "trace_rule_with_witness",
+    "witness": "inputs/trace_witnesses/expert/exp34.csv"
+  },
+  "vector_path": "inputs/expert_trees/svg/exp34_expert.svg"
+}

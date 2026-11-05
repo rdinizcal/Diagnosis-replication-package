@@ -72,8 +72,8 @@
   },
   "input": {
     "output_dir": "raw_results/rerun/rq1_rq2/exp24/seed0",
-    "requirement_file": "data/requirements/CC2/CC2_CC011.py",
-    "traces_file": "data/traces/tracesCC.csv"
+    "requirement_file": "inputs/requirements/CC2/CC2_CC011.py",
+    "traces_file": "inputs/traces/tracesCC.csv"
   },
   "mutation": {
     "allowed_changes": {

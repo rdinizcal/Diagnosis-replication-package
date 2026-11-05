@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIGS = ROOT / "experiments" / "rq3_sensitivity" / "configs"
-TEMPLATES = ROOT / "evaluation_inputs" / "sensitivity"
+TEMPLATES = ROOT / "inputs" / "launch_templates" / "sensitivity"
 RUNS = ROOT / "raw_results" / "rq3_sensitivity"
 
 ORIGINALS = {

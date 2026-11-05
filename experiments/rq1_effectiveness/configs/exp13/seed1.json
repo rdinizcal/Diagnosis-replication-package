@@ -72,8 +72,8 @@
   },
   "input": {
     "output_dir": "raw_results/rerun/rq1_rq2/exp13/seed1",
-    "requirement_file": "data/requirements/AT6A/AT6A_AT192.py",
-    "traces_file": "data/traces/tracesAT.csv"
+    "requirement_file": "inputs/requirements/AT6A/AT6A_AT192.py",
+    "traces_file": "inputs/traces/tracesAT.csv"
   },
   "mutation": {
     "allowed_changes": {

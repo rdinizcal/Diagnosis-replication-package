@@ -30,7 +30,7 @@ csv.field_size_limit(10**7)
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RESULTS = os.path.join(REPO, "raw_results", "rq1_rq2")
 CONFIGS = os.path.join(REPO, "experiments", "rq1_effectiveness", "configs")
-TRACES = os.path.join(REPO, "data", "traces", "tracesAT.csv")
+TRACES = os.path.join(REPO, "inputs", "traces", "tracesAT.csv")
 N = 100
 
 
@@ -117,19 +117,19 @@ CFG = {
                                dict(rpm=(2913.192700, 3200.0), speed=(35.960581, 40.0))])),
     14: dict(req="AT6A", dims=[D("t0", 20e6, 40e6, US, attr="NUM1"), D("rpm", 2800, 3200, attr="NUM2"),
                                D("t", 2e6, 6e6, US, attr="NUM4"), D("speed", 30, 40, attr="NUM5")],
-             expert=("func", "data/requirements/AT6A/AT6A_AT192.py")),
+             expert=("func", "inputs/requirements/AT6A/AT6A_AT192.py")),
     15: dict(req="AT6B", dims=[D("rpm", 2800, 3200), D("speed", 40, 60)],
              expert=("boxes", [dict(rpm=(2800.0, 2830.707000), speed=(40.0, 60.0)),
                                dict(rpm=(2830.707000, 3200.0), speed=(51.918594, 60.0))])),
     16: dict(req="AT6B", dims=[D("t0", 20e6, 40e6, US, attr="NUM1"), D("rpm", 2800, 3200, attr="NUM2"),
                                D("t", 4e6, 12e6, US, attr="NUM4"), D("speed", 40, 60, attr="NUM5")],
-             expert=("func", "data/requirements/AT6B/AT6B_AT272.py")),
+             expert=("func", "inputs/requirements/AT6B/AT6B_AT272.py")),
     17: dict(req="AT6C", dims=[D("rpm", 2800, 3200), D("speed", 50, 80)],
              expert=("boxes", [dict(rpm=(2800.0, 2973.074700), speed=(50.0, 80.0)),
                                dict(rpm=(2973.074700, 3200.0), speed=(70.976820, 80.0))])),
     18: dict(req="AT6C", dims=[D("t0", 20e6, 40e6, US, attr="NUM1"), D("rpm", 2800, 3200, attr="NUM2"),
                                D("t", 15e6, 25e6, US, attr="NUM4"), D("speed", 50, 80, attr="NUM5")],
-             expert=("func", "data/requirements/AT6C/AT6C_AT311.py")),
+             expert=("func", "inputs/requirements/AT6C/AT6C_AT311.py")),
     19: dict(req="AT6ABC", dims=[D("rpm", 2800, 3200), D("speed", 50, 80)],
              expert=("boxes", [dict(rpm=(2800.0, 2973.561657), speed=(50.0, 80.0)),
                            dict(rpm=(2973.561657, 3200.0), speed=(70.831811, 80.0))])),
@@ -174,7 +174,7 @@ CFG = {
              expert=("func", "RR")),
     20: dict(req="AT6ABC", dims=[D("t0", 20e6, 40e6, US, attr="NUM13"), D("rpm", 2800, 3200, attr="NUM14"),
                                  D("t", 15e6, 25e6, US, attr="NUM16"), D("speed", 50, 80, attr="NUM17")],
-             expert=("func", "data/requirements/AT6ABC/AT6ABC_AT232.py")),
+             expert=("func", "inputs/requirements/AT6ABC/AT6ABC_AT232.py")),
     32: dict(req="CCX", dims=[D("t0", 0, 25e6, US), D("t1", 25e6, 75e6, US), D("v", 5, 10)],
              expert=("boxes", [dict(t0=(0.0, 18.2), t1=(25.0, 75.0), v=(5.0, 7.4)),
                                dict(t0=(18.2, 25.0), t1=(25.0, 75.0), v=(5.0, 8.9)),
@@ -258,7 +258,7 @@ def at6_bounds(rel, T, speed=False):
     return run[np.clip(np.searchsorted(ts, np.asarray(T), side="right") - 1, 0, len(ts) - 1)]
 
 
-RR_PROP = os.path.join(REPO, "data", "requirements", "RR", "property_RR_RR.py")
+RR_PROP = os.path.join(REPO, "inputs", "requirements", "RR", "property_RR_RR.py")
 _RR = {}
 
 
@@ -304,7 +304,7 @@ def expert_tensor(req, axes, dims):
     names = [d["name"] for d in dims]
     nd = len(axes)
     ix = {n: i for i, n in enumerate(names)}
-    if req.startswith("data/"):                 # an AT6 requirement path
+    if req.startswith("inputs/"):               # an AT6 requirement path
         return at6_expert(req, axes[ix["t0"]], axes[ix["rpm"]], axes[ix["t"]], axes[ix["speed"]])
     if req == "RR":
         opd = next(d for d in dims if d["kind"] == "cat")
@@ -719,7 +719,7 @@ def latex_rows(rows):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output", default=os.path.join(REPO, "derived_results"))
+    parser.add_argument("--output", default=os.path.join(REPO, "analysis"))
     parser.add_argument("--ids", default="all", help="comma-separated experiment numbers")
     args = parser.parse_args()
     output = Path(args.output); output.mkdir(parents=True, exist_ok=True)
@@ -760,7 +760,7 @@ def main():
                               "checker_undecided_candidates": reconciled["undecided_count"],
                               "checker_undecided_excluded_from_tree_evaluation": "true",
                               "tool_tree": str(tree.relative_to(Path(REPO))),
-                              "expert_tree": f"references/expert_trees/machine_readable/exp{pe}.json"})
+                              "expert_tree": f"inputs/expert_trees/machine_readable/exp{pe}.json"})
         aggregate_rows.append({"req": result["req"], "exp": f"exp{pe}", "n_seeds": 10,
                                "n_scored": result["n"], "precision_median": result["p_med"],
                                "recall_median": result["r_med"], "precision_iqr": result["p_iqr"],
@@ -779,7 +779,7 @@ def main():
                               "tp": "", "tn": "", "fp": "", "fn": "", "precision_pct": "", "recall_pct": "",
                               "grid_points": "", "checker_undecided_candidates": row["undecided_count"],
                               "checker_undecided_excluded_from_tree_evaluation": "true",
-                              "tool_tree": "", "expert_tree": f"references/expert_trees/machine_readable/exp{pe}.json"})
+                              "tool_tree": "", "expert_tree": f"inputs/expert_trees/machine_readable/exp{pe}.json"})
     seed_rows.sort(key=lambda row: (int(row["experiment_id"][3:]), int(row["seed"])))
     write_csv(output / "rq1_per_seed_confusion.csv", seed_rows)
     write_csv(output / "appendix_precision_recall_authoritative.csv", aggregate_rows)

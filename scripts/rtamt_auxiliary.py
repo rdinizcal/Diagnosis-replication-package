@@ -10,7 +10,7 @@ from checker_swap_accuracy import at1_accuracy, ccx_accuracy
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "raw_results" / "checker_swap_rtamt"
-OUT = ROOT / "derived_results"
+OUT = ROOT / "analysis"
 
 RUNS = {"AT1": "AT1_seed1", "CCx": "CCX_seed0"}
 # The Z3 side is the original campaign's run of the same requirement and configuration.

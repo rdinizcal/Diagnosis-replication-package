@@ -32,8 +32,8 @@
   ],
   "timeout_per_requirement_sec": 3600,
   "inputs": {
-    "traces": "experiments/baseline_td_sb_tempsy/inputs/CsvLogs",
-    "specifications": "experiments/baseline_td_sb_tempsy/inputs/XmiProperties"
+    "traces": "inputs/baseline_td_sb_tempsy/CsvLogs",
+    "specifications": "inputs/baseline_td_sb_tempsy/XmiProperties"
   },
   "outcomes": "raw_results/baseline_td_sb_tempsy/outcomes.csv"
 }

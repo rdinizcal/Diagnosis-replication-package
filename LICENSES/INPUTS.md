@@ -1,6 +1,6 @@
 # Fixed-input licensing
 
-`data/provenance/inputs.csv` identifies the origin and pinned commit of each
+`inputs/provenance/inputs.csv` identifies the origin and pinned commit of each
 fixed requirement and trace. Inputs copied from Diagnosis commit
 `05d0750395972662e9be0a1083b09a6dce7e3e65` are covered by the MIT license
 bundled at `tool/LICENSE`. The running-example inputs at commit

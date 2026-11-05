@@ -18,7 +18,7 @@ from diagnosis.lang.theodore_parser import load_formula_from_property  # noqa: E
 from diagnosis.mutation.api import _mutate_by_positions, _walk  # noqa: E402
 
 CONFIGS = ROOT / "experiments" / "rq3_sensitivity" / "configs"
-OUT = ROOT / "derived_results" / "rq3_configuration_validation.json"
+OUT = ROOT / "analysis" / "rq3_configuration_validation.json"
 
 
 def node_value(node):
