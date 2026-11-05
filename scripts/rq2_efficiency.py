@@ -133,14 +133,15 @@ def latex_rows(table8: list[dict]) -> str:
         value = float(seconds)
         if phase and value < 1: return "$<$1s"
         if value < 120: return f"{value:.0f}s"
-        if value < 5400: return f"{value/60:.0f}min"
+        if value < 3600: return f"{value/60:.0f}min"
         return f"{value/3600:.1f}h"
     def cells(row):
-        exp = int(row["canonical_experiment_id"][3:])
-        mark = "$^{\\dagger\\ddagger}$" if exp in (27, 28, 31) else "$^{\\dagger}$" if exp == 32 else "$^{\\ddagger}$" if exp in (25, 26) else ""
+        # dagger: a seed reached the wall guard; double dagger: no seed produced an informative tree.
+        marks = ("\\dagger" if int(row["n_timeout"]) else "") + ("\\ddagger" if not int(row["n_informative"]) else "")
+        mark = f"$^{{{marks}}}$" if marks else ""
         return (f"\\emph{{{row['canonical_experiment_id']}}} & {duration(row['total_sec_median'])}{mark} & "
                 f"{duration(row['mutation_sec_median'], True)} & {duration(row['trace_check_sec_median'])} & "
-                f"{duration(row['decision_tree_sec_median'], True)} & {float(row['checker_calls_median']):g}")
+                f"{duration(row['decision_tree_sec_median'], True)} & {round(float(row['checker_calls_median']))}")
     lines = []
     for index in range(0, 34, 2):
         if index in (20, 32): lines.append("        \\midrule")
