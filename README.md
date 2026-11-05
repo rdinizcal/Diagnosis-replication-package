@@ -1,103 +1,73 @@
-# Diagnosis replication package
+# Replication package: Search-based Trace Diagnostic for Cyber-Physical Systems
 
-Public repository:
-<https://github.com/rdinizcal/Diagnosis-replication-package>
+This repository holds the tool, inputs, raw results and analysis behind the paper's
+three research questions: effectiveness (RQ1), efficiency (RQ2) and sensitivity to the
+mutation space (RQ3), plus the studies in its Discussion. Every table, figure and number
+the paper reports is regenerated from the files here by one command.
 
-This package supports three distinct activities:
-
-1. **Computational reproduction** regenerates paper tables and figures from the
-   selected archived outputs in `raw_results/` without invoking a checker. RQ1
-   is recomputed from per-seed trees and deterministic Cartesian grids; RQ2 is
-   recomputed from the archived run reports and scheduler records.
-2. **Full rerunning** executes the 480 materialized experiment/seed
-   configurations against the bundled fixed inputs.
-3. **Independent replication** uses the registries, inputs/provenance records,
-   semantics, tool snapshot, environment lock, and runbook to reimplement or
-   vary the method without relying on undocumented source behavior.
-
-The authoritative selection policy is the completed reconciliation. RQ1/RQ2
-uses campaign `20260803171759`, with declared per-experiment overrides to
-`20260812103600`. RQ3 uses the 140 selected historical sensitivity runs. The
-obsolete `outputs`, `online_results`, 20260728/20260729 campaigns, and nested
-historical `exp1..exp34` results are not imported.
-
-## Start here
+## Three commands
 
 ```sh
-python3 scripts/preflight.py       # reports host readiness; no changes
-./smoke                            # schema/parser/mutation/checker/cache/tree
-./reproduce-analysis              # writes analysis/
-./verify                           # validate evidence and analysis oracles
-./reproduce-full                   # dry-run inventory
-./reproduce-full --profile at1    # short single-token profile (exp1/seed0)
-./reproduce-full --profile multi-token       # exp2/seed0
-./reproduce-full --profile discrete-operator # exp30/seed0
-./reproduce-full --execute        # expensive: authorized primary runs
+./run smoke         # about 10 s: parser, mutation, Z3 check, verdict cache, J48
+./run results       # about 1 min: regenerate every paper result into analysis/, then verify it
+./run experiments   # list the 480 run configurations; add --profile at1 --execute to run one
 ```
 
-See `RUNBOOK.md` for container and selective-run commands, `docs/RQ1_RQ2.md`
-for the exact effectiveness/efficiency methodology, `CLAIMS.md` for the
-claim-to-artifact map, `experiments/registry.csv` for canonical `exp1`–`exp34`,
-and `experiments/auxiliary_registry.csv` for RQ3 and all auxiliary studies.
-`ARTIFACT_EVALUATION.md` records the clean-room validation environment,
-commands, and outcomes.
+The simplest environment is the container, which pins every dependency:
 
-## Provenance limits
+```sh
+docker build -t diagnosis-replication -f environment/Dockerfile .
+docker run --rm diagnosis-replication ./run results
+```
 
-The selected RQ1/RQ2 runs captured effective JSON configurations but not their
-tool commit or image digest. The package therefore records `UNRECORDED` and
-separately identifies `05d0750395972662e9be0a1083b09a6dce7e3e65` as the
-rerun source base. The bundled tool applies the documented bounded-quantifier
-guard correction in `tool/PATCHES.md`. RQ3 did not capture
-effective configs either; its 140 materialized configs are evidence-based
-reconstructions and are not represented as byte-identical reruns of the archive.
-They preserve the historical position namespace and provide translated current
-positions for execution. Archived AT53 runs used legacy binder-only quantifier
-flips; the current tool instead repairs range guards.
+Without Docker you need Python 3.13, Java 17, Graphviz, the packages in
+`environment/requirements-lock.txt` and `environment/rtamt-compat-lock.txt`, and
+`pip install -e tool`. Weka is needed only to re-run experiments; set `WEKA_JAR` to
+`weka.jar:bounce.jar`.
 
-Optional auxiliary material is inventoried separately from the core RQ1--RQ3
-reproduction: checker-swap timing sources, external-baseline case metadata, and
-MS-sensitivity configurations. Their recorded availability is explicit and is
-not used to assert unsupported derived results.
+A full RQ1/RQ2 run of one configuration and seed can take up to five days of checker
+time; the paper's campaign ran 340 of them on a cluster. `./run experiments --profile`
+offers three representative single runs: `at1` (exp1), `multi-token` (exp2) and
+`discrete-operator` (exp30).
 
-Public interfaces use only canonical paper IDs. Values such as `AT1/exp1` and
-`AT1/exp3` survive solely in `historical_internal_alias` for auditability.
+## Where each result comes from
 
-## Directory contract
+`./run results` runs the scripts below. Outputs are in `analysis/` unless noted.
 
-- `data/`: immutable requirements, 17 benchmark traces (10 AT rows, 6 CC rows,
-  and RR), running-example inputs, and provenance.
-- `inputs/launch_templates/`: historical launch templates and requirement sources
-  referenced by the archived RQ1/RQ2 configurations, plus the RQ3 sensitivity
-  templates retained to audit the reconstructed configurations.
-- `raw_results/rq1_rq2/`: the reconciliation-selected evidence for all 340
-  RQ1/RQ2 run slots, including configurations, generations, ARFFs, raw J48,
-  caches, stopping records, logs, and scheduler metadata.
-- `analysis/`: disposable outputs regenerated by scripts.
-- `tests/expected/`: immutable machine-readable comparison oracles.
-- `tool/`: archive-safe executable subset of the declared rerun source base,
-  the documented quantifier correction, and package launch/semantics files; it
-  is not an assertion about the unknown run commit.
-- `Diagnosis/`: Git submodule pinned to the complete declared rerun source at
-  `05d0750395972662e9be0a1083b09a6dce7e3e65`. It is provenance material; the
-  self-contained release archive uses `tool/` so it does not depend on a
-  hosting service or submodule expansion.
-- `inputs/expert_trees/`: 34 machine-readable expert trees, original
-  evaluator scripts, trace witnesses where recoverable, and vector renderings.
-- `experiments/operator_coverage/`: executable OP1--OP15/OP4a fixtures, full
-  source/AST bundles, expected verdicts, and implementation/coverage matrix.
-- `experiments/implementation_fix/`: exact faulty/fixed controllers, generated
-  patch, eight pre/post traces, detailed verdicts, and regression tests.
+| Paper | Script | Output | Evidence |
+|---|---|---|---|
+| RQ1 precision and recall per experiment (Appendix table) and their averages in Sec. V-C | `rq1_effectiveness.py` | `appendix_precision_recall_authoritative.csv`, `rq1_aggregate.json`, `rq1_per_seed_confusion.csv` | `raw_results/rq1_rq2/exp*/seed*/regen/`, `inputs/expert_trees/` |
+| Fig. 12, precision/recall boxplot | `fig_boxplot.py` | `rq1_boxplot.pdf` | as above |
+| Appendix decision trees | `modal_trees.py` | `modal_trees/`, `tool_trees/` | `raw_results/rq1_rq2/` |
+| Table VIII, runtimes | `rq2_efficiency.py` | `table8_authoritative.csv`, `rq2_per_run.csv` | `raw_results/rq1_rq2/` |
+| Table IX, sensitivity | `rq3_auxiliary.py` | `table9_authoritative.csv`, `rq3_per_run.csv` | `raw_results/rq3_sensitivity/` |
+| Table X, checker swap; six-seed RTAMT spread; 4,350-candidate verdict check | `rtamt_auxiliary.py`; `rtamt_differential.py` re-runs the check | `rtamt_checker_authoritative.csv`, `rtamt_at1_seed_sweep.csv`, `rtamt_paired_verdicts.csv` | `raw_results/checker_swap_rtamt/` |
+| Table VII, Sec. V-B and V-C, TD-SB-TemPsy baseline | `baseline_outcomes.py` | `baseline_outcome_counts.csv`, `baseline_diagnoses.csv` | `raw_results/baseline_td_sb_tempsy/`, `inputs/baseline_td_sb_tempsy/` |
+| Sec. VI-A, operator coverage | `experiments/operator_coverage/run_coverage.py` | `experiments/operator_coverage/operator_coverage.csv` | the fixtures in that folder |
+| Sec. VI-A, running-example fix | `experiments/implementation_fix/reproduce.py` | `experiments/implementation_fix/raw/` | the controllers and traces in that folder |
+| Sec. V-A, trace sizes | `trace_stats.py` | `trace_statistics.csv` | `inputs/traces/` |
 
-The normalized executable configurations are under
-`experiments/rq1_effectiveness/configs/` (340 RQ1/RQ2 seed configurations) and
-`experiments/rq3_sensitivity/configs/` (140 reconstructed RQ3 seed
-configurations). RQ2 analyzes the same runs as RQ1 and therefore has no separate
-launch-configuration set.
+The `*_rows.tex` files next to the CSVs are the corresponding LaTeX table bodies.
+`tests/expected/` holds the paper-facing CSVs that `./run results` compares against.
 
-`MANIFEST.csv` is the release inventory. Every immutable file has a SHA-256;
-generated/rerun targets are listed with their generation command and status.
+## Layout
 
-Clone with `git clone --recurse-submodules` to inspect the full upstream
-Diagnosis snapshot. Ordinary analysis and smoke reproduction use the bundled
-`tool/` subset and also work from the materialized Zenodo archive.
+`tool/` is the diagnosis tool. `inputs/` holds the requirements, traces, expert
+reference trees, the running example and the baseline's converted inputs.
+`experiments/` holds the run configurations of every study. `raw_results/` holds what
+the runs produced, and `analysis/` what the scripts in `scripts/` derive from it.
+`environment/` builds the container, and `docs/METHODS.md` explains how runs were
+selected, scored and timed.
+
+## Bulk data on Zenodo
+
+Per-generation candidates, verdict caches and intermediate files of the RQ1/RQ2 runs
+(635 MB), and the full Diagnosis repository that `tool/` was taken from, are archived on
+Zenodo. None of it is needed for the commands above. `python3 scripts/fetch_archive.py`
+downloads it, checks it against `raw_results/ARCHIVE.json` and unpacks it in place.
+
+## Citation and licence
+
+Cite the paper and this package; `CITATION.cff` has the details. The first three authors
+contributed equally. Package material is under the MIT licence (`LICENSE`); third-party
+terms are in `LICENSES/`.

@@ -18,3 +18,5 @@ raw_results/rerun/
 Diagnosis/
 .git/
 ci-derived/
+tool_trees_at_run/
+raw_results/archive_downloads/

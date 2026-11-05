@@ -22,4 +22,4 @@ From: python:3.13.5-slim-bookworm
 
 %runscript
     cd /opt/replication
-    exec ./smoke "$@"
+    exec ./run "${@:-smoke}"

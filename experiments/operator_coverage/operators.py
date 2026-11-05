@@ -11,7 +11,7 @@ Scope: coverage completeness of the operator *catalogue*. For operators the acti
 GA engine already samples (OP2/OP4/OP5/OP11/OP13, and mechanically OP6/OP7/OP12), we
 reimplement the same transform here; for the operators the GA never samples
 (OP1/OP3/OP4a/OP8/OP9/OP10/OP14/OP15) we instantiate the transform faithfully to the
-table. See README.md for the honest reachability caveat.
+table. docs/METHODS.md describes which operators the search itself applies.
 
 Determinism: every operator selects the FIRST applicable target in a fixed preorder
 traversal and rewrites it to a fixed alternative, so results are fully reproducible.

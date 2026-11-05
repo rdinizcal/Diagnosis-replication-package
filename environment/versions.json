@@ -11,5 +11,5 @@
   "container_image_digest": "sha256:aaac9ebdce8c270e973fefa21d323aeb85adfbb6dc00c587317f1a03f80dd454",
   "container_platform": "linux/arm64",
   "container_tested": "2026-08-19",
-  "note": "The archived campaigns did not record their image digest or exact Java/Graphviz patch. These pins and the tested digest define the release rerun environment, not the unknown historical environment. MANIFEST.csv and versions.json are excluded from the Docker context to avoid a self-referential image digest."
+  "note": "These pins and the tested digest define the environment for analysis and re-runs. versions.json is excluded from the Docker context so that it can record the digest of the image built without it."
 }

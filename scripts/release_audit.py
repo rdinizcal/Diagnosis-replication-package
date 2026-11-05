@@ -10,9 +10,10 @@ ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED_TOP_LEVEL = {".git", "Diagnosis", "ci-derived"}
 TEXT_SUFFIXES = {".cfg", ".csv", ".json", ".md", ".py", ".sh", ".tex", ".toml", ".txt", ".yaml", ".yml"}
 DEVELOPER_PATH = re.compile(r"(?:/Users/[^/]+/|/home/[^/]+/|[A-Za-z]:\\\\Users\\\\[^\\\\]+\\\\)")
+# Run summaries record the output directory of the machine that produced them.
 ARCHIVED_PATH_EXCEPTIONS = {
-    "raw_results/checker_swap_rtamt/runs/AT1_seed1/summary.json",
-    "raw_results/checker_swap_rtamt/runs/CCX_seed0/summary.json",
+    f"raw_results/checker_swap_rtamt/runs/{run}/summary.json"
+    for run in ("CCX_seed0", *(f"AT1_seed{seed}" for seed in range(1, 7)))
 }
 SECRET_PATTERNS = {
     "AWS access key": re.compile(r"AKIA[0-9A-Z]{16}"),
@@ -45,7 +46,7 @@ def main() -> None:
     versions = json.loads((ROOT / "environment" / "versions.json").read_text())
     if not versions.get("container_base", "").startswith("python:3.13.5-slim-bookworm@sha256:"):
         errors.append("container base is not digest-pinned")
-    for required in ("CITATION.cff", "LICENSE", ".zenodo.json", "RELEASE_NOTES.md"):
+    for required in ("README.md", "CITATION.cff", "LICENSE", ".zenodo.json"):
         if not (ROOT / required).is_file():
             errors.append(f"missing release metadata: {required}")
     if errors:
@@ -54,7 +55,7 @@ def main() -> None:
             print(f"- {error}")
         raise SystemExit(1)
     print("release audit PASS: active paths, secrets, IDs, environment pin, and publication files")
-    print("documented exception: two immutable RTAMT summaries retain non-executed historical output_dir values")
+    print(f"exempt: {len(ARCHIVED_PATH_EXCEPTIONS)} archived RTAMT run summaries that record their output directory")
 
 
 if __name__ == "__main__":

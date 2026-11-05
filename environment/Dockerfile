@@ -12,4 +12,4 @@ RUN curl -fsSL "$WEKA_URL" -o /opt/weka/weka.jar && echo "$WEKA_SHA256  /opt/wek
 ENV WEKA_JAR=/opt/weka/weka.jar:/opt/weka/bounce.jar
 COPY . /opt/replication
 RUN python -m pip install --no-deps -e tool && python scripts/validate_configs.py
-CMD ["./smoke"]
+CMD ["./run", "smoke"]

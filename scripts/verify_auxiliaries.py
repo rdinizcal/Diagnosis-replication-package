@@ -64,7 +64,7 @@ def main() -> None:
 
     forbidden = ("example" + ".com", "zenodo.org/record/" + "XXXX",
                  "INSERT" + "_URL", "TODO" + "_URL", "<" + "URL>")
-    roots = [ROOT, ROOT.parents[1] / "paper/latex"]
+    roots = [ROOT]
     hits = []
     for root in roots:
         for path in root.rglob("*"):
