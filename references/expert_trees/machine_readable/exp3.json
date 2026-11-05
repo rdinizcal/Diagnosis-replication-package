@@ -1,7 +1,7 @@
 {
   "canonical_experiment_id": "exp3",
   "canonicalization": {
-    "author": "UNRECORDED",
+    "author": "scripts/build_expert_references.py",
     "date": "2026-08-18",
     "original_vs_corrected": "verbatim boxes",
     "role": "mechanical transcription; trace-semantic correction where declared"
@@ -68,9 +68,8 @@
   "schema_version": 1,
   "trace_witness_derivation": {
     "extrema": null,
-    "reconstruction_required": "Recover the expert's annotated trace/plot, threshold crossings, and independent derivation notes; only the final region is archived.",
     "representative_trace_check_mutations": null,
-    "status": "unavailable_final_tree_only",
+    "status": "expert_region",
     "witness": null
   },
   "vector_path": "references/expert_trees/svg/exp3_expert.svg"

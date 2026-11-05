@@ -1,7 +1,7 @@
 {
   "canonical_experiment_id": "exp34",
   "canonicalization": {
-    "author": "UNRECORDED",
+    "author": "scripts/build_expert_references.py",
     "date": "2026-08-18",
     "original_vs_corrected": "corrected_from_trace; original AccuracyRR boxes retained in provenance",
     "role": "mechanical transcription; trace-semantic correction where declared"
@@ -136,9 +136,8 @@
   "schema_version": 1,
   "trace_witness_derivation": {
     "extrema": "references/trace_witnesses/expert/exp34_extrema.json",
-    "reconstruction_required": null,
     "representative_trace_check_mutations": "references/trace_witnesses/expert/exp34_representative_mutations.csv",
-    "status": "available_trace_witness",
+    "status": "trace_rule_with_witness",
     "witness": "references/trace_witnesses/expert/exp34.csv"
   },
   "vector_path": "references/expert_trees/svg/exp34_expert.svg"

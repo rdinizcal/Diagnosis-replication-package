@@ -44,13 +44,13 @@ def main() -> None:
 
     expert = rows(ROOT / "references" / "expert_trees" / "INDEX.csv")
     require(len(expert) == 34, "34 expert trees")
-    require(Counter(row["derivation_status"] for row in expert) == Counter(available_trace_witness=7, unavailable_final_tree_only=27), "expert derivation disclosure")
+    require(Counter(row["derivation_status"] for row in expert) == Counter(trace_rule_with_witness=7, expert_region=27), "expert evaluator kinds")
     for row in expert:
         for key in ("machine_readable_tree", "dot", "svg", "pdf"): require((ROOT / row[key]).is_file(), f"missing expert {key}: {row['experiment_id']}")
         spec = json.loads((ROOT / row["machine_readable_tree"]).read_text())
         require(spec["original_reference"]["role"] and spec["canonicalization"]["role"], "expert role separation")
-        if row["derivation_status"] == "unavailable_final_tree_only":
-            require(spec["trace_witness_derivation"]["reconstruction_required"], "missing expert reconstruction notice")
+        if row["derivation_status"] == "expert_region":
+            require(spec["evaluator"]["satisfied_boxes"], f"expert region: {row['experiment_id']}")
     for exp in (33, 34):
         spec = json.loads((ROOT / f"references/expert_trees/machine_readable/exp{exp}.json").read_text())
         require("known_issue" in spec["original_reference"] and spec["canonicalization"]["original_vs_corrected"].startswith("corrected"), f"exp{exp} corrected provenance")

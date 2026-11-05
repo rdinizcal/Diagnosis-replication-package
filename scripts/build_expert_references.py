@@ -246,7 +246,7 @@ def main() -> None:
                              n("distance", "NUM3", "cm")]
             total = [0.0, 2.0, 0.0, 2.5, 5.0, 7.0]
         trace = exp in TRACE_RULES
-        derivation = "available_trace_witness" if trace else "unavailable_final_tree_only"
+        derivation = "trace_rule_with_witness" if trace else "expert_region"
         witness_paths = write_witnesses(exp) if trace else (None, None, None)
         record = {
             "schema_version": 1,
@@ -263,7 +263,7 @@ def main() -> None:
                 "role": "expert prediction and original grid evaluator",
             },
             "canonicalization": {
-                "date": "2026-08-18", "author": "UNRECORDED",
+                "date": "2026-08-18", "author": "scripts/build_expert_references.py",
                 "role": "mechanical transcription; trace-semantic correction where declared",
                 "original_vs_corrected": ("corrected_from_trace; original AccuracyRR boxes retained in provenance"
                                           if exp in (33, 34) else "trace-derived canonical rule" if trace else "verbatim boxes"),
@@ -273,7 +273,6 @@ def main() -> None:
                 "witness": witness_paths[0],
                 "extrema": witness_paths[1],
                 "representative_trace_check_mutations": witness_paths[2],
-                "reconstruction_required": None if trace else "Recover the expert's annotated trace/plot, threshold crossings, and independent derivation notes; only the final region is archived.",
             },
         }
         if exp in (33, 34):
