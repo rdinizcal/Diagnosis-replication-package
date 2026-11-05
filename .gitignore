@@ -6,3 +6,14 @@ __pycache__/
 ci-derived/
 raw_results/rerun/
 
+raw_results/archive_downloads/
+Diagnosis/
+tool_trees_at_run/
+raw_results/rq1_rq2/*/seed*/archive/generations/
+raw_results/rq1_rq2/*/seed*/archive/**/*.arff
+raw_results/rq1_rq2/*/seed*/archive/**/*.model
+raw_results/rq1_rq2/*/seed*/archive/verdict_cache.sqlite*
+raw_results/rq1_rq2/*/seed*/archive/inferred_labels.csv
+raw_results/rq1_rq2/*/seed*/archive/inference_state.json
+raw_results/rq1_rq2/*/seed*/archive/pr_growth.png
+raw_results/rq1_rq2/*/seed*/archive/worker.log

@@ -30,9 +30,9 @@ def final_tree(archive: Path) -> Path | None:
     return candidate if candidate.exists() else None
 
 
-def arff_label(archive: Path) -> str:
+def arff_label(run: Path) -> str:
     labels = set()
-    for path in archive.glob("dataset_qty_*_all.arff"):
+    for path in run.glob("dataset_qty_*_all.arff"):
         in_data = False
         for line in path.read_text(errors="replace").splitlines():
             if line.strip().lower() == "@data": in_data = True; continue
@@ -64,7 +64,7 @@ def main() -> None:
         source = final_tree(archive); tree = parse(source.read_text(errors="replace")) if source else None
         tree_status = "available"
         if tree is None and status == "completed_degenerate":
-            tree = {"root": 0, "nodes": [{"id": 0, "kind": "leaf", "label": arff_label(archive)}], "edges": []}
+            tree = {"root": 0, "nodes": [{"id": 0, "kind": "leaf", "label": arff_label(archive.parent)}], "edges": []}
             tree_status = "degenerate_one_class_reconstructed_from_arff"
         elif tree is None:
             tree_status = "unavailable_run_censored_before_final_tree"

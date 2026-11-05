@@ -202,7 +202,7 @@ def write_witnesses(exp: int) -> tuple[str, str, str]:
 
     # Representative decided/undecided mutations are validation witnesses, not expert input.
     reps = []
-    seed = ROOT / "raw_results" / "rq1_rq2" / f"exp{exp}" / "seed0" / "archive"
+    seed = ROOT / "raw_results" / "rq1_rq2" / f"exp{exp}" / "seed0"
     arffs = sorted(seed.glob("dataset_qty_*_all.arff"))
     if arffs:
         attrs, data = [], False

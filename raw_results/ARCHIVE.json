@@ -1,0 +1,26 @@
+{
+  "zenodo_record": null,
+  "files": [
+    {
+      "name": "rq1_rq2_run_archives.tar.gz",
+      "extract_to": ".",
+      "contents": "per-generation candidates, verdict caches, intermediate ARFF cuts and J48 models, inferred labels and worker logs of the 340 RQ1/RQ2 runs, at their raw_results/rq1_rq2/exp*/seed*/archive/ paths",
+      "sha256": "22dcfa3c1e338952e210190ac84913b7bda60f03b99b2d653008ba4a2e76e910",
+      "bytes": 87531628
+    },
+    {
+      "name": "Diagnosis-05d0750.tar.gz",
+      "extract_to": ".",
+      "contents": "the Diagnosis repository at 05d0750395972662e9be0a1083b09a6dce7e3e65, the source base of tool/",
+      "sha256": "9fda8ffe25bf640d6aaccaf9d39a6aaca17f7cdb602987b57c0d6bb68a56c9a3",
+      "bytes": 33180504
+    },
+    {
+      "name": "tool_trees_at_run.tar.gz",
+      "extract_to": "tool_trees_at_run",
+      "contents": "the tool trees that produced the archived runs: diagnosis-experiments@9b34118 and @28edea0, Diagnosis@fc96c7e",
+      "sha256": "3d4b75845aeb7570c0821e29a99389936db6c65c64c4c8346a1f9da2388ffc6c",
+      "bytes": 614002
+    }
+  ]
+}

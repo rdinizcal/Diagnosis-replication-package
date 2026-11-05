@@ -1,4 +1,0 @@
-[submodule "Diagnosis"]
-	path = Diagnosis
-	url = https://github.com/rdinizcal/Diagnosis.git
-	branch = rtamt-lite
