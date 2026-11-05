@@ -63,11 +63,11 @@ selected, scored and timed.
 
 Per-generation candidates, verdict caches and intermediate files of the RQ1/RQ2 runs
 (635 MB), and the full Diagnosis repository that `tool/` was taken from, are archived on
-Zenodo with this package ([10.5281/zenodo.23979522](https://doi.org/10.5281/zenodo.23979522)). None of it is needed for the commands above. `python3 scripts/fetch_archive.py`
+Zenodo with this package ([10.5281/zenodo.23979521](https://doi.org/10.5281/zenodo.23979521)). None of it is needed for the commands above. `python3 scripts/fetch_archive.py`
 downloads it, checks it against `raw_results/ARCHIVE.json` and unpacks it in place.
 
 ## Citation and licence
 
-Cite the paper and this package (DOI [10.5281/zenodo.23979522](https://doi.org/10.5281/zenodo.23979522)); `CITATION.cff` has the details. The first three authors
+Cite the paper and this package (DOI [10.5281/zenodo.23979521](https://doi.org/10.5281/zenodo.23979521)); `CITATION.cff` has the details. The first three authors
 contributed equally. Package material is under the MIT licence (`LICENSE`); third-party
 terms are in `LICENSES/`.

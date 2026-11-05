@@ -2,7 +2,7 @@
   "title": "Diagnosis: replication package for Search-based Trace Diagnostic for Cyber-Physical Systems",
   "upload_type": "dataset",
   "publication_date": "2026-11-05",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Tool, inputs, raw results and analysis scripts that regenerate every table, figure and number of the article, with the per-generation run data and the tool's source base as archive files.",
   "creators": [
     {"name": "Caldas, Ricardo", "affiliation": "Gran Sasso Science Institute (GSSI), L'Aquila, Italy"},

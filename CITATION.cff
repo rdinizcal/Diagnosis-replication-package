@@ -2,9 +2,9 @@ cff-version: 1.2.0
 message: "If you use this replication package, cite the associated article and this software artifact."
 title: "Diagnosis: replication package for Search-based Trace Diagnostic for Cyber-Physical Systems"
 type: dataset
-version: 1.1.0
+version: 1.1.1
 date-released: 2026-11-05
-doi: 10.5281/zenodo.23979522
+doi: 10.5281/zenodo.23979521
 authors:
   - family-names: Caldas
     given-names: Ricardo
