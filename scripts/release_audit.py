@@ -10,11 +10,6 @@ ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED_TOP_LEVEL = {".git", "Diagnosis", "ci-derived"}
 TEXT_SUFFIXES = {".cfg", ".csv", ".json", ".md", ".py", ".sh", ".tex", ".toml", ".txt", ".yaml", ".yml"}
 DEVELOPER_PATH = re.compile(r"(?:/Users/[^/]+/|/home/[^/]+/|[A-Za-z]:\\\\Users\\\\[^\\\\]+\\\\)")
-# Run summaries record the output directory of the machine that produced them.
-ARCHIVED_PATH_EXCEPTIONS = {
-    f"raw_results/checker_swap_rtamt/runs/{run}/summary.json"
-    for run in ("CCX_seed0", *(f"AT1_seed{seed}" for seed in range(1, 7)))
-}
 SECRET_PATTERNS = {
     "AWS access key": re.compile(r"AKIA[0-9A-Z]{16}"),
     "private key": re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----"),
@@ -33,9 +28,8 @@ def main() -> None:
         if not path.is_file() or path.suffix.lower() not in TEXT_SUFFIXES:
             continue
         text = path.read_text(encoding="utf-8", errors="ignore")
-        relative = relative_path.as_posix()
-        if DEVELOPER_PATH.search(text) and relative not in ARCHIVED_PATH_EXCEPTIONS and path.name != "release_audit.py":
-            errors.append(f"active absolute developer path: {relative}")
+        if DEVELOPER_PATH.search(text) and path.name != "release_audit.py":
+            errors.append(f"active absolute developer path: {relative_path}")
         for label, pattern in SECRET_PATTERNS.items():
             if pattern.search(text):
                 errors.append(f"possible {label}: {path.relative_to(ROOT)}")
@@ -55,7 +49,6 @@ def main() -> None:
             print(f"- {error}")
         raise SystemExit(1)
     print("release audit PASS: active paths, secrets, IDs, environment pin, and publication files")
-    print(f"exempt: {len(ARCHIVED_PATH_EXCEPTIONS)} archived RTAMT run summaries that record their output directory")
 
 
 if __name__ == "__main__":

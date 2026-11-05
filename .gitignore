@@ -17,3 +17,4 @@ raw_results/rq1_rq2/*/seed*/archive/inferred_labels.csv
 raw_results/rq1_rq2/*/seed*/archive/inference_state.json
 raw_results/rq1_rq2/*/seed*/archive/pr_growth.png
 raw_results/rq1_rq2/*/seed*/archive/worker.log
+zenodo/

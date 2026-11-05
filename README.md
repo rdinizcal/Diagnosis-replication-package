@@ -2,8 +2,8 @@
 
 This repository holds the tool, inputs, raw results and analysis behind the paper's
 three research questions: effectiveness (RQ1), efficiency (RQ2) and sensitivity to the
-mutation space (RQ3), plus the studies in its Discussion. Every table, figure and number
-the paper reports is regenerated from the files here by one command.
+mutation space (RQ3), plus the studies in its Discussion. One command derives the
+paper's tables, figures and numbers from the files here.
 
 ## Three commands
 

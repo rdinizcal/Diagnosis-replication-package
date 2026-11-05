@@ -17,6 +17,10 @@ identical to it.
 The archived runs were produced by the tool trees recorded in each run's
 `tool_commit`: `diagnosis-experiments@9b34118` for campaign 20260803171759,
 `diagnosis-experiments@28edea0` for the 20260812103600 and 20260903113951 re-runs,
-and `Diagnosis@fc96c7e` for the RQ3 runs. Each is the last commit touching the
-tool before its campaign started, and none changed during a campaign. The archive
-holds all three trees.
+and `Diagnosis@fc96c7e` for the RQ3 runs. The cluster image copies the tool in when
+it is built (`hpc/diagnosis.def` in diagnosis-experiments). `9b34118` is the only tool
+commit before campaign 20260803171759, and all of its trees still carry the undecided
+class that `d668fe4` removed from the training-set writer. No tree of the two later
+campaigns does, and `28edea0` is the last tool commit before either. The RQ3 runs date
+from 23 to 30 December 2025, after `fc96c7e` and before the next tool commit in March
+2026. The archive holds all three trees.
