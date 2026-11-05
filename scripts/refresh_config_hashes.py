@@ -28,7 +28,7 @@ def refresh(name: str, canonical_column: bool = False) -> None:
         if canonical_column:
             row["canonical_json_sha256"] = canonical(config)
             if row["study_id"] == "rq3_sensitivity":
-                row["provenance"] = "reconstructed_current_snapshot_from_archived_rq3_evidence"
+                row["provenance"] = "launch_template_with_run_record"
     with path.open("w", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=list(rows[0])); writer.writeheader(); writer.writerows(rows)
 

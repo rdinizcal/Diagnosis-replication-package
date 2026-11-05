@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate reconstructed RQ3 configurations against the frozen AST mutator."""
+"""Validate the RQ3 run configurations against the frozen AST mutator."""
 from __future__ import annotations
 
 import json
@@ -111,9 +111,11 @@ def main() -> None:
         for path in group:
             data = json.loads(path.read_text(encoding="utf-8"))
             data["ga"]["seed"] = 0
+            data["ga"]["target_sats"] = "RUN_RECORD"  # per run, as recorded in its summary.json
             data["input"]["output_dir"] = "SEED_OUTPUT"
+            data["replication_metadata"]["run_record"] = "RUN_RECORD"
             canonical.append(data)
-        assert all(item == canonical[0] for item in canonical[1:]), f"non-seed drift in {key}"
+        assert all(item == canonical[0] for item in canonical[1:]), f"non-run drift in {key}"
 
     report = {
         "status": "pass",

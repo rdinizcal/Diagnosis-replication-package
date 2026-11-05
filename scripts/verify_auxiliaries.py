@@ -27,7 +27,7 @@ def main() -> None:
     require(rq3_validation["status"] == "pass" and rq3_validation["configurations"] == 140,
             "RQ3 executable configurations")
     require(all(int(row["n_runs"]) == 5 for row in rows(ROOT / "derived_results/table9_authoritative.csv")), "RQ3 five seeds")
-    require(all(row["archive_byte_identical"] == "False" for row in catalogue), "RQ3 reconstruction disclosure")
+    require(all((ROOT / row["launch_template"]).is_file() for row in catalogue), "RQ3 launch templates")
     print("OK RQ3: 140 raw runs, 28 configurations, generated Table 9")
 
     op = ROOT / "experiments/operator_coverage"

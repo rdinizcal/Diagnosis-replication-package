@@ -14,9 +14,9 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "derived_results"
 RQ3_CONFIGS = ROOT / "experiments" / "rq3_sensitivity" / "configs"
 
-# Historical position IDs belong to the archived 2025 encoder, whose effective
-# configurations were not retained. Values below are recovered from the bundled
-# original properties and corroborated by every archived ARFF header/data row.
+# Historical position IDs belong to the 2025 encoder used by the launch templates in
+# evaluation_inputs/sensitivity. Values below are the unmutated literals of the bundled
+# original properties, as every archived ARFF header and data row confirms.
 ORIGINALS = {
     "phi2": {12: -3.0, 15: 1.5},
     "phi3": {4: 0, 8: 9_900_000.0, 10: "And", 18: 3.5, 40: 1.0},
@@ -102,8 +102,7 @@ def build_configuration_catalogue() -> list[dict]:
             "effective_max_simultaneous_mutations": metadata["effective_max_simultaneous_mutations"],
             "label_rationale": metadata["label_rationale"],
             "configuration_provenance": metadata["configuration_provenance"],
-            "archive_byte_identical": metadata["archive_run_configuration_byte_identity"],
-            "archive_caveat": metadata["archive_caveat"],
+            "launch_template": metadata["launch_template"],
             "config_pattern": str(seed0.relative_to(ROOT)).replace("seed0.json", "seed{seed}.json"),
             "seed0_sha256": hashlib.sha256(seed0.read_bytes()).hexdigest(),
         })

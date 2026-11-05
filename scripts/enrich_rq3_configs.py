@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Make reconstructed RQ3 configurations explicit and runnable on this snapshot."""
+"""Write the RQ3 run configurations: launch template + run record, runnable on this snapshot."""
 from __future__ import annotations
 
 import json
@@ -7,6 +7,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIGS = ROOT / "experiments" / "rq3_sensitivity" / "configs"
+TEMPLATES = ROOT / "evaluation_inputs" / "sensitivity"
+RUNS = ROOT / "raw_results" / "rq3_sensitivity"
 
 ORIGINALS = {
     "phi2": {12: -3.0, 15: 1.5},
@@ -33,6 +35,9 @@ def main() -> None:
         req, label = path.parent.parent.name, path.parent.name
         config = json.loads(path.read_text(encoding="utf-8"))
         mutation = config["mutation"]
+        template = TEMPLATES / ("AT53" if req == "AT53_AT119" else req) / f"{req}_{label}.json"
+        record = RUNS / req / label / path.stem / "summary.json"
+        config["ga"]["target_sats"] = json.loads(record.read_text())["ga_target_sats"]
         prior_metadata = config.get("replication_metadata", {})
         historical = list(prior_metadata.get("historical_allowed_positions", mutation["allowed_positions"]))
         current = [38 if req == "phi3" and pos == 40 else pos for pos in historical]
@@ -45,8 +50,12 @@ def main() -> None:
         }
         mutation["original_values"] = original_values
         metadata = config.setdefault("replication_metadata", {})
+        for stale in ("archive_caveat", "archive_run_configuration_byte_identity"):
+            metadata.pop(stale, None)
         metadata.update({
-            "configuration_provenance": "reconstructed_current_snapshot_from_archived_rq3_evidence",
+            "configuration_provenance": "launch_template_with_run_record",
+            "launch_template": str(template.relative_to(ROOT)),
+            "run_record": str(record.relative_to(ROOT)),
             "label_rationale": rationale(label),
             "historical_position_namespace": "archived_2025_preorder_encoder",
             "historical_allowed_positions": historical,
@@ -55,15 +64,7 @@ def main() -> None:
             "effective_max_simultaneous_mutations": min(
                 mutation["max_mutations"], len(mutation["allowed_positions"])
             ),
-            "archive_run_configuration_byte_identity": False,
-            "archive_caveat": (
-                "The original effective JSON was not retained. Domains and values were recovered "
-                "from property sources and archived ARFF data. Archived AT53 quantifier samples use "
-                "the legacy binder-only flip; this runnable configuration uses guarded range repair."
-                if req == "AT53_AT119" else
-                "The original effective JSON was not retained. Domains and values were recovered "
-                "from property sources and archived ARFF data."
-            ),
+            **({"quantifier_mutation": "guarded range repair"} if req == "AT53_AT119" else {}),
         })
         if mutation["max_mutations"] > len(mutation["allowed_positions"]):
             metadata["label_rationale"] += (

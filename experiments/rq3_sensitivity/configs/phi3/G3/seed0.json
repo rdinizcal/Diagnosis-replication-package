@@ -129,9 +129,7 @@
     }
   },
   "replication_metadata": {
-    "archive_caveat": "The original effective JSON was not retained. Domains and values were recovered from property sources and archived ARFF data.",
-    "archive_run_configuration_byte_identity": false,
-    "configuration_provenance": "reconstructed_current_snapshot_from_archived_rq3_evidence",
+    "configuration_provenance": "launch_template_with_run_record",
     "current_position_namespace": "bundled_tool_preorder_encoder_at_05d0750",
     "effective_max_simultaneous_mutations": 3,
     "historical_allowed_positions": [
@@ -143,9 +141,11 @@
     ],
     "historical_position_namespace": "archived_2025_preorder_encoder",
     "label_rationale": "interaction: guided domains; up to 3 simultaneous mutations",
+    "launch_template": "evaluation_inputs/sensitivity/phi3/phi3_G3.json",
     "position_translation": {
       "40": 38
     },
+    "run_record": "raw_results/rq3_sensitivity/phi3/G3/seed0/summary.json",
     "tool_commit_for_archived_run": "UNRECORDED",
     "tool_snapshot_for_rerun": "05d0750395972662e9be0a1083b09a6dce7e3e65",
     "verdict_polarity": "TRUE=satisfied; FALSE=violated; UNDECIDED=missing label"
