@@ -4,6 +4,7 @@ title: "Diagnosis: replication package for Search-based Trace Diagnostic for Cyb
 type: dataset
 version: 1.1.0
 date-released: 2026-11-05
+doi: 10.5281/zenodo.23979522
 authors:
   - family-names: Caldas
     given-names: Ricardo
