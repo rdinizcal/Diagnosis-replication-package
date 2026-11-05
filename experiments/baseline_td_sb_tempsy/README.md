@@ -12,4 +12,4 @@ and a Docker environment with Eclipse Mars, Java 7, EMF 2.11 and OCL. Run
 `lu.svv.offline/src/lu/svv/offline/main/TraceCheck.java` on each CSV/XMI pair with a
 one-hour limit. The output of every run is in
 `raw_results/baseline_td_sb_tempsy/outcomes.csv`; `scripts/baseline_outcomes.py`
-derives the outcome counts, the pie chart and the diagnosis witnesses.
+derives the outcome counts and the diagnosis witnesses.
