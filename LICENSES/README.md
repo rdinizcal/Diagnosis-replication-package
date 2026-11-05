@@ -1,7 +1,7 @@
 # Licensing and attribution
 
 Package-authored scripts, registries, and documentation use the repository MIT
-license (copied as `PACKAGE-MIT.txt`). The Diagnosis tool snapshot follows its
+license (`LICENSE` at the repository root). The Diagnosis tool snapshot follows its
 bundled license in `tool/LICENSE`.
 
 Input requirements and traces originate from the cited Diagnosis and
