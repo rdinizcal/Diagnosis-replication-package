@@ -5,7 +5,7 @@ From: python:3.13.5-slim-bookworm@sha256:4c2cf9917bd1cbacc5e9b07320025bdb7cdf2df
     . /opt/replication
 
 %post
-    sh /opt/replication/environment/install_debian_packages.sh
+    sh /opt/replication/environment/install_system_packages.sh
     python -m pip install --no-cache-dir -r /opt/replication/environment/requirements-lock.txt
     python /opt/replication/environment/patch_antlr47_py313.py
     python -m pip install --no-cache-dir --no-deps -r /opt/replication/environment/rtamt-compat-lock.txt

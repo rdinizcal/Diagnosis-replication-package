@@ -1,7 +1,7 @@
 {
   "python": "3.13.5",
   "z3_solver": "4.15.4.0",
-  "java_runtime": "OpenJDK 17.0.20+8; Debian 17.0.20+8-1~deb12u1",
+  "java_runtime": "OpenJDK 17.0.20+8; Eclipse Temurin JRE 17.0.20+8",
   "weka": "3.8.6",
   "bounce": "0.18",
   "rtamt": "0.3.5",
