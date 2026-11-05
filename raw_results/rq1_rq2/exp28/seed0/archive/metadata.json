@@ -25,7 +25,7 @@
   "selection_policy": "reconciliation allow-list; independent of result quality/runtime",
   "status": "timeout",
   "stop_reason": "wall_guard_or_PGTO_no_summary",
-  "tool_commit_at_run": "UNRECORDED",
+  "tool_commit_at_run": "diagnosis-experiments@28edea0f4f97a181128080b11ff413648a5cea7c",
   "unavailable_evidence": {
     "evaluation_tree": "not present in the reconciliation-selected source run; preserve as unavailable, do not reconstruct from another campaign",
     "raw_j48_output": "not present in the reconciliation-selected source run; preserve as unavailable, do not reconstruct from another campaign",

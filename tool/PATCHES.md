@@ -17,6 +17,8 @@ file is retained because it was the exact audited rerun implementation. Run
 `python3 scripts/verify_submodule.py` from a recursive clone to verify the
 gitlink, upstream checkout, unchanged overlapping files, and patched-file hash.
 
-This correction must not be projected backward onto archived primary runs.
-Their effective configurations survived, but their source commit did not; the
-artifact records that field as `UNRECORDED`.
+The archived runs were produced by the tool trees recorded in each run's
+`tool_commit`: `diagnosis-experiments@9b34118` for campaign 20260803171759,
+`diagnosis-experiments@28edea0` for the 20260812103600 and 20260903113951 re-runs,
+and `Diagnosis@fc96c7e` for the RQ3 runs. Each is the last commit touching the
+tool before its campaign started, and none changed during a campaign.

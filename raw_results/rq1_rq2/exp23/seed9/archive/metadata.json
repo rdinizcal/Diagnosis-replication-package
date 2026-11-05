@@ -25,7 +25,7 @@
   "selection_policy": "reconciliation allow-list; independent of result quality/runtime",
   "status": "completed_informative",
   "stop_reason": "cv_pr_stable",
-  "tool_commit_at_run": "UNRECORDED",
+  "tool_commit_at_run": "diagnosis-experiments@9b34118528314647327e35d8d8a966dcef780c6d",
   "unavailable_evidence": {
     "evaluation_tree": "not present in the reconciliation-selected source run; preserve as unavailable, do not reconstruct from another campaign"
   }
