@@ -1,0 +1,10 @@
+{
+    "TOTAL": 1150,
+    "": 1150,
+    "cache_hits": 108,
+    "cache_misses": 1042,
+    "cache_distinct": 1042,
+    "rtamt_subject": "AT1",
+    "rtamt_evaluations": 1042,
+    "rho_zero": 0
+}
