@@ -22,7 +22,7 @@ docker run --rm diagnosis-replication ./run results
 
 Without Docker you need Python 3.13, Java 17, Graphviz, the packages in
 `environment/requirements-lock.txt` and `environment/rtamt-compat-lock.txt`, and
-`pip install -e tool`. Weka is needed only to re-run experiments; set `WEKA_JAR` to
+`pip install -e tool`. The smoke test and experiment runs also need Weka; set `WEKA_JAR` to
 `weka.jar:bounce.jar`.
 
 A full RQ1/RQ2 run of one configuration and seed can take up to five days of checker
